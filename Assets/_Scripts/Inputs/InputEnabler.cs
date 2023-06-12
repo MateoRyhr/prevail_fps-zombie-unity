@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(BasicInput))]
 public class InputEnabler : MonoBehaviour
 {
     private BasicInput _input;

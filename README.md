@@ -1,12 +1,14 @@
-a# **Prevail**
+# Prevail
+
 Prevail is a first-person shooter in which you'll have to survive waves of zombies.
 
-# Game Systems
+# Systems
 
 > Index
 
 1. ## [Input System](#01)
 2. ## [Movement System](#02)
+2. ## [Animation Controller System](#03)
 
 > End of index
 
@@ -17,3 +19,7 @@ Prevail is a first-person shooter in which you'll have to survive waves of zombi
 2. ## Movement System <a id="02"></a>
 
 ![](./Documentation/MovementSystem.png)
+
+3. ## Animation System <a id="03"></a>
+
+![](./Documentation/AnimationControllerSystem.png)

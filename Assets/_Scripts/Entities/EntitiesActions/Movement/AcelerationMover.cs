@@ -26,6 +26,8 @@ public class AcelerationMover : IMover
     {
         bool isMoving = direction != Vector3.zero;
 
+        // float speedCostForNewDirection = 1 - Vector3.Angle(_lastMovementDirection,direction) / 180f;
+        // _timeSpeedingUp = AceleratedMovement.TimeToReachMaxSpeed * (_lastSpeed * speedCostForNewDirection / AceleratedMovement.MaxSpeed);
         _timeSpeedingUp = AceleratedMovement.TimeToReachMaxSpeed * (_lastSpeed / AceleratedMovement.MaxSpeed);
         _timeSlowingDown = AceleratedMovement.TimeToStop * (_lastSpeed / AceleratedMovement.MaxSpeed);
 

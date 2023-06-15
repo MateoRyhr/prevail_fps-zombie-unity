@@ -1,28 +1,28 @@
 using UnityEngine;
 
-public static class CursorHandler
+public class CursorHandler
 {
-    public static void HideCursor()
+    public void HideCursor()
     {
         Cursor.visible = false;
     }
 
-    public static void ShowCursor()
+    public void ShowCursor()
     {
         Cursor.visible = true;
     }
 
-    public static void ConfinCursor()
+    public void ConfinCursor()
     {
         Cursor.lockState = CursorLockMode.Confined;
     }
 
-    public static void LockCursor()
+    public void LockCursor()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    public static void ReleaseCursor()
+    public void ReleaseCursor()
     {
         Cursor.lockState = CursorLockMode.None;
     }

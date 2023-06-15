@@ -7,11 +7,19 @@ public class Inputs_EditorTests : InputTestFixture
 {
     //------------------------CursorHandler
 
+    CursorHandler _cursorHandler;
+
+    [SetUp]
+    public void SetUp()
+    {
+        _cursorHandler = new CursorHandler();
+    }
+
     [Test]
     public void CursorHandler_HideCursor()
     {
         Cursor.visible = true;
-        CursorHandler.HideCursor();
+        _cursorHandler.HideCursor();
         Assert.False(Cursor.visible);
     }
 
@@ -19,7 +27,7 @@ public class Inputs_EditorTests : InputTestFixture
     public void CursorHandler_ShowCursor()
     {
         Cursor.visible = false;
-        CursorHandler.ShowCursor();
+        _cursorHandler.ShowCursor();
         Assert.True(Cursor.visible);
     }
 
@@ -27,7 +35,7 @@ public class Inputs_EditorTests : InputTestFixture
     public void CursorHandler_ConfinCursor()
     {
         Cursor.lockState = CursorLockMode.None;
-        CursorHandler.ConfinCursor();
+        _cursorHandler.ConfinCursor();
         Assert.AreEqual(CursorLockMode.Confined,Cursor.lockState);
     }
 
@@ -35,7 +43,7 @@ public class Inputs_EditorTests : InputTestFixture
     public void CursorHandler_LockCursor()
     {
         Cursor.lockState = CursorLockMode.None;
-        CursorHandler.LockCursor();
+        _cursorHandler.LockCursor();
         Assert.AreEqual(CursorLockMode.Locked,Cursor.lockState);
     }
 
@@ -43,8 +51,7 @@ public class Inputs_EditorTests : InputTestFixture
     public void CursorHandler_ReleaseCursor()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        CursorHandler.ReleaseCursor();
+        _cursorHandler.ReleaseCursor();
         Assert.AreEqual(CursorLockMode.None,Cursor.lockState);
     }
-
 }

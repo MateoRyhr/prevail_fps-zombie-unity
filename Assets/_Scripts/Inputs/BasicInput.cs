@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(InputEnabler))]
 public class BasicInput : MonoBehaviour, IBaseInputActions
 {
     [SerializeField] protected InputActionAsset _actionAsset;

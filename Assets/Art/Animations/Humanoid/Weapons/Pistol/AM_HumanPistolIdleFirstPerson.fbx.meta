@@ -16,9 +16,7 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: <Root Transform>
-    rigImportErrors: "Avatar creation failed:\n\tParent for 'mixamorig12:Hips' differs
-      from one found in HumanDescription. 'AM_HumanPistolIdleFirstPerson' was found
-      instead of 'Armature'.\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 

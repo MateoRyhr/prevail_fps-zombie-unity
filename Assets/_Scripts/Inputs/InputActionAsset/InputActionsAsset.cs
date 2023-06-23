@@ -192,6 +192,74 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             ]
         },
         {
+            ""name"": ""Inventory"",
+            ""id"": ""598c5d8e-aa79-4d76-898b-7a7a5c052277"",
+            ""actions"": [
+                {
+                    ""name"": ""EquipItem_1"",
+                    ""type"": ""Button"",
+                    ""id"": ""23759045-a0fe-424c-bf9b-2c556cab9a3b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""EquipItem_2"",
+                    ""type"": ""Button"",
+                    ""id"": ""d9a2a489-80ca-47b7-854f-31448129c26f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""EquipItem_3"",
+                    ""type"": ""Button"",
+                    ""id"": ""e769751c-0670-43b0-b4d1-af3ea4fb9489"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""4ac7350d-b8bb-4807-9d9e-29bdf3e34871"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""EquipItem_1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""72ea06ec-27d5-4afa-8469-e12f7cb6c374"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""EquipItem_2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""004fa399-66a0-4114-80c2-79c7d591d36e"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""EquipItem_3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
             ""name"": ""Menu"",
             ""id"": ""97878292-7b0c-4c8a-bb4d-111495fbc739"",
             ""actions"": [
@@ -233,6 +301,11 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         // Interaction
         m_Interaction = asset.FindActionMap("Interaction", throwIfNotFound: true);
         m_Interaction_Newaction = m_Interaction.FindAction("New action", throwIfNotFound: true);
+        // Inventory
+        m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
+        m_Inventory_EquipItem_1 = m_Inventory.FindAction("EquipItem_1", throwIfNotFound: true);
+        m_Inventory_EquipItem_2 = m_Inventory.FindAction("EquipItem_2", throwIfNotFound: true);
+        m_Inventory_EquipItem_3 = m_Inventory.FindAction("EquipItem_3", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_Newaction = m_Menu.FindAction("New action", throwIfNotFound: true);
@@ -448,6 +521,68 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     }
     public InteractionActions @Interaction => new InteractionActions(this);
 
+    // Inventory
+    private readonly InputActionMap m_Inventory;
+    private List<IInventoryActions> m_InventoryActionsCallbackInterfaces = new List<IInventoryActions>();
+    private readonly InputAction m_Inventory_EquipItem_1;
+    private readonly InputAction m_Inventory_EquipItem_2;
+    private readonly InputAction m_Inventory_EquipItem_3;
+    public struct InventoryActions
+    {
+        private @InputActionsAsset m_Wrapper;
+        public InventoryActions(@InputActionsAsset wrapper) { m_Wrapper = wrapper; }
+        public InputAction @EquipItem_1 => m_Wrapper.m_Inventory_EquipItem_1;
+        public InputAction @EquipItem_2 => m_Wrapper.m_Inventory_EquipItem_2;
+        public InputAction @EquipItem_3 => m_Wrapper.m_Inventory_EquipItem_3;
+        public InputActionMap Get() { return m_Wrapper.m_Inventory; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(InventoryActions set) { return set.Get(); }
+        public void AddCallbacks(IInventoryActions instance)
+        {
+            if (instance == null || m_Wrapper.m_InventoryActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_InventoryActionsCallbackInterfaces.Add(instance);
+            @EquipItem_1.started += instance.OnEquipItem_1;
+            @EquipItem_1.performed += instance.OnEquipItem_1;
+            @EquipItem_1.canceled += instance.OnEquipItem_1;
+            @EquipItem_2.started += instance.OnEquipItem_2;
+            @EquipItem_2.performed += instance.OnEquipItem_2;
+            @EquipItem_2.canceled += instance.OnEquipItem_2;
+            @EquipItem_3.started += instance.OnEquipItem_3;
+            @EquipItem_3.performed += instance.OnEquipItem_3;
+            @EquipItem_3.canceled += instance.OnEquipItem_3;
+        }
+
+        private void UnregisterCallbacks(IInventoryActions instance)
+        {
+            @EquipItem_1.started -= instance.OnEquipItem_1;
+            @EquipItem_1.performed -= instance.OnEquipItem_1;
+            @EquipItem_1.canceled -= instance.OnEquipItem_1;
+            @EquipItem_2.started -= instance.OnEquipItem_2;
+            @EquipItem_2.performed -= instance.OnEquipItem_2;
+            @EquipItem_2.canceled -= instance.OnEquipItem_2;
+            @EquipItem_3.started -= instance.OnEquipItem_3;
+            @EquipItem_3.performed -= instance.OnEquipItem_3;
+            @EquipItem_3.canceled -= instance.OnEquipItem_3;
+        }
+
+        public void RemoveCallbacks(IInventoryActions instance)
+        {
+            if (m_Wrapper.m_InventoryActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IInventoryActions instance)
+        {
+            foreach (var item in m_Wrapper.m_InventoryActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_InventoryActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public InventoryActions @Inventory => new InventoryActions(this);
+
     // Menu
     private readonly InputActionMap m_Menu;
     private List<IMenuActions> m_MenuActionsCallbackInterfaces = new List<IMenuActions>();
@@ -506,6 +641,12 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     public interface IInteractionActions
     {
         void OnNewaction(InputAction.CallbackContext context);
+    }
+    public interface IInventoryActions
+    {
+        void OnEquipItem_1(InputAction.CallbackContext context);
+        void OnEquipItem_2(InputAction.CallbackContext context);
+        void OnEquipItem_3(InputAction.CallbackContext context);
     }
     public interface IMenuActions
     {

@@ -170,6 +170,74 @@
             ]
         },
         {
+            "name": "Inventory",
+            "id": "598c5d8e-aa79-4d76-898b-7a7a5c052277",
+            "actions": [
+                {
+                    "name": "EquipItem_1",
+                    "type": "Button",
+                    "id": "23759045-a0fe-424c-bf9b-2c556cab9a3b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "EquipItem_2",
+                    "type": "Button",
+                    "id": "d9a2a489-80ca-47b7-854f-31448129c26f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "EquipItem_3",
+                    "type": "Button",
+                    "id": "e769751c-0670-43b0-b4d1-af3ea4fb9489",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4ac7350d-b8bb-4807-9d9e-29bdf3e34871",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EquipItem_1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "72ea06ec-27d5-4afa-8469-e12f7cb6c374",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EquipItem_2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "004fa399-66a0-4114-80c2-79c7d591d36e",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EquipItem_3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
             "name": "Menu",
             "id": "97878292-7b0c-4c8a-bb4d-111495fbc739",
             "actions": [

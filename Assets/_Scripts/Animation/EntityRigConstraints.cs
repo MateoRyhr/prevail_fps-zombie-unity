@@ -3,11 +3,11 @@ using UnityEngine.Animations.Rigging;
 
 public class EntityRigConstraints : MonoBehaviour
 {
-    [SerializeField] GameObject[] AllRigs;
+    [SerializeField] public GameObject[] Rigs;
 
     public void DisableAllRigs()
     {
-        foreach (GameObject rig in AllRigs)
+        foreach (GameObject rig in Rigs)
         {
             rig.GetComponent<Rig>().weight = 0f;
         }

@@ -125,6 +125,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Aim",
+                    "type": "Button",
+                    "id": "28da0ed1-74b8-4a97-bf64-9237b9c9030d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Reload",
+                    "type": "Button",
+                    "id": "cac43308-8b3e-409f-92f8-9dab625b8687",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -138,6 +156,28 @@
                     "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2d8e5d10-c5e8-49f0-862e-65aa94d64f0f",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f8e29e65-56eb-4a03-ab1c-45c581a5e913",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reload",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -146,7 +186,7 @@
             "id": "8cee2818-1fc7-4cfe-ba1a-894c6bd6fca2",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "ThirdPersonCamera",
                     "type": "Button",
                     "id": "e913725f-8d80-4c67-a7bd-23345703f9ce",
                     "expectedControlType": "Button",
@@ -159,11 +199,11 @@
                 {
                     "name": "",
                     "id": "44edcad4-8029-4ba0-a94b-48cb2b837456",
-                    "path": "",
+                    "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "ThirdPersonCamera",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -232,6 +272,54 @@
                     "processors": "",
                     "groups": "",
                     "action": "EquipItem_3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "InventoryShortcuts",
+            "id": "94c4041c-ab8d-4bc3-92df-1825ae01f9fc",
+            "actions": [
+                {
+                    "name": "NextEquipable",
+                    "type": "Button",
+                    "id": "0b0b0781-5191-497f-8aec-7ddf2c274e41",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PreviousEquipable",
+                    "type": "Button",
+                    "id": "113c39be-b396-4187-80b4-e02ca1e79fd3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "539bf015-b1b4-4926-930d-a9d96f9d29d2",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NextEquipable",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5c22192e-1896-4742-90f9-0bd33a109f24",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PreviousEquipable",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

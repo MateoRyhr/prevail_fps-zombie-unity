@@ -147,6 +147,24 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Aim"",
+                    ""type"": ""Button"",
+                    ""id"": ""28da0ed1-74b8-4a97-bf64-9237b9c9030d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Reload"",
+                    ""type"": ""Button"",
+                    ""id"": ""cac43308-8b3e-409f-92f8-9dab625b8687"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -160,6 +178,28 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
                     ""action"": ""Fire"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2d8e5d10-c5e8-49f0-862e-65aa94d64f0f"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f8e29e65-56eb-4a03-ab1c-45c581a5e913"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reload"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -168,7 +208,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             ""id"": ""8cee2818-1fc7-4cfe-ba1a-894c6bd6fca2"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
+                    ""name"": ""ThirdPersonCamera"",
                     ""type"": ""Button"",
                     ""id"": ""e913725f-8d80-4c67-a7bd-23345703f9ce"",
                     ""expectedControlType"": ""Button"",
@@ -181,11 +221,11 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""44edcad4-8029-4ba0-a94b-48cb2b837456"",
-                    ""path"": """",
+                    ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""ThirdPersonCamera"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -260,6 +300,54 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             ]
         },
         {
+            ""name"": ""InventoryShortcuts"",
+            ""id"": ""94c4041c-ab8d-4bc3-92df-1825ae01f9fc"",
+            ""actions"": [
+                {
+                    ""name"": ""NextEquipable"",
+                    ""type"": ""Button"",
+                    ""id"": ""0b0b0781-5191-497f-8aec-7ddf2c274e41"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PreviousEquipable"",
+                    ""type"": ""Button"",
+                    ""id"": ""113c39be-b396-4187-80b4-e02ca1e79fd3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""539bf015-b1b4-4926-930d-a9d96f9d29d2"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NextEquipable"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5c22192e-1896-4742-90f9-0bd33a109f24"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PreviousEquipable"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
             ""name"": ""Menu"",
             ""id"": ""97878292-7b0c-4c8a-bb4d-111495fbc739"",
             ""actions"": [
@@ -298,14 +386,20 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         // Combat
         m_Combat = asset.FindActionMap("Combat", throwIfNotFound: true);
         m_Combat_Fire = m_Combat.FindAction("Fire", throwIfNotFound: true);
+        m_Combat_Aim = m_Combat.FindAction("Aim", throwIfNotFound: true);
+        m_Combat_Reload = m_Combat.FindAction("Reload", throwIfNotFound: true);
         // Interaction
         m_Interaction = asset.FindActionMap("Interaction", throwIfNotFound: true);
-        m_Interaction_Newaction = m_Interaction.FindAction("New action", throwIfNotFound: true);
+        m_Interaction_ThirdPersonCamera = m_Interaction.FindAction("ThirdPersonCamera", throwIfNotFound: true);
         // Inventory
         m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
         m_Inventory_EquipItem_1 = m_Inventory.FindAction("EquipItem_1", throwIfNotFound: true);
         m_Inventory_EquipItem_2 = m_Inventory.FindAction("EquipItem_2", throwIfNotFound: true);
         m_Inventory_EquipItem_3 = m_Inventory.FindAction("EquipItem_3", throwIfNotFound: true);
+        // InventoryShortcuts
+        m_InventoryShortcuts = asset.FindActionMap("InventoryShortcuts", throwIfNotFound: true);
+        m_InventoryShortcuts_NextEquipable = m_InventoryShortcuts.FindAction("NextEquipable", throwIfNotFound: true);
+        m_InventoryShortcuts_PreviousEquipable = m_InventoryShortcuts.FindAction("PreviousEquipable", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_Newaction = m_Menu.FindAction("New action", throwIfNotFound: true);
@@ -433,11 +527,15 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Combat;
     private List<ICombatActions> m_CombatActionsCallbackInterfaces = new List<ICombatActions>();
     private readonly InputAction m_Combat_Fire;
+    private readonly InputAction m_Combat_Aim;
+    private readonly InputAction m_Combat_Reload;
     public struct CombatActions
     {
         private @InputActionsAsset m_Wrapper;
         public CombatActions(@InputActionsAsset wrapper) { m_Wrapper = wrapper; }
         public InputAction @Fire => m_Wrapper.m_Combat_Fire;
+        public InputAction @Aim => m_Wrapper.m_Combat_Aim;
+        public InputAction @Reload => m_Wrapper.m_Combat_Reload;
         public InputActionMap Get() { return m_Wrapper.m_Combat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -450,6 +548,12 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             @Fire.started += instance.OnFire;
             @Fire.performed += instance.OnFire;
             @Fire.canceled += instance.OnFire;
+            @Aim.started += instance.OnAim;
+            @Aim.performed += instance.OnAim;
+            @Aim.canceled += instance.OnAim;
+            @Reload.started += instance.OnReload;
+            @Reload.performed += instance.OnReload;
+            @Reload.canceled += instance.OnReload;
         }
 
         private void UnregisterCallbacks(ICombatActions instance)
@@ -457,6 +561,12 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             @Fire.started -= instance.OnFire;
             @Fire.performed -= instance.OnFire;
             @Fire.canceled -= instance.OnFire;
+            @Aim.started -= instance.OnAim;
+            @Aim.performed -= instance.OnAim;
+            @Aim.canceled -= instance.OnAim;
+            @Reload.started -= instance.OnReload;
+            @Reload.performed -= instance.OnReload;
+            @Reload.canceled -= instance.OnReload;
         }
 
         public void RemoveCallbacks(ICombatActions instance)
@@ -478,12 +588,12 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     // Interaction
     private readonly InputActionMap m_Interaction;
     private List<IInteractionActions> m_InteractionActionsCallbackInterfaces = new List<IInteractionActions>();
-    private readonly InputAction m_Interaction_Newaction;
+    private readonly InputAction m_Interaction_ThirdPersonCamera;
     public struct InteractionActions
     {
         private @InputActionsAsset m_Wrapper;
         public InteractionActions(@InputActionsAsset wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_Interaction_Newaction;
+        public InputAction @ThirdPersonCamera => m_Wrapper.m_Interaction_ThirdPersonCamera;
         public InputActionMap Get() { return m_Wrapper.m_Interaction; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -493,16 +603,16 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_InteractionActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_InteractionActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
+            @ThirdPersonCamera.started += instance.OnThirdPersonCamera;
+            @ThirdPersonCamera.performed += instance.OnThirdPersonCamera;
+            @ThirdPersonCamera.canceled += instance.OnThirdPersonCamera;
         }
 
         private void UnregisterCallbacks(IInteractionActions instance)
         {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
+            @ThirdPersonCamera.started -= instance.OnThirdPersonCamera;
+            @ThirdPersonCamera.performed -= instance.OnThirdPersonCamera;
+            @ThirdPersonCamera.canceled -= instance.OnThirdPersonCamera;
         }
 
         public void RemoveCallbacks(IInteractionActions instance)
@@ -583,6 +693,60 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     }
     public InventoryActions @Inventory => new InventoryActions(this);
 
+    // InventoryShortcuts
+    private readonly InputActionMap m_InventoryShortcuts;
+    private List<IInventoryShortcutsActions> m_InventoryShortcutsActionsCallbackInterfaces = new List<IInventoryShortcutsActions>();
+    private readonly InputAction m_InventoryShortcuts_NextEquipable;
+    private readonly InputAction m_InventoryShortcuts_PreviousEquipable;
+    public struct InventoryShortcutsActions
+    {
+        private @InputActionsAsset m_Wrapper;
+        public InventoryShortcutsActions(@InputActionsAsset wrapper) { m_Wrapper = wrapper; }
+        public InputAction @NextEquipable => m_Wrapper.m_InventoryShortcuts_NextEquipable;
+        public InputAction @PreviousEquipable => m_Wrapper.m_InventoryShortcuts_PreviousEquipable;
+        public InputActionMap Get() { return m_Wrapper.m_InventoryShortcuts; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(InventoryShortcutsActions set) { return set.Get(); }
+        public void AddCallbacks(IInventoryShortcutsActions instance)
+        {
+            if (instance == null || m_Wrapper.m_InventoryShortcutsActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_InventoryShortcutsActionsCallbackInterfaces.Add(instance);
+            @NextEquipable.started += instance.OnNextEquipable;
+            @NextEquipable.performed += instance.OnNextEquipable;
+            @NextEquipable.canceled += instance.OnNextEquipable;
+            @PreviousEquipable.started += instance.OnPreviousEquipable;
+            @PreviousEquipable.performed += instance.OnPreviousEquipable;
+            @PreviousEquipable.canceled += instance.OnPreviousEquipable;
+        }
+
+        private void UnregisterCallbacks(IInventoryShortcutsActions instance)
+        {
+            @NextEquipable.started -= instance.OnNextEquipable;
+            @NextEquipable.performed -= instance.OnNextEquipable;
+            @NextEquipable.canceled -= instance.OnNextEquipable;
+            @PreviousEquipable.started -= instance.OnPreviousEquipable;
+            @PreviousEquipable.performed -= instance.OnPreviousEquipable;
+            @PreviousEquipable.canceled -= instance.OnPreviousEquipable;
+        }
+
+        public void RemoveCallbacks(IInventoryShortcutsActions instance)
+        {
+            if (m_Wrapper.m_InventoryShortcutsActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IInventoryShortcutsActions instance)
+        {
+            foreach (var item in m_Wrapper.m_InventoryShortcutsActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_InventoryShortcutsActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public InventoryShortcutsActions @InventoryShortcuts => new InventoryShortcutsActions(this);
+
     // Menu
     private readonly InputActionMap m_Menu;
     private List<IMenuActions> m_MenuActionsCallbackInterfaces = new List<IMenuActions>();
@@ -637,16 +801,23 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     public interface ICombatActions
     {
         void OnFire(InputAction.CallbackContext context);
+        void OnAim(InputAction.CallbackContext context);
+        void OnReload(InputAction.CallbackContext context);
     }
     public interface IInteractionActions
     {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnThirdPersonCamera(InputAction.CallbackContext context);
     }
     public interface IInventoryActions
     {
         void OnEquipItem_1(InputAction.CallbackContext context);
         void OnEquipItem_2(InputAction.CallbackContext context);
         void OnEquipItem_3(InputAction.CallbackContext context);
+    }
+    public interface IInventoryShortcutsActions
+    {
+        void OnNextEquipable(InputAction.CallbackContext context);
+        void OnPreviousEquipable(InputAction.CallbackContext context);
     }
     public interface IMenuActions
     {

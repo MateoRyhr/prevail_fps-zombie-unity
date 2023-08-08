@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 1000
   velocity: 735
-  recoilForce: 10
+  recoilForce: 12
   fireRate: 730
   recoilRecoveryTime: 0.2
   ammoType: 1

@@ -1,0 +1,16 @@
+{
+    "name": "Surfaces",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d62c0c33ad764e642a519513163a41da"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -352,7 +352,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             ""id"": ""97878292-7b0c-4c8a-bb4d-111495fbc739"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
+                    ""name"": ""ShowHideFPS"",
                     ""type"": ""Button"",
                     ""id"": ""f319de39-2b43-4ea8-88dd-6411657486c9"",
                     ""expectedControlType"": ""Button"",
@@ -365,11 +365,11 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""54e35a97-8f66-4cae-b93a-44eaaa8c8416"",
-                    ""path"": """",
+                    ""path"": ""<Keyboard>/h"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""ShowHideFPS"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -402,7 +402,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         m_InventoryShortcuts_PreviousEquipable = m_InventoryShortcuts.FindAction("PreviousEquipable", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
-        m_Menu_Newaction = m_Menu.FindAction("New action", throwIfNotFound: true);
+        m_Menu_ShowHideFPS = m_Menu.FindAction("ShowHideFPS", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -750,12 +750,12 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     // Menu
     private readonly InputActionMap m_Menu;
     private List<IMenuActions> m_MenuActionsCallbackInterfaces = new List<IMenuActions>();
-    private readonly InputAction m_Menu_Newaction;
+    private readonly InputAction m_Menu_ShowHideFPS;
     public struct MenuActions
     {
         private @InputActionsAsset m_Wrapper;
         public MenuActions(@InputActionsAsset wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_Menu_Newaction;
+        public InputAction @ShowHideFPS => m_Wrapper.m_Menu_ShowHideFPS;
         public InputActionMap Get() { return m_Wrapper.m_Menu; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -765,16 +765,16 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_MenuActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_MenuActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
+            @ShowHideFPS.started += instance.OnShowHideFPS;
+            @ShowHideFPS.performed += instance.OnShowHideFPS;
+            @ShowHideFPS.canceled += instance.OnShowHideFPS;
         }
 
         private void UnregisterCallbacks(IMenuActions instance)
         {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
+            @ShowHideFPS.started -= instance.OnShowHideFPS;
+            @ShowHideFPS.performed -= instance.OnShowHideFPS;
+            @ShowHideFPS.canceled -= instance.OnShowHideFPS;
         }
 
         public void RemoveCallbacks(IMenuActions instance)
@@ -821,6 +821,6 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     }
     public interface IMenuActions
     {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnShowHideFPS(InputAction.CallbackContext context);
     }
 }

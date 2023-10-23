@@ -1,0 +1,18 @@
+{
+    "name": "ParticlesBySurface",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d62c0c33ad764e642a519513163a41da",
+        "GUID:53dfe3417a8f2094fafdb8096cf91400",
+        "GUID:65ac4c1eee232a34f930f932e0cae6ff"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

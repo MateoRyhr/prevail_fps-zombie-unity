@@ -23,6 +23,7 @@ public class HealthEntity : MonoBehaviour, IDamageTaker
 
     public void TakeDamage(float damage)
     {
+        if(_hasBeenDestructed) return;
         Health.Substract(damage);
         if(Health.Value <= 0 )
         {

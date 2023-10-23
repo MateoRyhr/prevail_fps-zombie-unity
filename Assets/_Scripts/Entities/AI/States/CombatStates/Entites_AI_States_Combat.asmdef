@@ -1,0 +1,21 @@
+{
+    "name": "Entites_AI_States_Combat",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d62c0c33ad764e642a519513163a41da",
+        "GUID:adc55048a499cb6438054d96088b3373",
+        "GUID:64ba9e9a5e247814386fd3562ecf7567",
+        "GUID:cf141f577822e574290da3d93190206f",
+        "GUID:43a0cefe418f46a4d8f24bc0be82107b",
+        "GUID:943ee43241593414fae4e36d558222a6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

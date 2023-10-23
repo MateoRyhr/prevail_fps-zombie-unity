@@ -1,0 +1,18 @@
+{
+    "name": "Entites_AI_States_Movement",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d62c0c33ad764e642a519513163a41da",
+        "GUID:adc55048a499cb6438054d96088b3373",
+        "GUID:19a322ea99f996e48aca33a72d923566"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -13,7 +13,11 @@ GameObject:
   - component: {fileID: -3250169551460320932}
   - component: {fileID: 8397763030195585309}
   - component: {fileID: 5349513762653853247}
-  m_Layer: 0
+  - component: {fileID: 6995211804446534632}
+  - component: {fileID: 6855574294263536884}
+  - component: {fileID: 5647689533134828815}
+  - component: {fileID: 6383396368022828604}
+  m_Layer: 10
   m_Name: bullet_9mm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +47,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2361728187679040793}
-  m_Material: {fileID: 13400000, guid: bb70f74da88d2a043a8862ca55d0f5c3, type: 2}
+  m_Material: {fileID: 13400000, guid: b5b6471e799107a4284c35e5cf7a3755, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -65,7 +69,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2361728187679040793}
   serializedVersion: 4
-  m_Mass: 0.07
+  m_Mass: 0.0000001
   m_Drag: 0
   m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -101,6 +105,18 @@ MonoBehaviour:
   OnImpact:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 6855574294263536884}
+        m_TargetAssemblyTypeName: SurfaceGetterOnCollision, Surfaces
+        m_MethodName: GetSurface
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 5349513762653853247}
         m_TargetAssemblyTypeName: DamageDealerOnCollision, DamageSystem
         m_MethodName: DealDamage
@@ -113,6 +129,45 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6995211804446534632}
+        m_TargetAssemblyTypeName: ForceApplierOnCollision, Assembly-CSharp
+        m_MethodName: ApplyForceAtPoint
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5647689533134828815}
+        m_TargetAssemblyTypeName: ParticlesFXBySurface, ParticlesBySurface
+        m_MethodName: PlayParticles
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6383396368022828604}
+        m_TargetAssemblyTypeName: DecalOnCollisionBySurface, DecalsVFXBySurface
+        m_MethodName: PrintDecalBySurface
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnDestroyAfterImpact:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5349513762653853247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +180,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950890a2eb10ee94a8fff0527133cbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6995211804446534632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2361728187679040793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb571529fe5b4448a85b84f4da52e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ForceAmount: {fileID: 11400000, guid: 35a3b92a3b14a32489c6700e339c1530, type: 2}
+  MaxVariation: 0
+  _forceWithLocalDirection: {x: 0, y: 0, z: 1}
+--- !u!114 &6855574294263536884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2361728187679040793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ade3ed197f371d249b6abe9f8d89ab21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5647689533134828815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2361728187679040793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ef7e6ebbd6c0d4998b2671cd0c9218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particlesBySurface:
+  - {fileID: 11400000, guid: 0cad2ec17e9cc4a448afc174826e99fb, type: 2}
+  - {fileID: 11400000, guid: 5431fe84503120142a94b323e58f3fc3, type: 2}
+  - {fileID: 11400000, guid: c3d16244e75c25a4da7bbac891981a0a, type: 2}
+  - {fileID: 11400000, guid: d254e84eb3908354097eeb6dc28e435b, type: 2}
+  - {fileID: 11400000, guid: 035481fc11e366347abc2c13973b61d4, type: 2}
+--- !u!114 &6383396368022828604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2361728187679040793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f2ea0f74a62d7846b49dbc819a431ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _decalBySurface:
+  - {fileID: 11400000, guid: d0745bdea75689946a651b00f01356e4, type: 2}
+  - {fileID: 11400000, guid: ae7235a42c3a3a547a144f1cb57cd1ec, type: 2}
+  - {fileID: 11400000, guid: e96991cb4b5bd0e4689d253fd341a71e, type: 2}
+  - {fileID: 11400000, guid: 84b007024a53f2c4ba027db3fc13bcaa, type: 2}
+  - {fileID: 11400000, guid: e96991cb4b5bd0e4689d253fd341a71e, type: 2}
 --- !u!1 &8337813221734771366
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +254,7 @@ GameObject:
   - component: {fileID: 5736576469630041152}
   - component: {fileID: 8846706641003981441}
   - component: {fileID: 5360327150815273993}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}

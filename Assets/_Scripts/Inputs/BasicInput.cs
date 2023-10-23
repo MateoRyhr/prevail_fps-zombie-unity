@@ -19,17 +19,17 @@ public class BasicInput : MonoBehaviour, IBaseInputActions
     public void OnInputStarted(InputAction.CallbackContext data)
     {
         OnStarted?.Invoke();
-        _logger.Log(data,this);
+        if(_logger != null) _logger.Log(data,this);
     }
     public void OnInputPerformed(InputAction.CallbackContext data)
     {
         OnPerformed?.Invoke();
-        _logger.Log(data,this);
+        if(_logger != null) _logger.Log(data,this);
     }
     public void OnInputCanceled(InputAction.CallbackContext data)
     {
         OnCanceled?.Invoke();
-        _logger.Log(data,this);
+        if(_logger != null) _logger.Log(data,this);
     }
 
     public void SuscribeInputs()

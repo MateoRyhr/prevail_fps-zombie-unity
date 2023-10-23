@@ -330,7 +330,7 @@
             "id": "97878292-7b0c-4c8a-bb4d-111495fbc739",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "ShowHideFPS",
                     "type": "Button",
                     "id": "f319de39-2b43-4ea8-88dd-6411657486c9",
                     "expectedControlType": "Button",
@@ -343,11 +343,11 @@
                 {
                     "name": "",
                     "id": "54e35a97-8f66-4cae-b93a-44eaaa8c8416",
-                    "path": "",
+                    "path": "<Keyboard>/h",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "ShowHideFPS",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

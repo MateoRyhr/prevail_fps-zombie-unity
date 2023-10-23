@@ -1,0 +1,492 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7431417920149369641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Submachineguns/SubmachineGun_AK74U_ReloadEmpty
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Submachineguns/SubmachineGun_AK74U_ReloadEmpty
+  Guid:
+    Data1: -1500019870
+    Data2: 1337714002
+    Data3: 226161851
+    Data4: -555252975
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 1000
+  Length: 0
+--- !u!114 &-7022453945639051154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../Audio/FMOD/prevail/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638285820246629245
+  FileSizes:
+  - Name: Desktop
+    Value: 308448
+  Exists: 1
+--- !u!114 &-6525390317756728764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Entites/Zombie-1/Zombie-1-Walking
+  m_EditorClassIdentifier: 
+  Path: event:/Entites/Zombie-1/Zombie-1-Walking
+  Guid:
+    Data1: 1681998238
+    Data2: 1150017601
+    Data3: 481525402
+    Data4: 1442981691
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 730
+--- !u!114 &-3893971254098686700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Entites/Zombie-1/Zombie-1_Idle_1
+  m_EditorClassIdentifier: 
+  Path: event:/Entites/Zombie-1/Zombie-1_Idle_1
+  Guid:
+    Data1: -28006850
+    Data2: 1290577689
+    Data3: -1191097683
+    Data4: -592025695
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13842
+--- !u!114 &-2974833098260663231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Entites/Zombie-1/Zombie-1_AttackGrunts
+  m_EditorClassIdentifier: 
+  Path: event:/Entites/Zombie-1/Zombie-1_AttackGrunts
+  Guid:
+    Data1: -622998921
+    Data2: 1237391061
+    Data3: 1314090413
+    Data4: 1466698479
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 50
+  Length: 10
+--- !u!114 &-2124973465484511144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Pistols/Pistol_Makarov_ReloadNoEmpty
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Pistols/Pistol_Makarov_ReloadNoEmpty
+  Guid:
+    Data1: 1070306504
+    Data2: 1138096034
+    Data3: 731587242
+    Data4: -1452427538
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 1000
+  Length: 0
+--- !u!114 &-1880407755844744847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Pistols/Pistol_Makarov_ReloadEmpty
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Pistols/Pistol_Makarov_ReloadEmpty
+  Guid:
+    Data1: -105623779
+    Data2: 1326097678
+    Data3: -1708549464
+    Data4: 1847816367
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 1000
+  Length: 0
+--- !u!114 &-1302040948764729701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../Audio/FMOD/prevail/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638285820244434138
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &-1289675650167275003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Entites/Zombie-1/Zombie-1-InjuredWalking
+  m_EditorClassIdentifier: 
+  Path: event:/Entites/Zombie-1/Zombie-1-InjuredWalking
+  Guid:
+    Data1: 1747076731
+    Data2: 1210172958
+    Data3: -75201880
+    Data4: -1194652309
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1450
+--- !u!114 &-739214392265613440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Entites/Zombie-1/Zombie-1_HittedGrunts
+  m_EditorClassIdentifier: 
+  Path: event:/Entites/Zombie-1/Zombie-1_HittedGrunts
+  Guid:
+    Data1: 1504563777
+    Data2: 1240139904
+    Data3: -1310484093
+    Data4: 1405385101
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 50
+  Length: 10
+--- !u!114 &-49700246828663059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/VO.bank
+  m_EditorClassIdentifier: 
+  Path: ../Audio/FMOD/prevail/Build/Desktop/VO.bank
+  Name: VO
+  StudioPath: bank:/VO
+  lastModified: 638285820246659253
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 8256719651917186016}
+  - {fileID: -1302040948764729701}
+  - {fileID: 1013900631925574604}
+  - {fileID: -7022453945639051154}
+  - {fileID: -49700246828663059}
+  EditorEvents:
+  - {fileID: 269741633620123068}
+  - {fileID: 5085106386270744185}
+  - {fileID: -2124973465484511144}
+  - {fileID: -1880407755844744847}
+  - {fileID: -7431417920149369641}
+  - {fileID: 8147509433122175829}
+  - {fileID: 4936515105899985881}
+  - {fileID: -3893971254098686700}
+  - {fileID: -739214392265613440}
+  - {fileID: -2974833098260663231}
+  - {fileID: -1289675650167275003}
+  - {fileID: -6525390317756728764}
+  - {fileID: 173400674341161584}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -1302040948764729701}
+  StringsBanks:
+  - {fileID: 8256719651917186016}
+  cacheTime: 638285820246659253
+  cacheVersion: 131605
+--- !u!114 &173400674341161584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Entites/Zombie-1/Zombie-1_Breathing_1
+  m_EditorClassIdentifier: 
+  Path: event:/Entites/Zombie-1/Zombie-1_Breathing_1
+  Guid:
+    Data1: 1168120263
+    Data2: 1128379061
+    Data3: 1283463084
+    Data4: 1111467512
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 36156
+--- !u!114 &269741633620123068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Pistols/Pistol_Makarov_Fire-1
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Pistols/Pistol_Makarov_Fire-1
+  Guid:
+    Data1: 1084671928
+    Data2: 1250640670
+    Data3: 295971981
+    Data4: 854305061
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 1000
+  Length: 0
+--- !u!114 &1013900631925574604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: ../Audio/FMOD/prevail/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638285820244474150
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
+--- !u!114 &4936515105899985881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Entites/Zombie-1/Zombie-1_ChasingGrunts
+  m_EditorClassIdentifier: 
+  Path: event:/Entites/Zombie-1/Zombie-1_ChasingGrunts
+  Guid:
+    Data1: -1601464540
+    Data2: 1309140856
+    Data3: -1369262401
+    Data4: 61771463
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 50
+  Length: 10
+--- !u!114 &5085106386270744185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Submachineguns/SubmachineGun_AK74U_Fire-1
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Submachineguns/SubmachineGun_AK74U_Fire-1
+  Guid:
+    Data1: -904828490
+    Data2: 1102578076
+    Data3: -1162733681
+    Data4: -354321388
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 1000
+  Length: 0
+--- !u!114 &8147509433122175829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Submachineguns/SubmachineGun_AK74U_ReloadNoEmpty
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Submachineguns/SubmachineGun_AK74U_ReloadNoEmpty
+  Guid:
+    Data1: -1178697240
+    Data2: 1284266805
+    Data3: -569982841
+    Data4: 85802042
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 1000
+  Length: 0
+--- !u!114 &8256719651917186016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../Audio/FMOD/prevail/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638285820244454149
+  FileSizes:
+  - Name: Desktop
+    Value: 1572
+  Exists: 1

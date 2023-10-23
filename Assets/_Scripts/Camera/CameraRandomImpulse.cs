@@ -29,5 +29,5 @@ public class CameraRandomImpulse : MonoBehaviour
         _impulseSource.GenerateImpulse();
     }
 
-    private int RandomDirection() => Random.Range(0,1) == 0 ? 1 : -1;
+    private int RandomDirection() => Random.Range(0,2) == 0 ? 1 : -1;
 }

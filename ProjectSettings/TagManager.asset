@@ -3,21 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Z
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - NoCollisionLayer
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Player
+  - Enemy
+  - MovementCollider
+  - Projectile
+  - AgentNavLinkCollider
+  - NavMeshLink
   - 
   - 
   - 

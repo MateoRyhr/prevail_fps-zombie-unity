@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Pool;
 
 public abstract class RangedWeapon : Weapon
 {
     public RangedWeaponData RangedWeaponData;
     public WeaponReload WeaponReload;
-    public GameObject ProjectilePrefab;
+    public Projectile ProjectilePrefab;
     public Transform ProjectileStartPostition;
     public int CurrentAmmo { get; set; }
     

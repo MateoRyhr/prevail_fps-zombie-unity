@@ -25,6 +25,6 @@ public class AcelerationMoverBehaviour : MoverBehaviour, IAceleratedMovement
 
     private void FixedUpdate() => ApplyMovement(_mover.Move(GetMovementDirection(),Time.fixedDeltaTime));
 
-    void ApplyMovement(Vector3 velocity) => _rigidBody.velocity = velocity;
+    void ApplyMovement(Vector3 velocity) => _rigidBody.velocity = new Vector3(velocity.x,_rigidBody.velocity.y,velocity.z);
     Vector3 GetMovementDirection() => transform.TransformDirection(new Vector3(_direction.Value.x,0f,_direction.Value.y));
 }

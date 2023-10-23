@@ -2,7 +2,8 @@
     "name": "EntityMovement",
     "rootNamespace": "",
     "references": [
-        "GUID:d62c0c33ad764e642a519513163a41da"
+        "GUID:d62c0c33ad764e642a519513163a41da",
+        "GUID:225a7347b4d087948a6d39eddc498de4"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d58e49be525b8d4384a301068fb7633, type: 3}
+  m_Name: VFX_Decal_BulletImpact_Concrete
+  m_EditorClassIdentifier: 
+  _decalEffect: {fileID: 7798517916876849425, guid: ecdfc10f2e9dba24cb50fbdab80ad84a,
+    type: 3}
+  _distanceFromCollision: 0.05
+  Variations:
+  - {x: 0, y: 0}
+  - {x: 0.5, y: 0}
+  - {x: 0, y: 0.5}
+  - {x: 0.5, y: 0.5}
+  DecalDuration: {fileID: 11400000, guid: 901631cddbbe265448a083131a74feb0, type: 2}
+  MaxAmount: 128

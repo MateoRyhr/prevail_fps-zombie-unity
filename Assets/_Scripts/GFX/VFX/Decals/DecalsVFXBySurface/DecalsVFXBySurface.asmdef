@@ -1,0 +1,19 @@
+{
+    "name": "DecalsVFXBySurface",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d62c0c33ad764e642a519513163a41da",
+        "GUID:457756d89b35d2941b3e7b37b4ece6f1",
+        "GUID:7b1119787edb875409660bcee7a5718d",
+        "GUID:53dfe3417a8f2094fafdb8096cf91400"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

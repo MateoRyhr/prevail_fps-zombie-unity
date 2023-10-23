@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 1000
   velocity: 735
-  recoilForce: 12
-  fireRate: 730
-  recoilRecoveryTime: 0.2
+  recoilForce: 8
+  fireRate: 700
   ammoType: 1
   magSize: 30
   hasBulletChamber: 1

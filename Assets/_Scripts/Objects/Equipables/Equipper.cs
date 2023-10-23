@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -14,10 +13,7 @@ public class Equipper : MonoBehaviour
     public UnityEvent OnEquip;
     public UnityEvent OnUnequip;
 
-    private void Awake()
-    {
-        RegisterCurrentEquipables();
-    }
+    private void Awake() => RegisterCurrentEquipables();
 
     public void Add(Equipable equipable)
     {

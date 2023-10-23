@@ -1,0 +1,18 @@
+{
+    "name": "EntitiesAI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d62c0c33ad764e642a519513163a41da",
+        "GUID:225a7347b4d087948a6d39eddc498de4",
+        "GUID:ba3dfc69f3b3dee4b8245a10ecfaf914"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

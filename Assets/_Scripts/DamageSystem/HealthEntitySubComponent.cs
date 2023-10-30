@@ -4,7 +4,8 @@ public class HealthEntitySubComponent : MonoBehaviour, IDamageTaker
 {
     [SerializeField] private FloatVariable _damageMultiplier;
     [SerializeField] private HealthEntity _entityHealth;
-
+    public HealthEntity HealthEntity { get => _entityHealth; }
+    
     private float _damageMultiplierValue;
 
     private void Awake()

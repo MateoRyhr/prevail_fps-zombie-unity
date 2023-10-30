@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6855574294263536884}
   - component: {fileID: 5647689533134828815}
   - component: {fileID: 6383396368022828604}
+  - component: {fileID: 3269514942370516513}
   m_Layer: 10
   m_Name: bullet_9mm
   m_TagString: Untagged
@@ -165,6 +166,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3269514942370516513}
+        m_TargetAssemblyTypeName: ScoreOnBulletImpact, Assembly-CSharp
+        m_MethodName: Score
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDestroyAfterImpact:
     m_PersistentCalls:
       m_Calls: []
@@ -243,6 +256,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e96991cb4b5bd0e4689d253fd341a71e, type: 2}
   - {fileID: 11400000, guid: 84b007024a53f2c4ba027db3fc13bcaa, type: 2}
   - {fileID: 11400000, guid: e96991cb4b5bd0e4689d253fd341a71e, type: 2}
+--- !u!114 &3269514942370516513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2361728187679040793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7150cfea9e72ec498d2918baaea2e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreForCombat: {fileID: 11400000, guid: 7afd10e932ec241439f4651da2542992, type: 2}
 --- !u!1 &8337813221734771366
 GameObject:
   m_ObjectHideFlags: 0

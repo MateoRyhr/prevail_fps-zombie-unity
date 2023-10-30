@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Projectile : MonoBehaviour, ICollision, IFloat
+public class Projectile : MonoBehaviour, ICollision, IFloat, IGameObject
 {
     [SerializeField] Collider _collider;
     [SerializeField] Rigidbody _rigidbody;
@@ -11,6 +11,9 @@ public class Projectile : MonoBehaviour, ICollision, IFloat
 
     public float Damage { get; set; }
     public float Value { get => Damage; set => Damage = value; }
+
+    public GameObject Instantiator { get; set; }
+    public GameObject GameObject { get => Instantiator; set => Instantiator = value; }
 
     public bool HasAlreadyCollided { get; set; }
 

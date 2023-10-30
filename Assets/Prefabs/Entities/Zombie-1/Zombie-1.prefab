@@ -1930,7 +1930,7 @@ GameObject:
   - component: {fileID: 1895286267563418218}
   m_Layer: 8
   m_Name: head
-  m_TagString: Untagged
+  m_TagString: head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3458,7 +3458,7 @@ GameObject:
   - component: {fileID: 9168964167166337403}
   m_Layer: 8
   m_Name: neck_01
-  m_TagString: Untagged
+  m_TagString: head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

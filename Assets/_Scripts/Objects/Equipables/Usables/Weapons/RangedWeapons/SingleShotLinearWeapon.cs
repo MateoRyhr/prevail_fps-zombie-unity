@@ -26,6 +26,7 @@ public class SingleShotLinearWeapon : RangedWeapon
                 Quaternion.LookRotation(GetBulletDirection(),Vector3.up)
             );
         projectile.Damage = WeaponData.damage;
+        projectile.Instantiator = transform.root.gameObject;
         projectile.transform.parent = null;
         projectile.OnDestroyAfterImpact.AddListener(() => _pool.Release(projectile));
         return projectile;

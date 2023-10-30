@@ -31,10 +31,8 @@ public class CameraFirstPerson : MonoBehaviour
 
     void UpdateCamera()
     {
-        _lookRotation = new Vector2(
-            _cameraController.GetRotation(_lookRotation.x ,_input.y * _yInputDirection, _sensivity.Value * _sensivityY.Value),
-            _cameraController.GetRotation(_lookRotation.y ,_input.x, _sensivity.Value * _sensivityX.Value)
-        );
+        _lookRotation.x = _cameraController.GetRotation(_lookRotation.x ,_input.y * _yInputDirection, _sensivity.Value * _sensivityY.Value);
+        _lookRotation.y = _cameraController.GetRotation(_lookRotation.y ,_input.x, _sensivity.Value * _sensivityX.Value);
 
         _lookRotation.x = Mathf.Clamp(_lookRotation.x,-_maxRotationInX.Value,_maxRotationInX.Value);
 

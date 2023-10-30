@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 7163274212866041301}
   - component: {fileID: 2439684185766915029}
   - component: {fileID: 3871557143912968305}
-  - component: {fileID: 6110669117668575961}
   m_Layer: 0
   m_Name: Glass_001
   m_TagString: Untagged
@@ -227,19 +226,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3730132161682731333, guid: 5adb0aca2e0c32347b72249e2c309d19, type: 3}
---- !u!114 &6110669117668575961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2182821713984972990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e68698c4bdaa8c2489559aa486445bbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _surfaceType: 4
 --- !u!1 &2656485450601410357
 GameObject:
   m_ObjectHideFlags: 0

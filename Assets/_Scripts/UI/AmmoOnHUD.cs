@@ -8,25 +8,18 @@ public class AmmoOnHUD : MonoBehaviour
     [SerializeField] ObjectUser _weaponUser;
     [SerializeField] AmmoCounter _ammoCounter;
 
-    Usable _usable;
+    private Usable _usable;
+    private RangedWeapon _gun;
 
-    private void Awake()
-    {
-        _ammoCounter.OnWeaponChange.AddListener(() => {
-            UpdateWeapon();
-            UpdateAmmo();
-            _usable.OnUse.AddListener(UpdateAmmo);
-        });
-        // _ammoCounter.OnAmmunitionCollected.AddListener(() => UpdateAmmo());
-        _ammoCounter.OnAmmoChange.AddListener(UpdateAmmo);
-    }
+    bool _rangedWeapon;
+
+    private void Awake() => _ammoCounter.OnAmmoChange.AddListener(UpdateAmmo);
 
     public void UpdateAmmo()
     {
-        if(_usable is RangedWeapon)
+        if(_rangedWeapon)
         {
-            RangedWeapon gun = (RangedWeapon) _usable;
-            _text.text = $"{gun.CurrentAmmo} / {_ammoCounter.AmountsCounter.Amounts[(int)gun.RangedWeaponData.ammoType]}";
+            _text.text = $"{_gun.CurrentAmmo} / {_ammoCounter.AmountsCounter.Amounts[(int)_gun.RangedWeaponData.ammoType]}";
         }
         else
         {
@@ -34,8 +27,16 @@ public class AmmoOnHUD : MonoBehaviour
         }
     }
 
-    void UpdateWeapon()
+    public void UpdateWeapon()
     {
         _usable = _weaponUser.Usable;
+        if(_usable is RangedWeapon)
+        {
+            _rangedWeapon = true;
+            _gun = (RangedWeapon) _usable;
+        }
+        else
+            _rangedWeapon = false;
+        _usable.OnUse.AddListener(UpdateAmmo);
     }
 }

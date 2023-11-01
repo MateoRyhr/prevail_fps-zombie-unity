@@ -16,7 +16,6 @@ public class AmmoCounter : MonoBehaviour
     private void Awake()
     {
         AmountsCounter = new AmountOfTypesCounter(new AmmoType(),_initialAmounts);
-        _weaponEquipper.OnEquip.AddListener(UpdateWeapon);
     }
 
     public void UpdateWeapon()

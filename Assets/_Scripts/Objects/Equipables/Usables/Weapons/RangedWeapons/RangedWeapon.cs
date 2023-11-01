@@ -19,7 +19,7 @@ public abstract class RangedWeapon : Weapon
 
     public UnityEvent OnWeaponEmpty;
 
-    private protected virtual void Update() => TimeSinceLastShoot += Time.fixedDeltaTime * Time.timeScale;
+    private protected virtual void Update() => TimeSinceLastShoot += Time.deltaTime * Time.timeScale;
 
     public override void Use()
     {

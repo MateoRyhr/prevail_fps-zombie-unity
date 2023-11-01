@@ -208,7 +208,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             ""id"": ""8cee2818-1fc7-4cfe-ba1a-894c6bd6fca2"",
             ""actions"": [
                 {
-                    ""name"": ""ThirdPersonCamera"",
+                    ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""e913725f-8d80-4c67-a7bd-23345703f9ce"",
                     ""expectedControlType"": ""Button"",
@@ -221,11 +221,11 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""44edcad4-8029-4ba0-a94b-48cb2b837456"",
-                    ""path"": ""<Keyboard>/c"",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""ThirdPersonCamera"",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -390,7 +390,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         m_Combat_Reload = m_Combat.FindAction("Reload", throwIfNotFound: true);
         // Interaction
         m_Interaction = asset.FindActionMap("Interaction", throwIfNotFound: true);
-        m_Interaction_ThirdPersonCamera = m_Interaction.FindAction("ThirdPersonCamera", throwIfNotFound: true);
+        m_Interaction_Interact = m_Interaction.FindAction("Interact", throwIfNotFound: true);
         // Inventory
         m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
         m_Inventory_EquipItem_1 = m_Inventory.FindAction("EquipItem_1", throwIfNotFound: true);
@@ -588,12 +588,12 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     // Interaction
     private readonly InputActionMap m_Interaction;
     private List<IInteractionActions> m_InteractionActionsCallbackInterfaces = new List<IInteractionActions>();
-    private readonly InputAction m_Interaction_ThirdPersonCamera;
+    private readonly InputAction m_Interaction_Interact;
     public struct InteractionActions
     {
         private @InputActionsAsset m_Wrapper;
         public InteractionActions(@InputActionsAsset wrapper) { m_Wrapper = wrapper; }
-        public InputAction @ThirdPersonCamera => m_Wrapper.m_Interaction_ThirdPersonCamera;
+        public InputAction @Interact => m_Wrapper.m_Interaction_Interact;
         public InputActionMap Get() { return m_Wrapper.m_Interaction; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -603,16 +603,16 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_InteractionActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_InteractionActionsCallbackInterfaces.Add(instance);
-            @ThirdPersonCamera.started += instance.OnThirdPersonCamera;
-            @ThirdPersonCamera.performed += instance.OnThirdPersonCamera;
-            @ThirdPersonCamera.canceled += instance.OnThirdPersonCamera;
+            @Interact.started += instance.OnInteract;
+            @Interact.performed += instance.OnInteract;
+            @Interact.canceled += instance.OnInteract;
         }
 
         private void UnregisterCallbacks(IInteractionActions instance)
         {
-            @ThirdPersonCamera.started -= instance.OnThirdPersonCamera;
-            @ThirdPersonCamera.performed -= instance.OnThirdPersonCamera;
-            @ThirdPersonCamera.canceled -= instance.OnThirdPersonCamera;
+            @Interact.started -= instance.OnInteract;
+            @Interact.performed -= instance.OnInteract;
+            @Interact.canceled -= instance.OnInteract;
         }
 
         public void RemoveCallbacks(IInteractionActions instance)
@@ -806,7 +806,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     }
     public interface IInteractionActions
     {
-        void OnThirdPersonCamera(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
     public interface IInventoryActions
     {

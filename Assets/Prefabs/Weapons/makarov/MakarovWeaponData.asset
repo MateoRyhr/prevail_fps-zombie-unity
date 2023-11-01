@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponId: 0
   type: 1
-  damage: 13.34
+  damage: 17

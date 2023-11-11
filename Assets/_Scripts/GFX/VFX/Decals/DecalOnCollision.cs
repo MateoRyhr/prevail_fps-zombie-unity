@@ -17,12 +17,6 @@ public class DecalOnCollision : ScriptableObject
 
     private List<DecalProjector> _decalPool;
 
-    private void OnEnable()
-    {
-        _currentDecalAmount = 0;
-        _decalPool = new List<DecalProjector>();
-    }
-
     public void PrintDecal(Collision collision)
     {
         _collision = collision;
@@ -72,5 +66,11 @@ public class DecalOnCollision : ScriptableObject
         decal.transform.SetPositionAndRotation(position,rotation);
         decal.transform.Rotate(new Vector3(0,0,Random.Range(0f,360f)),Space.Self);
         decal.transform.parent = _collision.collider.transform;
+    }
+
+    public void Init()
+    {
+        _currentDecalAmount = 0;
+        _decalPool = new List<DecalProjector>();
     }
 }

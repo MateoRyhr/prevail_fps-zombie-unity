@@ -12,7 +12,7 @@ public class EventInARangeOfTime : MonoBehaviour
 
     public void InvokeEvent()
     {
-        float timeToInvoke = Random.Range(_maxTime,_maxTime);
+        float timeToInvoke = Random.Range(_minTime,_maxTime);
         this.Invoke(() => OnEvent?.Invoke(),timeToInvoke);
     }
 
@@ -36,7 +36,7 @@ public class EventInARangeOfTime : MonoBehaviour
             OnEvent?.Invoke();
             if(_canInvokeEvent)
             {
-                float nextEventTimeToInvoke = Random.Range(_maxTime,_maxTime);
+                float nextEventTimeToInvoke = Random.Range(_minTime,_maxTime);
                 LoopInvokeEvent(nextEventTimeToInvoke);
             }
         }

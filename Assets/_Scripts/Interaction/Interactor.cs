@@ -8,6 +8,9 @@ public class Interactor : MonoBehaviour
     public void Interact()
     {
         if(_interactable != null)
+        {
             _interactable.Interact(gameObject);
+            _interactable = null;
+        }
     }
 }

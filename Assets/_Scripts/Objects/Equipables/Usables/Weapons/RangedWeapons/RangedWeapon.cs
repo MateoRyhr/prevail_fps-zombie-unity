@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Pool;
 
 public abstract class RangedWeapon : Weapon
 {
@@ -23,10 +22,13 @@ public abstract class RangedWeapon : Weapon
 
     public override void Use()
     {
+        if(CurrentAmmo == 0)
+        {
+            OnWeaponEmpty?.Invoke();
+            return;
+        }
         if(!CanShoot()) return;
         Shoot();
-        if(CurrentAmmo == 0)
-            OnWeaponEmpty?.Invoke();
         Recoil();
         OnUse?.Invoke();
     }
@@ -53,7 +55,7 @@ public abstract class RangedWeapon : Weapon
     }
 
     public bool CanShoot() => CurrentAmmo > 0 && !IsReloading && FireRateEnabled();
-    public bool FireRateEnabled() => TimeSinceLastShoot >= TimeTillANextRound();
+    public bool FireRateEnabled() => TimeSinceLastShoot > TimeTillANextRound();
     public float TimeTillANextRound() => 1f / (RangedWeaponData.fireRate / 60f);
 
     public void SetSight()

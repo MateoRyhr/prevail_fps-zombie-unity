@@ -1,0 +1,18 @@
+{
+    "name": "DestructibleObjects",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d62c0c33ad764e642a519513163a41da",
+        "GUID:a2fad5b239b933c47980a108d4f1c801",
+        "GUID:74a8c5084fa67134a95eec551ce7781f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

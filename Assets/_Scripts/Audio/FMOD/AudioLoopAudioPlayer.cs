@@ -5,6 +5,7 @@ using FMOD.Studio;
 public class AudioLoopAudioPlayer : MonoBehaviour
 {
     [SerializeField] private Transform _audioTransform;
+    [SerializeField] private float _volume;
     private EventInstance _loopAudio;
 
     void Update() {
@@ -18,6 +19,7 @@ public class AudioLoopAudioPlayer : MonoBehaviour
     {
         if(!_loopAudio.isValid())
             _loopAudio = RuntimeManager.CreateInstance(sound.soundEvent);
+        _loopAudio.setVolume(_volume);
         _loopAudio.start();
     }
 

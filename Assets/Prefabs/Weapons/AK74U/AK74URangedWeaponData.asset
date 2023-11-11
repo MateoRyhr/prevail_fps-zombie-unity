@@ -15,7 +15,7 @@ MonoBehaviour:
   maxDistance: 1000
   velocity: 735
   recoilForce: 8
-  fireRate: 700
+  fireRate: 600
   ammoType: 1
   magSize: 30
   hasBulletChamber: 1

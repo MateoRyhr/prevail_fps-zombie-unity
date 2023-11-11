@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -10,10 +8,6 @@ public class ParticlesOnCollision : ScriptableObject
     [SerializeField] private int _maxAmount;
 
     private ObjectPool<ParticleSystem> _pool;
-
-    private void OnEnable(){
-        _pool = new ObjectPool<ParticleSystem>(InstantiateObject,OnGetFromPool,OnReturnToPool,OnDestroyFromPool,true,_maxAmount);
-    }
 
     public ParticleSystem InstantiateObject() => Instantiate(_particles);
 
@@ -41,6 +35,10 @@ public class ParticlesOnCollision : ScriptableObject
         Vector3 position = collision.GetContact(0).point + collision.GetContact(0).normal * .01f;
         Quaternion rotation = Quaternion.LookRotation(collision.GetContact(0).normal);
         particles.transform.SetPositionAndRotation(position,rotation);
-        // particles.transform.position = position;
+    }
+
+    public void Init()
+    {
+        _pool = new ObjectPool<ParticleSystem>(InstantiateObject,OnGetFromPool,OnReturnToPool,OnDestroyFromPool,true,_maxAmount);
     }
 }

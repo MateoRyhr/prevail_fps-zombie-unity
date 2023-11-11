@@ -28,10 +28,10 @@ public class EnemyRespawnerPerRounds : MonoBehaviour
     public void SetEnemiesOfRound()
     {
         int enemiesInThisRound =
-            _currentRound.Value - 1 < _enemiesPerRound.Length
+            _currentRound.Value < _enemiesPerRound.Length
             ? _enemiesPerRound[_currentRound.Value - 1]
             : _enemiesPerRound[_enemiesPerRound.Length-1];
-        
+        Debug.Log($"Enemies in this round: {enemiesInThisRound}");
         _enemiesLeftToRespawn = enemiesInThisRound;
         _enemiesLeft = enemiesInThisRound;
     }
@@ -39,8 +39,8 @@ public class EnemyRespawnerPerRounds : MonoBehaviour
     int AmountToRespawn()
     {
         int maxEnemies =
-            _currentRound.Value - 1 < _maxEnemiesAtSameTimePerRound.Length
-            ? _maxEnemiesAtSameTimePerRound[_currentRound.Value]
+            _currentRound.Value < _maxEnemiesAtSameTimePerRound.Length
+            ? _maxEnemiesAtSameTimePerRound[_currentRound.Value - 1]
             : _maxEnemiesAtSameTimePerRound[_maxEnemiesAtSameTimePerRound.Length-1];
 
         return Mathf.Clamp(_enemiesLeftToRespawn,0,maxEnemies - _currentEnemies);

@@ -57,7 +57,7 @@ MonoBehaviour:
     lightProbeSystem: 1
     probeVolumeMemoryBudget: 1024
     probeVolumeBlendingMemoryBudget: 128
-    supportProbeVolumeStreaming: 1
+    supportProbeVolumeStreaming: 0
     probeVolumeSHBands: 1
     supportRayTracing: 0
     supportedRayTracingMode: 3
@@ -121,7 +121,7 @@ MonoBehaviour:
       maxDirectionalShadowMapResolution: 4096
       maxPunctualShadowMapResolution: 4096
       maxAreaShadowMapResolution: 4096
-      supportScreenSpaceShadows: 1
+      supportScreenSpaceShadows: 0
       maxScreenSpaceShadowSlots: 4
       screenSpaceShadowBufferFormat: 48
     decalSettings:
@@ -145,7 +145,7 @@ MonoBehaviour:
       fsrSharpness: 0.92
       maxPercentage: 100
       minPercentage: 100
-      dynResType: 1
+      dynResType: 0
       upsampleFilter: 1
       forceResolution: 0
       forcedPercentage: 100
@@ -289,7 +289,7 @@ MonoBehaviour:
   allowShaderVariantStripping: 1
   enableSRPBatcher: 1
   availableMaterialQualityLevels: -1
-  m_DefaultMaterialQualityLevel: 4
+  m_DefaultMaterialQualityLevel: 2
   diffusionProfileSettings: {fileID: 0}
   virtualTexturingSettings:
     streamingCpuCacheSizeInMegaBytes: 256

@@ -60,7 +60,7 @@ public class AgentNavLinkTranslation : MonoBehaviour
         this.Invoke(() => {
             ActivePhysics();
             Active(true);
-        },Time.fixedDeltaTime);
+        },Time.fixedDeltaTime);//Fixeddelta before
         // Debug.Log($"Translated");
     }
 

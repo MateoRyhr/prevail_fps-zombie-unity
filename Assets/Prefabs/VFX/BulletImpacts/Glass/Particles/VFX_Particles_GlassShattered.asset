@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _particles: {fileID: 1656408700308272619, guid: 308d2b1dea2c81f498ab1002dcde1dab,
     type: 3}
+  _maxAmount: 16

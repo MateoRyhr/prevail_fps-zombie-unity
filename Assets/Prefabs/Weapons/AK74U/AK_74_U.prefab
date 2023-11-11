@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5822514613814340446}
   - component: {fileID: 8373202454149992516}
   - component: {fileID: 6916301657195246431}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Front_of_Stock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7504866288867304824}
   - component: {fileID: 2520358223682069402}
   - component: {fileID: 1414287827503545632}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trig_Mech_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 3282723754111354944}
   - component: {fileID: 5701737588376761930}
   - component: {fileID: 6367992850035668851}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 1443456694215444203}
   - component: {fileID: 717014167598996638}
   - component: {fileID: 3708047653221809887}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Muzzle_Break
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 7387393927293677723}
   - component: {fileID: 8654663773281116917}
   - component: {fileID: 1034260179069655316}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Screw_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 2744279024486396244}
   - component: {fileID: 2804156648953250105}
   - component: {fileID: 3680531022302095459}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plate_Behind_Swivel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8712005280348905773}
   - component: {fileID: 4307861383399779597}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SFX_Reload
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioTransform: {fileID: 8712005280348905773}
-  Volume: 1
+  _volume: 1
 --- !u!1 &535028764800968817
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,7 +555,7 @@ GameObject:
   - component: {fileID: 3868739575515707214}
   - component: {fileID: 2195697418360134901}
   - component: {fileID: 64613472156630557}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CameraShake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 8266158287611979327}
   - component: {fileID: 2733303528151397273}
   - component: {fileID: 486632668021080150}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slide_Screw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +739,7 @@ GameObject:
   - component: {fileID: 1931423817002508737}
   - component: {fileID: 1655696687825741270}
   - component: {fileID: 614862950414415732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Screw_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -822,7 +822,7 @@ GameObject:
   - component: {fileID: 3084016517632639415}
   - component: {fileID: 5416129843684631938}
   - component: {fileID: 3343038884233876234}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,7 +905,7 @@ GameObject:
   - component: {fileID: 6915746289619609832}
   - component: {fileID: 2000420103040453152}
   - component: {fileID: 6600739136789075762}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Left_side_Metal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -986,7 +986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 699247148604011093}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Butt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 5324584201391405068}
   - component: {fileID: 5891620743932022832}
   - component: {fileID: 8356042479867378237}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1120,7 +1120,7 @@ GameObject:
   - component: {fileID: 2357752856607856685}
   - component: {fileID: 5571289946542217571}
   - component: {fileID: 3755549136004763202}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Swivel_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1203,7 +1203,7 @@ GameObject:
   - component: {fileID: 833179267079285737}
   - component: {fileID: 8459036203380413026}
   - component: {fileID: 486821091880947526}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trig_Mech_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1286,7 +1286,7 @@ GameObject:
   - component: {fileID: 21327494868163393}
   - component: {fileID: 1362764730827296281}
   - component: {fileID: 8825186892491863265}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Release
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1369,7 +1369,7 @@ GameObject:
   - component: {fileID: 2016324329069658615}
   - component: {fileID: 8990162715574171976}
   - component: {fileID: 8846658044851518884}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1452,7 +1452,7 @@ GameObject:
   - component: {fileID: 4306451288383683914}
   - component: {fileID: 3788144726544879767}
   - component: {fileID: 4558998719384197288}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Inside_Void
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1535,7 +1535,7 @@ GameObject:
   - component: {fileID: 2570558867350252478}
   - component: {fileID: 6229971455710309015}
   - component: {fileID: 3612318868807700666}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Safety
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1618,7 +1618,7 @@ GameObject:
   - component: {fileID: 8123643900373990328}
   - component: {fileID: 5775239541251931093}
   - component: {fileID: 6163864749988612240}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1701,7 +1701,7 @@ GameObject:
   - component: {fileID: 8309357325734634703}
   - component: {fileID: 4133216690685572061}
   - component: {fileID: 4532465789758082745}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Metal_Piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1784,7 +1784,7 @@ GameObject:
   - component: {fileID: 1960269804628682251}
   - component: {fileID: 7023267766641586855}
   - component: {fileID: 4419762396306412673}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1867,7 +1867,7 @@ GameObject:
   - component: {fileID: 8840169763303252234}
   - component: {fileID: 5351945936543104714}
   - component: {fileID: 6601310952232745630}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1950,7 +1950,7 @@ GameObject:
   - component: {fileID: 2208210353251457867}
   - component: {fileID: 6910390694247979981}
   - component: {fileID: 2555845966962592338}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trig_Mech_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2032,7 +2032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6202295047966308251}
   - component: {fileID: 7040046413989246522}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GunFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2081,7 +2081,7 @@ GameObject:
   - component: {fileID: 8026034311382409619}
   - component: {fileID: 4941530778852928106}
   - component: {fileID: 2294131850010258216}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Back_Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2162,7 +2162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2208249399261113590}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stock_Connection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2196,7 +2196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6738795669603400852}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2232,7 +2232,7 @@ GameObject:
   - component: {fileID: 106377365100747039}
   - component: {fileID: 867386744148806781}
   - component: {fileID: 1262450625727695290}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Top_Hand_Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2315,7 +2315,7 @@ GameObject:
   - component: {fileID: 9100607788862824871}
   - component: {fileID: 2032240876655078178}
   - component: {fileID: 3306559784398503507}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2398,7 +2398,7 @@ GameObject:
   - component: {fileID: 1307574627750341172}
   - component: {fileID: 7928167867272870418}
   - component: {fileID: 4350857812587508480}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stock_Screw_Plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2481,7 +2481,7 @@ GameObject:
   - component: {fileID: 3949546286878455316}
   - component: {fileID: 841484355154540500}
   - component: {fileID: 5944617824672619332}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sight_Main_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2564,7 +2564,7 @@ GameObject:
   - component: {fileID: 7312336551899902958}
   - component: {fileID: 3951158593036843850}
   - component: {fileID: 4610776039987716618}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Screw_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2645,7 +2645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7645712717863733193}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2681,7 +2681,7 @@ GameObject:
   - component: {fileID: 3894787753621235150}
   - component: {fileID: 6222982169367507527}
   - component: {fileID: 4877991944335749974}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Swivel_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2764,7 +2764,7 @@ GameObject:
   - component: {fileID: 1161858057217278146}
   - component: {fileID: 1739385814427267513}
   - component: {fileID: 8635988560926545733}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Release_Screw_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2847,7 +2847,7 @@ GameObject:
   - component: {fileID: 8715221625019825792}
   - component: {fileID: 627759247560903512}
   - component: {fileID: 1009006645760498965}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Upper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2928,7 +2928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5958527476911888214}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sight_main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2964,7 +2964,7 @@ GameObject:
   - component: {fileID: 8029255456167817990}
   - component: {fileID: 6857011733736732848}
   - component: {fileID: 8358146678830612068}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stock_Connection_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3047,7 +3047,7 @@ GameObject:
   - component: {fileID: 1212698085189301100}
   - component: {fileID: 2540469792893241357}
   - component: {fileID: 2431131424710778260}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trigger_Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3130,7 +3130,7 @@ GameObject:
   - component: {fileID: 5481577506694131825}
   - component: {fileID: 4241723646860019313}
   - component: {fileID: 2148649557510174117}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sight_Screw_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3213,7 +3213,7 @@ GameObject:
   - component: {fileID: 5078485066506377607}
   - component: {fileID: 1729488806502446182}
   - component: {fileID: 5461560071667941634}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Barrel_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3296,7 +3296,7 @@ GameObject:
   - component: {fileID: 2600466389678962771}
   - component: {fileID: 415404711168215779}
   - component: {fileID: 8113990492840092888}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3378,7 +3378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6478192148483851246}
   - component: {fileID: 4124100568630431715}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SFX_Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3413,7 +3413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioTransform: {fileID: 7208291689809796124}
-  Volume: 1
+  _volume: 1
 --- !u!1 &3897453677580447026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3425,7 +3425,7 @@ GameObject:
   - component: {fileID: 1483184345234456751}
   - component: {fileID: 8823514935188238300}
   - component: {fileID: 2668236758144585063}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Screw_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3506,7 +3506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8339266730854201627}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Release_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3546,7 +3546,7 @@ GameObject:
   - component: {fileID: 5966041479872425274}
   - component: {fileID: 8555909879714407378}
   - component: {fileID: 3130159569823875191}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Screw_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3629,7 +3629,7 @@ GameObject:
   - component: {fileID: 5710784103826567962}
   - component: {fileID: 5220469979577854811}
   - component: {fileID: 7978351791861034562}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3712,7 +3712,7 @@ GameObject:
   - component: {fileID: 6157911750110619575}
   - component: {fileID: 6636289075124956480}
   - component: {fileID: 4690758714420220543}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3795,7 +3795,7 @@ GameObject:
   - component: {fileID: 2953515641677299683}
   - component: {fileID: 6572405201825502299}
   - component: {fileID: 6553567172543988156}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stock_Connection_Plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3878,7 +3878,7 @@ GameObject:
   - component: {fileID: 3876001370575232835}
   - component: {fileID: 4607844073507080663}
   - component: {fileID: 1186883728974596743}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3961,7 +3961,7 @@ GameObject:
   - component: {fileID: 3672715029224275842}
   - component: {fileID: 5340977171209738323}
   - component: {fileID: 7893697620432810023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4042,7 +4042,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 442134014137681492}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hand_Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4080,7 +4080,7 @@ GameObject:
   - component: {fileID: 7452373504486273361}
   - component: {fileID: 7676954309842093367}
   - component: {fileID: 4706438657256173453}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Barrel_Inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4163,7 +4163,7 @@ GameObject:
   - component: {fileID: 5886704875465469088}
   - component: {fileID: 2420962553662254541}
   - component: {fileID: 3378529151550110911}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Release_Screw_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4246,7 +4246,7 @@ GameObject:
   - component: {fileID: 1743952492997811557}
   - component: {fileID: 3549114480077906429}
   - component: {fileID: 8683563156920611697}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Front_Sight_Housing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4329,7 +4329,7 @@ GameObject:
   - component: {fileID: 7957139078495048486}
   - component: {fileID: 5573013964458660347}
   - component: {fileID: 5459872371999207732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Front_Sight_Adjust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4412,7 +4412,7 @@ GameObject:
   - component: {fileID: 8651481287929404427}
   - component: {fileID: 8691159589895027419}
   - component: {fileID: 6892041224954783552}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Release_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4495,7 +4495,7 @@ GameObject:
   - component: {fileID: 2729680896502267945}
   - component: {fileID: 1429144213002152202}
   - component: {fileID: 553094850389460754}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sight_Screw_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4578,7 +4578,7 @@ GameObject:
   - component: {fileID: 7270167421471839472}
   - component: {fileID: 4837339109895433688}
   - component: {fileID: 1525137724549788685}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4661,7 +4661,7 @@ GameObject:
   - component: {fileID: 9055623450954490935}
   - component: {fileID: 4116404446141310169}
   - component: {fileID: 6863039254851171260}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4744,7 +4744,7 @@ GameObject:
   - component: {fileID: 979394613819779768}
   - component: {fileID: 7295669507414147528}
   - component: {fileID: 7803976464593424639}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4827,7 +4827,7 @@ GameObject:
   - component: {fileID: 6044056185975184510}
   - component: {fileID: 4916302300438422943}
   - component: {fileID: 6240151694191331062}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Back_Switch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4908,7 +4908,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8476587674725562416}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4973,7 +4973,7 @@ GameObject:
   - component: {fileID: 3172457344050244392}
   - component: {fileID: 5225280970889974213}
   - component: {fileID: 7409401719458254836}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Release_Screw_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5056,7 +5056,7 @@ GameObject:
   - component: {fileID: 6556048868395975313}
   - component: {fileID: 4960615820542224696}
   - component: {fileID: 5825118262937921305}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5139,7 +5139,7 @@ GameObject:
   - component: {fileID: 2673190597792414924}
   - component: {fileID: 8371131803177099291}
   - component: {fileID: 4753564034191037368}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Release_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5222,7 +5222,7 @@ GameObject:
   - component: {fileID: 6318197322027968912}
   - component: {fileID: 8704135108240679782}
   - component: {fileID: 6592696200102819283}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Screw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5305,7 +5305,7 @@ GameObject:
   - component: {fileID: 535692594576137674}
   - component: {fileID: 7440019594703420504}
   - component: {fileID: 1024056056954023022}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5388,7 +5388,7 @@ GameObject:
   - component: {fileID: 7972938443606379404}
   - component: {fileID: 4448870537245108715}
   - component: {fileID: 226178548154212429}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5471,7 +5471,7 @@ GameObject:
   - component: {fileID: 3122832721068563417}
   - component: {fileID: 3778409973479660118}
   - component: {fileID: 862707517839349241}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5554,7 +5554,7 @@ GameObject:
   - component: {fileID: 4125390472895088871}
   - component: {fileID: 1416927020432997763}
   - component: {fileID: 2380040975072779090}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Front_Metal_Bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5635,7 +5635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3472599431972741439}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mag_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5668,7 +5668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7208291689809796124}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ProjectileStartPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5699,7 +5699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2802013877442752385}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TransformOnUnequipping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5732,7 +5732,7 @@ GameObject:
   - component: {fileID: 528432005627217118}
   - component: {fileID: 1466656877716598109}
   - component: {fileID: 7543661294046621652}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Screw_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5815,7 +5815,7 @@ GameObject:
   - component: {fileID: 6457044523900536502}
   - component: {fileID: 826941665444972876}
   - component: {fileID: 7168002329365097902}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Long_Screw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5898,7 +5898,7 @@ GameObject:
   - component: {fileID: 1127124402832728833}
   - component: {fileID: 6343873935181156889}
   - component: {fileID: 2656147664636733611}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stock_Connection_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5981,7 +5981,7 @@ GameObject:
   - component: {fileID: 7934455671283702470}
   - component: {fileID: 6602730178790917544}
   - component: {fileID: 3957230139918473061}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Front_Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6064,7 +6064,7 @@ GameObject:
   - component: {fileID: 3858349935041048006}
   - component: {fileID: 4787367809549404957}
   - component: {fileID: 558049121406129520}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Front_Metal_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6147,7 +6147,7 @@ GameObject:
   - component: {fileID: 7188729458697818606}
   - component: {fileID: 5185010339294829695}
   - component: {fileID: 7004898396843227403}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slide_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6230,7 +6230,7 @@ GameObject:
   - component: {fileID: 1052574052739384492}
   - component: {fileID: 5506263244571389121}
   - component: {fileID: 7687819061373072295}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stock_Screw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6313,7 +6313,7 @@ GameObject:
   - component: {fileID: 368495314959886575}
   - component: {fileID: 8467992727217548862}
   - component: {fileID: 4260327476935753218}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Release_Screw_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6396,7 +6396,7 @@ GameObject:
   - component: {fileID: 1285147299325430448}
   - component: {fileID: 5052335095749259653}
   - component: {fileID: 1256937178526154319}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Butt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6479,7 +6479,7 @@ GameObject:
   - component: {fileID: 3697652417108098318}
   - component: {fileID: 9190058688913951530}
   - component: {fileID: 3799728959667403453}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AK_74_U
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6584,7 +6584,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _timeToUse: 0
-  _timeUsing: 0.1666667
+  _timeUsing: 0.166666
   OnUse:
     m_PersistentCalls:
       m_Calls:
@@ -6685,7 +6685,7 @@ GameObject:
   - component: {fileID: 3945783734433523257}
   - component: {fileID: 2931651884759612544}
   - component: {fileID: 2394839292301321246}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Screw_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6768,7 +6768,7 @@ GameObject:
   - component: {fileID: 8531202404314667725}
   - component: {fileID: 3068152781186750198}
   - component: {fileID: 5510758216403894748}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6851,7 +6851,7 @@ GameObject:
   - component: {fileID: 3500802496225024808}
   - component: {fileID: 6970895288179175144}
   - component: {fileID: 8686664914872555182}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Release_Screw_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6934,7 +6934,7 @@ GameObject:
   - component: {fileID: 4523170219698872593}
   - component: {fileID: 8453613921087479323}
   - component: {fileID: 6951934335998359153}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Screw_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7017,7 +7017,7 @@ GameObject:
   - component: {fileID: 4874008507159918257}
   - component: {fileID: 2977070013685794451}
   - component: {fileID: 997769685407120457}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7100,7 +7100,7 @@ GameObject:
   - component: {fileID: 3022920973499243478}
   - component: {fileID: 6313445032728975030}
   - component: {fileID: 836964385981842408}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7183,7 +7183,7 @@ GameObject:
   - component: {fileID: 5808578806988391789}
   - component: {fileID: 3458130596549770105}
   - component: {fileID: 6072166128708161308}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trig_Mech_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7266,7 +7266,7 @@ GameObject:
   - component: {fileID: 1314439671672999004}
   - component: {fileID: 8905669566457911581}
   - component: {fileID: 2629696436404540447}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Metal_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7349,7 +7349,7 @@ GameObject:
   - component: {fileID: 7752962834149628016}
   - component: {fileID: 8485435726999065563}
   - component: {fileID: 9038050284991370436}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trig_Mech_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7430,7 +7430,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8343659368801573069}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7465,7 +7465,7 @@ GameObject:
   - component: {fileID: 3430914907131038585}
   - component: {fileID: 6696477620490525167}
   - component: {fileID: 7060794837488905939}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface463
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7548,7 +7548,7 @@ GameObject:
   - component: {fileID: 7804300916621580789}
   - component: {fileID: 8263937211435542232}
   - component: {fileID: 6027823486727542262}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bottom_Hand_Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7631,7 +7631,7 @@ GameObject:
   - component: {fileID: 7416391110351423854}
   - component: {fileID: 8756391944163015672}
   - component: {fileID: 6702762422707859992}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Big_Body_Knob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7714,7 +7714,7 @@ GameObject:
   - component: {fileID: 21303384085691947}
   - component: {fileID: 7530534610552151673}
   - component: {fileID: 3993561799795111369}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Front_Upper_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7797,7 +7797,7 @@ GameObject:
   - component: {fileID: 1672369171517928246}
   - component: {fileID: 443194900228612447}
   - component: {fileID: 82365619679469647}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7878,7 +7878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6601017024555799432}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TransformOnEquipping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7911,7 +7911,7 @@ GameObject:
   - component: {fileID: 214298362935564285}
   - component: {fileID: 4738547231752154479}
   - component: {fileID: 6041538922636885202}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7995,7 +7995,7 @@ GameObject:
   - component: {fileID: 9210221020477029749}
   - component: {fileID: 3755604873525764757}
   - component: {fileID: 6039775236334192746}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8066,7 +8066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2911132704950443739}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8101,7 +8101,7 @@ GameObject:
   - component: {fileID: 8571055288337424579}
   - component: {fileID: 3063523516976892887}
   - component: {fileID: 3907931586895422543}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8184,7 +8184,7 @@ GameObject:
   - component: {fileID: 2408971442354279025}
   - component: {fileID: 4545174824691156059}
   - component: {fileID: 8122837405741519422}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Reload
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8219,11 +8219,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Weapon: {fileID: 9190058688913951530}
-  _reloadTime: 0
+  _reloadTime: 1.917
   _noEmptyMagReloadTime: 1.416667
   OnReloadStarts:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 8122837405741519422}
+        m_TargetAssemblyTypeName: MagReloadAnimationEvents, RangedWeapons
+        m_MethodName: InvokeMagReloadEvents
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 9210221020477029749}
         m_TargetAssemblyTypeName: EquipableAnimatorOfEquipper, Objects
         m_MethodName: PlayEquipperAnimation
@@ -8248,18 +8260,6 @@ MonoBehaviour:
           m_StringArgument: reloadEmpty
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8122837405741519422}
-        m_TargetAssemblyTypeName: MagReloadAnimationEvents, RangedWeapons
-        m_MethodName: InvokeMagReloadEvents
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 4307861383399779597}
         m_TargetAssemblyTypeName: AudioSimpleAudioPlayer, AudioFMOD
         m_MethodName: PlayAudioAttached
@@ -8276,6 +8276,18 @@ MonoBehaviour:
   OnNoEmptyMagReloadStarts:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 8122837405741519422}
+        m_TargetAssemblyTypeName: MagReloadAnimationEvents, RangedWeapons
+        m_MethodName: InvokeMagReloadEvents
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: reloadNoEmpty
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 9210221020477029749}
         m_TargetAssemblyTypeName: EquipableAnimatorOfEquipper, Objects
         m_MethodName: PlayEquipperAnimation
@@ -8292,18 +8304,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
         m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: reloadNoEmpty
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8122837405741519422}
-        m_TargetAssemblyTypeName: MagReloadAnimationEvents, RangedWeapons
-        m_MethodName: InvokeMagReloadEvents
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8382,7 +8382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7899343121185042721}
   - component: {fileID: 8506338193332016210}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8462,7 +8462,7 @@ GameObject:
   - component: {fileID: 1843296416051213530}
   - component: {fileID: 5726620453186094487}
   - component: {fileID: 1357822101497535140}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Screw_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8543,7 +8543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3164856447086265852}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Front_Upper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8576,7 +8576,7 @@ GameObject:
   - component: {fileID: 2502825198805551576}
   - component: {fileID: 4578912170847780569}
   - component: {fileID: 3926104245715535885}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Release_Screw_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8659,7 +8659,7 @@ GameObject:
   - component: {fileID: 4795254764346338041}
   - component: {fileID: 8222846871070271024}
   - component: {fileID: 2645854975853121560}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Swivel_Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8742,7 +8742,7 @@ GameObject:
   - component: {fileID: 2814243175938787871}
   - component: {fileID: 1759101796426269050}
   - component: {fileID: 610972819069777832}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Charging_Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8825,7 +8825,7 @@ GameObject:
   - component: {fileID: 8886710725465106003}
   - component: {fileID: 46872946938955267}
   - component: {fileID: 3137454676104843023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Back_Swivel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8979,6 +8979,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Maga_Main
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176012619064416787, guid: 97d7991d44628d746abdb3cdf1cae669,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

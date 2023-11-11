@@ -62,4 +62,9 @@ public class ForceReceiver : MonoBehaviour
             }
         },delay);
     }
+
+    public void SetRigidbody(Rigidbody rb)
+    {
+        _rigidbody = rb;
+    }
 }

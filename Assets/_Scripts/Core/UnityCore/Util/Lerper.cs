@@ -17,6 +17,11 @@ public static class Lerper
         mb.StartCoroutine(LerpVectorRoutine(start,target,lerpDuration,action,curve));
     }
 
+    public static void LerpFloatFollowingCurve(this MonoBehaviour mb,float totalTime, AnimationCurve curve, System.Action<float> SetValue, bool fixedUpdate)
+    {
+        mb.StartCoroutine(LerpFloatFollowingCurve(totalTime, curve, SetValue, fixedUpdate));
+    }
+
     static IEnumerator LerpFloatRoutine(float start, float target, float lerpDuration, System.Action<float> action, bool fixedUpdate, AnimationCurve curve = null){
         float timeElapsed = 0f;
         float currentValue;
@@ -26,9 +31,17 @@ public static class Lerper
             t = curve != null ? curve.Evaluate(timeElapsed / lerpDuration) : (timeElapsed / lerpDuration);
             currentValue = Mathf.Lerp(start,target, t);
             action(currentValue);
-            timeElapsed += Time.deltaTime;
-            if(fixedUpdate) yield return new WaitForFixedUpdate();
-            else yield return null;  //stop the execution of the coroutine until the next frame
+            // timeElapsed += Time.deltaTime;
+            if(fixedUpdate)
+            {
+                timeElapsed += Time.fixedDeltaTime;
+                yield return new WaitForFixedUpdate();
+            }
+            else
+            {
+                timeElapsed += Time.deltaTime;
+                yield return null;  //stop the execution of the coroutine until the next frame
+            }
         }
         currentValue = target;  //because timeElapsed/lerpDuration will never be equal to 1
         action(currentValue);
@@ -47,5 +60,29 @@ public static class Lerper
             yield return null;  //stop the execution of the coroutine until the next frame
         }
         currentValue = target;  //because timeElapsed/lerpDuration will never be equal to 1
+    }
+
+    static IEnumerator LerpFloatFollowingCurve(float totalTime, AnimationCurve curve, System.Action<float> SetValue, bool fixedUpdate)
+    {
+        float timeElapsed = 0f;
+        float currentValue;
+
+        while(timeElapsed < totalTime)
+        {
+            currentValue = curve.Evaluate(timeElapsed / totalTime);
+            SetValue(currentValue);
+            if(fixedUpdate)
+            {
+                timeElapsed += Time.fixedDeltaTime;
+                yield return new WaitForFixedUpdate();
+            }
+            else
+            {
+                timeElapsed += Time.deltaTime;
+                yield return null;  //stop the execution of the coroutine until the next frame
+            }
+        }
+        currentValue = curve.Evaluate(1);
+        SetValue(currentValue);
     }
 }

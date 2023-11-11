@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dea60f26cccfa94394901c0fc1b860c, type: 3}
   m_Name: ZombieInstantiator
   m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 1895286267968430109, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+  _enemyPrefab: {fileID: 2020012775116119910, guid: 2bdd122ef542e36499dcac04c3aa8a79,
     type: 3}

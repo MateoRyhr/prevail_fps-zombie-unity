@@ -28,20 +28,19 @@ public class StateAlwaysChaseEnemies : MonoBehaviour, IState
 
     public void Tick()
     {
-        /*
-                                                    */
         if(!_agent.enabled) return;
-        FollowEnemy();
         if(! CanAttackEnemy())
         {
+            FollowEnemy();
             Move();
         }
         else
         {
+            LookAtEnemy();
             Stop();
-            // LookAtEnemy();
             Attack();
         }
+        _timeUntilAttack -= Time.deltaTime * Time.timeScale;
     }
 
     void FollowEnemy()
@@ -60,10 +59,6 @@ public class StateAlwaysChaseEnemies : MonoBehaviour, IState
             _weaponUser.UseObject();
             _timeUntilAttack = _aiData.TimeBeforeAttack + _meleeWeapon.LastAttack.TimeUntilAttackFinished;
             _aiData.InvokeScaledDeltaTime(() => _isAttacking = false,_aiData.TimeBeforeAttack + _meleeWeapon.LastAttack.TimeUntilAttackFinished);
-        }
-        else
-        {
-            _timeUntilAttack -= Time.deltaTime * Time.timeScale;
         }
     }
 

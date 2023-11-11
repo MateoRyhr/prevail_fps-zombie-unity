@@ -25,7 +25,7 @@ public class Projectile : MonoBehaviour, ICollision, IFloat, IGameObject
         if(HasAlreadyCollided) return;
         HasAlreadyCollided = true;
         _collision = collision;
-        Vector3 contactPoint = collision.collider.ClosestPoint(transform.position);
+        Vector3 contactPoint = collision.contacts[0].point;
         IVector3 impactedVectorGetter = collision.collider.GetComponent<IVector3>();
         if(impactedVectorGetter != null) impactedVectorGetter.Value = contactPoint;
         OnImpact?.Invoke();

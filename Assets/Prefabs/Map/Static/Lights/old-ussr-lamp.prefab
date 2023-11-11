@@ -101,7 +101,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &6981949653460594425
 Transform:
@@ -253,7 +253,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5079981008264105633
 Transform:
@@ -262,14 +262,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8417118520869781742}
-  m_LocalRotation: {x: 0.32158574, y: -0.054376535, z: 0.09312465, w: 0.9407197}
-  m_LocalPosition: {x: -0.00030003674, y: 0.061799966, z: -0.10130006}
+  m_LocalRotation: {x: 0.32020032, y: -0.040717717, z: 0.09778214, w: 0.9414099}
+  m_LocalPosition: {x: -0.0004, y: 0.0632, z: -0.1029}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1604327009220348827}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 37.964, y: -3.084, z: 10.246}
+  m_LocalEulerAnglesHint: {x: 37.65, y: -1.016, z: 11.513}
 --- !u!108 &6262284603454135146
 Light:
   m_ObjectHideFlags: 0
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_EvsmBlurPasses: 0
   m_LightlayersMask: 255
   m_LinkShadowLayers: 1
-  m_ShadowNearPlane: 0.05
+  m_ShadowNearPlane: 0
   m_BlockerSampleCount: 24
   m_FilterSampleCount: 16
   m_MinFilterSize: 0.1
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_ShadowVariant: 0
   m_ShadowPrecision: 0
   useOldInspector: 0
-  useVolumetric: 1
+  useVolumetric: 0
   featuresFoldout: 1
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0

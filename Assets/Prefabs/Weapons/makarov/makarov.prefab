@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8390295938298941055}
   - component: {fileID: 4185801800570390079}
   - component: {fileID: 7630470283513539765}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hammerthing_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2859484055689994234}
   - component: {fileID: 2217740389709254826}
   - component: {fileID: 8755691054219042168}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: triggerguard_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3184010935748807427}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 8720224211235148352}
   - component: {fileID: 3300405720905556508}
   - component: {fileID: 7489588149861363734}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: slidestop_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4837591731066138203}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EquippedTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 251149470331004905}
   - component: {fileID: 7235607093669481043}
   - component: {fileID: 1557542025820574940}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: grip_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 5244017260234463841}
   - component: {fileID: 7657929459399397174}
   - component: {fileID: 6094661355826991371}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: followerhitch_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 2296506884251173346}
   - component: {fileID: 6545457887237522204}
   - component: {fileID: 3298912440484387816}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Reload
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -689,7 +689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6568167173259251265}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 1826319591228607331}
   - component: {fileID: 2083135406377092843}
   - component: {fileID: 9117991397632760261}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: triggerguardbolt_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3910088506677853667}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ProjectileStartPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -838,7 +838,7 @@ GameObject:
   - component: {fileID: 1348188986789620696}
   - component: {fileID: 7686624450542743026}
   - component: {fileID: 5410301060230291282}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hammer_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 7154924855549723814}
   - component: {fileID: 5048733821068820551}
   - component: {fileID: 232548940210187658}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: safety_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1004,7 +1004,7 @@ GameObject:
   - component: {fileID: 2926716002521305837}
   - component: {fileID: 7754718177214975506}
   - component: {fileID: 188738973282807254}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: barrel_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1086,7 +1086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 531996622867960613}
   - component: {fileID: 5351662793150879064}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SFX_Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioTransform: {fileID: 531996622867960613}
-  Volume: 1
+  _volume: 1
 --- !u!1 &4515010904603401479
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1133,7 @@ GameObject:
   - component: {fileID: 8980493182744510189}
   - component: {fileID: 1173128346465844896}
   - component: {fileID: 8145273512965397823}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: follower_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1216,7 +1216,7 @@ GameObject:
   - component: {fileID: 4863073211157029161}
   - component: {fileID: 5722386371227008534}
   - component: {fileID: 2413078436618621925}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: extractor_pipe_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1299,7 +1299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7991906379999762613}
   - component: {fileID: 8585427172018338752}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1354,7 +1354,7 @@ GameObject:
   - component: {fileID: 8469503286786285848}
   - component: {fileID: 6712189252911312868}
   - component: {fileID: 8703006634534374049}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: magspring_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1437,7 +1437,7 @@ GameObject:
   - component: {fileID: 8862241424713161704}
   - component: {fileID: 3917327749914724532}
   - component: {fileID: 5001005029794427585}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: metalcatch_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1520,7 +1520,7 @@ GameObject:
   - component: {fileID: 7286883828842431497}
   - component: {fileID: 9008773810324566064}
   - component: {fileID: 4665836083933130955}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: slide_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1606,7 +1606,7 @@ GameObject:
   - component: {fileID: 6000234425661648374}
   - component: {fileID: 5189721531287653780}
   - component: {fileID: 3312616485778772397}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: gripscrew_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1687,7 +1687,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8381885772961753812}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: UnequippedTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1719,7 +1719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3058883837229190945}
   - component: {fileID: 3381097604626046184}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GunFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1768,7 +1768,7 @@ GameObject:
   - component: {fileID: 3099378515144834662}
   - component: {fileID: 5166140247442776734}
   - component: {fileID: 3909062740001674038}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CameraShake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1868,7 +1868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7858612634263136934}
   - component: {fileID: 139529486855727828}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SFX_Reload
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1903,7 +1903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioTransform: {fileID: 7858612634263136934}
-  Volume: 1
+  _volume: 1
 --- !u!1 &6951146024404343378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1916,7 +1916,7 @@ GameObject:
   - component: {fileID: 3723951554579628050}
   - component: {fileID: 3725345422683342318}
   - component: {fileID: 5150952325991011127}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1989,7 +1989,7 @@ GameObject:
   - component: {fileID: 4961800145816290278}
   - component: {fileID: 6504734930819985216}
   - component: {fileID: 592559300402853047}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: sights_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2072,7 +2072,7 @@ GameObject:
   - component: {fileID: 3616250496114711471}
   - component: {fileID: 4927777524441718807}
   - component: {fileID: 2389149204709429303}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: extractor_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2155,7 +2155,7 @@ GameObject:
   - component: {fileID: 8550052126306576450}
   - component: {fileID: -7186653073001816425}
   - component: {fileID: 7786922115946192266}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: makarov
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2183,7 +2183,7 @@ Transform:
   - {fileID: 3184010935748807427}
   - {fileID: 6568167173259251265}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-7186653073001816425
 MonoBehaviour:
@@ -2302,7 +2302,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5351662793150879064}
         m_TargetAssemblyTypeName: AudioSimpleAudioPlayer, AudioFMOD
-        m_MethodName: PlayAudioFast
+        m_MethodName: PlayAudioAttached
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 8aae3f328e36f66498153ac672e9e9aa,
@@ -2361,7 +2361,7 @@ GameObject:
   - component: {fileID: 1275151382444455864}
   - component: {fileID: 2460484724533022367}
   - component: {fileID: 822494696617361781}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: magcatch_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2444,7 +2444,7 @@ GameObject:
   - component: {fileID: 8961725714875166408}
   - component: {fileID: 7050565471020184266}
   - component: {fileID: 2102862155690977558}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: magazine_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2531,7 +2531,7 @@ GameObject:
   - component: {fileID: 4052742124015156271}
   - component: {fileID: 1087711150417528011}
   - component: {fileID: 3668391602931952819}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: trigger_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2614,7 +2614,7 @@ GameObject:
   - component: {fileID: 8299197299765982583}
   - component: {fileID: 8727232891567674947}
   - component: {fileID: 8693848842845183875}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hammerspring_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2697,7 +2697,7 @@ GameObject:
   - component: {fileID: 1029728377455223362}
   - component: {fileID: 835399881974528669}
   - component: {fileID: 3673203495411982830}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mainbody_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}

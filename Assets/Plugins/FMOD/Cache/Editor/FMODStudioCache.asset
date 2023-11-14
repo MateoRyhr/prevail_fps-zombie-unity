@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638351251354114947
+  lastModified: 638354963606363510
   FileSizes:
   - Name: Desktop
     Value: 3964160
@@ -251,7 +251,7 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638351251351872398
+  lastModified: 638354963605672613
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -325,7 +325,7 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/VO.bank
   Name: VO
   StudioPath: bank:/VO
-  lastModified: 638351251354154956
+  lastModified: 638354963606403447
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -374,7 +374,7 @@ MonoBehaviour:
   - {fileID: -1302040948764729701}
   StringsBanks:
   - {fileID: 8256719651917186016}
-  cacheTime: 638351251354154956
+  cacheTime: 638354963606403447
   cacheVersion: 131605
 --- !u!114 &173400674341161584
 MonoBehaviour:
@@ -456,7 +456,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 50
-  Length: 10
+  Length: 5
 --- !u!114 &1013900631925574604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,7 +472,7 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638351251351912407
+  lastModified: 638354963605717744
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -712,7 +712,7 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638351251351892404
+  lastModified: 638354963605692628
   FileSizes:
   - Name: Desktop
     Value: 1990

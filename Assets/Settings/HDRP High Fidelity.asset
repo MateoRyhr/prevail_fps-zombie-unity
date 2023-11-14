@@ -50,7 +50,7 @@ MonoBehaviour:
     supportSurfaceGradient: 1
     decalNormalBufferHP: 1
     msaaSampleCount: 1
-    supportMotionVectors: 1
+    supportMotionVectors: 0
     supportRuntimeAOVAPI: 0
     supportDitheringCrossFade: 1
     supportTerrainHole: 0

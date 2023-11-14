@@ -13129,7 +13129,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 133079
+    m_Bits: 132033
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -13160,9 +13160,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   volumeAnchorOverride: {fileID: 0}
-  antialiasing: 1
+  antialiasing: 2
   SMAAQuality: 2
-  dithering: 0
+  dithering: 1
   stopNaNs: 1
   taaSharpenStrength: 0.5
   TAAQuality: 1
@@ -13185,7 +13185,7 @@ MonoBehaviour:
   xrRendering: 1
   fullscreenPassthrough: 0
   allowDynamicResolution: 1
-  customRenderingSettings: 1
+  customRenderingSettings: 0
   invertFaceCulling: 0
   probeLayerMask:
     serializedVersion: 2
@@ -13201,7 +13201,7 @@ MonoBehaviour:
   deepLearningSuperSamplingSharpening: 0
   fsrOverrideSharpness: 0
   fsrSharpness: 0.92
-  exposureTarget: {fileID: 0}
+  exposureTarget: {fileID: 8393757126135128826}
   materialMipBias: 0
   m_RenderingPathCustomFrameSettings:
     bitDatas:

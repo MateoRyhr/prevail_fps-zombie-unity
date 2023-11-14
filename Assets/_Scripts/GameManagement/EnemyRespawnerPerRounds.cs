@@ -31,7 +31,6 @@ public class EnemyRespawnerPerRounds : MonoBehaviour
             _currentRound.Value < _enemiesPerRound.Length
             ? _enemiesPerRound[_currentRound.Value - 1]
             : _enemiesPerRound[_enemiesPerRound.Length-1];
-        Debug.Log($"Enemies in this round: {enemiesInThisRound}");
         _enemiesLeftToRespawn = enemiesInThisRound;
         _enemiesLeft = enemiesInThisRound;
     }

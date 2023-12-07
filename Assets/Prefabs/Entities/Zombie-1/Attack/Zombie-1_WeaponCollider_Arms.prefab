@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _impactableLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 129
   OnImpact:
     m_PersistentCalls:
       m_Calls:

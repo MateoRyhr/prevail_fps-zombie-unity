@@ -10,6 +10,7 @@ public class InteractorByTrigger : MonoBehaviour
     public string Message { get; private set; }
     [Tooltip("Start point to check with raycast that is in front and not behind something")]
     [SerializeField] private Transform _isInFrontCheckStart;
+    [SerializeField] private bool _checkThatIsInFront;
 
     public UnityEvent OnInteractableEnter;
     public UnityEvent OnInteractableExit;
@@ -17,7 +18,8 @@ public class InteractorByTrigger : MonoBehaviour
     //If enter trigger is called is because is a InteractableObject, set that using 2 layers, and make them only collides with each other
     private void OnTriggerEnter(Collider other)
     {
-        if(!CheckIsInFront(other)) return;
+        if(_checkThatIsInFront)
+            if(!CheckIsInFront(other)) return;
         InteractableObject interactable = other.GetComponent<InteractableObject>();
         if(interactable.InteractionType != _interactionType) return;
         if(_interactor.Interactable == null)
@@ -27,7 +29,8 @@ public class InteractorByTrigger : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(!CheckIsInFront(other)) return;
+        if(_checkThatIsInFront)
+            if(!CheckIsInFront(other)) return;
         InteractableObject interactable = other.GetComponent<InteractableObject>();
         if(interactable.InteractionType != _interactionType) return;
         if(_interactor.Interactable == null)
@@ -37,6 +40,7 @@ public class InteractorByTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        _interactor.Interactable = null;
         OnInteractableExit?.Invoke();
     }
 

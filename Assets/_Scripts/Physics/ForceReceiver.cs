@@ -34,10 +34,10 @@ public class ForceReceiver : MonoBehaviour
             {
                 _rigidbody.AddForceAtPosition(force,contactPoint,ForceMode.Impulse);
             }
-            else
-            {
-                Debug.Log($"Force Receiver doesn't have RigidBody");
-            }
+            // else
+            // {
+            //     Debug.Log($"Force Receiver doesn't have RigidBody");
+            // }
         },delay);
     }
 

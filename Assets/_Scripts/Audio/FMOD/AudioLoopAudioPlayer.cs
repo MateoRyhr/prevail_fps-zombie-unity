@@ -17,6 +17,7 @@ public class AudioLoopAudioPlayer : MonoBehaviour
 
     public void PlayLoopAudio(Sound sound)
     {
+        // if(_loopAudio)
         if(!_loopAudio.isValid())
             _loopAudio = RuntimeManager.CreateInstance(sound.soundEvent);
         _loopAudio.setVolume(_volume);

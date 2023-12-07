@@ -10,8 +10,12 @@ public class AgentNavLinkTranslation : MonoBehaviour
     [SerializeField] private GameObject[] desactiveOnTranslation;
     [SerializeField] private MonoEvent[] _events;
 
+    private bool _inTranslation;
+
     public void StartTranslation(Vector3 newPosition, int eventType)
     {
+        if(_inTranslation) return;
+        _inTranslation = true;
         // Debug.Log($"Started");
         Active(false);
         DesactivePhysics();
@@ -21,8 +25,8 @@ public class AgentNavLinkTranslation : MonoBehaviour
         StartCoroutine(Translate(newPosition,_events[eventType].EventTime));
 
         this.Invoke(() => {
-            ActivePhysics();
             Active(true);
+            ActivePhysics();
         },_events[eventType].EventTime);
     }
 
@@ -43,8 +47,8 @@ public class AgentNavLinkTranslation : MonoBehaviour
 
     public void StartTeleport(Vector3 newPosition, int eventType)
     {
-        Active(false);
         DesactivePhysics();
+        Active(false);
 
         //Animation
         _events[eventType].UnityEvent?.Invoke();
@@ -70,15 +74,16 @@ public class AgentNavLinkTranslation : MonoBehaviour
         {
             gObject.SetActive(state);
         }
+        _inTranslation = false;
     }
 
     void ActivePhysics()
     {
         _rigidbody.isKinematic = false;
-        _rigidbody.useGravity = false;
+        // _rigidbody.useGravity = false;
         _agentColliderToTriggerTeleport.enabled = true;
         _agent.enabled = true;
-        _rigidbody.detectCollisions = true;
+        // _rigidbody.detectCollisions = true;
     }
 
     void DesactivePhysics()
@@ -87,8 +92,8 @@ public class AgentNavLinkTranslation : MonoBehaviour
         _rigidbody.velocity = Vector3.zero;
         _agent.enabled = false;
         _rigidbody.isKinematic = true;
-        _rigidbody.useGravity = true;
-        _rigidbody.detectCollisions = false;
+        // _rigidbody.useGravity = true;
+        // _rigidbody.detectCollisions = false;
     }
 }
 

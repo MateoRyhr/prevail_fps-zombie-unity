@@ -17,6 +17,10 @@ public abstract class MeleeWeapon : Weapon
 
     public MeleeAttack LastAttack { get; private set; }
 
+    private void OnEnable() {
+        IsAttacking = false;
+    }
+
     public override void Use()
     {
         if(IsAttacking) return;

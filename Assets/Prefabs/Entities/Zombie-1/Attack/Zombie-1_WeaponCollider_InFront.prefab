@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5082880545981462888}
   - component: {fileID: 5110191692274619554}
   - component: {fileID: 5690525730400483650}
-  - component: {fileID: 3640342684240730961}
+  - component: {fileID: 4242721469935029265}
   - component: {fileID: 8607153841666607602}
   - component: {fileID: 554079733598825914}
   - component: {fileID: 7022458226142862286}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _impactableLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 262272
   OnImpact:
     m_PersistentCalls:
       m_Calls:
@@ -141,7 +141,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3640342684240730961
+      - m_Target: {fileID: 4242721469935029265}
+        m_TargetAssemblyTypeName: ForceApplierOnCollision, Physics
+        m_MethodName: ApplyForceAtPoint
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4242721469935029265
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,11 +162,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1546097565538482226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 362391dfc52855a4ea1c26429dedd0ec, type: 3}
+  m_Script: {fileID: 11500000, guid: abb571529fe5b4448a85b84f4da52e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ForceAmount: {fileID: 11400000, guid: ef9e8ac77c0e80d46a5aa92e6355314e, type: 2}
   MaxVariation: 1
+  _forceWithLocalDirection: {x: 0, y: 0, z: 0}
 --- !u!114 &8607153841666607602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _particlesBySurface:
   - {fileID: 11400000, guid: 0cad2ec17e9cc4a448afc174826e99fb, type: 2}
+  - {fileID: 11400000, guid: 5431fe84503120142a94b323e58f3fc3, type: 2}
+  - {fileID: 11400000, guid: c3d16244e75c25a4da7bbac891981a0a, type: 2}
 --- !u!114 &7022458226142862286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,3 +208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950890a2eb10ee94a8fff0527133cbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _damageableLayers:
+    serializedVersion: 2
+    m_Bits: 262272

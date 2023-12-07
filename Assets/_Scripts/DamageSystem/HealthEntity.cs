@@ -16,7 +16,7 @@ public class HealthEntity : MonoBehaviour, IDamageTaker
 
     private void Awake()
     {
-        Health = new Amount(_startingValue,_maxValue.Value);
+        Health = new Amount(_startingValue,0,_maxValue.Value);
         Health.OnSubstractToTheAmount = () => OnGetDamage?.Invoke();
         Health.OnAddToTheAmount = () => OnGetHeal?.Invoke();
     }

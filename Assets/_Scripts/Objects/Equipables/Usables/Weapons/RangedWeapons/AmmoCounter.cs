@@ -44,5 +44,11 @@ public class AmmoCounter : MonoBehaviour
         AmountsCounter.Amounts[(int)_rangedWeapon.RangedWeaponData.ammoType] -= value;
         OnAmmoChange?.Invoke();
     }
+
+    public void AddAmmo(int value)
+    {
+        AmountsCounter.Amounts[(int)_rangedWeapon.RangedWeaponData.ammoType] += value;
+        OnAmmoChange?.Invoke();
+    }
 }
 

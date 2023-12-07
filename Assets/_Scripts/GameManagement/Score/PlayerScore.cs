@@ -15,7 +15,7 @@ public class PlayerScore : MonoBehaviour, IAmount
 
     private void Awake()
     {
-        Score = new Amount(_initialScore,_maxScore);
+        Score = new Amount(_initialScore,0,_maxScore);
         Score.OnAmountModified += OnScoreModified.Invoke;
         Score.OnAddToTheAmount += OnAddScore.Invoke;
         Score.OnSubstractToTheAmount += OnRestScore.Invoke;

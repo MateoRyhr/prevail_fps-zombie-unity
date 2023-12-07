@@ -11,6 +11,8 @@ public class StateAlwaysChaseEnemies : MonoBehaviour, IState
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private Vector3Variable[] enemiesPositions;
 
+    public bool AttackNow { get; set; }
+
     private bool _isAttacking;
     private MeleeWeapon _meleeWeapon;
     private float _timeUntilAttack = 0f;
@@ -28,8 +30,15 @@ public class StateAlwaysChaseEnemies : MonoBehaviour, IState
 
     public void Tick()
     {
+        _timeUntilAttack -= Time.deltaTime * Time.timeScale;
         if(!_agent.enabled) return;
-        if(! CanAttackEnemy())
+        if(AttackNow)
+        {
+            Stop();
+            Attack();
+            return;
+        }
+        if(!CanAttackEnemy())
         {
             FollowEnemy();
             Move();
@@ -40,7 +49,6 @@ public class StateAlwaysChaseEnemies : MonoBehaviour, IState
             Stop();
             Attack();
         }
-        _timeUntilAttack -= Time.deltaTime * Time.timeScale;
     }
 
     void FollowEnemy()
@@ -57,6 +65,7 @@ public class StateAlwaysChaseEnemies : MonoBehaviour, IState
         {
             _isAttacking = true;
             _weaponUser.UseObject();
+            // Debug.Log($"Attack");
             _timeUntilAttack = _aiData.TimeBeforeAttack + _meleeWeapon.LastAttack.TimeUntilAttackFinished;
             _aiData.InvokeScaledDeltaTime(() => _isAttacking = false,_aiData.TimeBeforeAttack + _meleeWeapon.LastAttack.TimeUntilAttackFinished);
         }

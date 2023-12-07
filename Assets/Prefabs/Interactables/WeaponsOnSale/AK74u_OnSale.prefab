@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1013986159259337739
 Transform:
@@ -32,7 +32,7 @@ Transform:
   - {fileID: 354167204738265003}
   - {fileID: 6759813481211952267}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2940123174546823404
 GameObject:
@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 6759813481211952267}
   - component: {fileID: 8591965713809501532}
   - component: {fileID: 6315816646849355813}
+  - component: {fileID: 7032824749491163831}
   - component: {fileID: 8332246931995127439}
   m_Layer: 14
   m_Name: BuyAK47_Interactable
@@ -106,6 +107,35 @@ MonoBehaviour:
   Interaction:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 7032824749491163831}
+        m_TargetAssemblyTypeName: Seller, Interaction
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7032824749491163831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2940123174546823404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a52a2c05d954d1348bb7b00dc59d09f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cost: 1600
+  _buyerGetterContainer: {fileID: 2940123174546823404}
+  OnSellSucceed:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 8332246931995127439}
         m_TargetAssemblyTypeName: SellerOfEquipables, Objects
         m_MethodName: SellEquipable
@@ -118,6 +148,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnSellFailed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8332246931995127439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,38 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _equipableOnSale: {fileID: 9190058688913951530, guid: 66b73d8acceaf9f46aa1b4468b85d55d,
     type: 3}
-  _cost: 1600
   _buyerGetterContainer: {fileID: 2940123174546823404}
-  OnSellSucceed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2940123174546823404}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8918618074843545867}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  OnSellFailed:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &6290626652955852250
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class MaterialChanger : MonoBehaviour
 
     public void ChangeMaterial(int materialIndex)
     {
-        _renderer.material = _materials[materialIndex];
+        _renderer.sharedMaterial = _materials[materialIndex];
     }
 
     public void SetRandomMaterial()

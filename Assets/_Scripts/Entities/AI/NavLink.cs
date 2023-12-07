@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class NavLink : MonoBehaviour
 {
@@ -30,16 +27,6 @@ public class NavLink : MonoBehaviour
         return distanceToA > distanceToB
             ? (_pointA.position - agent.transform.position) * distanceToA
             : (_pointB.position - agent.transform.position) * distanceToB;
-        // if(distanceToA > distanceToB)
-        // {
-        //     direction = _pointA.position - agent.transform.position;
-        //     distance = distanceToA;
-        // }
-        // else
-        // {
-        //     direction = _pointB.position - agent.transform.position;
-        //     distance = distanceToB;
-        // }
     }
 
     Vector3 GetDistantPoint(Collider agent)

@@ -2,21 +2,18 @@ using UnityEngine;
 
 public class DamageDealerOnCollision : MonoBehaviour, IDamageDealer
 {
+    [SerializeField] private LayerMask _damageableLayers;
     public float DamageAmount { get; set; }
-    private IDamageTaker _damageable;
 
     public void DealDamage()
     {
-        GetDamageable();
-        if(_damageable == null || !TakeDamageCondition()) return;
+        GameObject damageTaker = GetComponent<ICollision>().Collision.gameObject;
+        if(!IsDamageable(damageTaker)) return;
+        IDamageTaker damageable = damageTaker.GetComponent<IDamageTaker>();
+        if(damageable == null) return;
         DamageAmount = GetComponent<IFloat>().Value;
-        _damageable.TakeDamage(DamageAmount);
+        damageable.TakeDamage(DamageAmount);
     }
 
-    public bool TakeDamageCondition() => true;
-
-    void GetDamageable()
-    {
-        _damageable = GetComponent<ICollision>().Collision.gameObject.GetComponent<IDamageTaker>();
-    }
+    bool IsDamageable(GameObject other) => LayerUtil.LayerContains(_damageableLayers,other.layer);
 }

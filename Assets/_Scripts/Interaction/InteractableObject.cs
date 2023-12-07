@@ -25,5 +25,6 @@ public enum InteractionType
 {
     Action,
     RepairWindow,
-    BuyWeapon
+    BuyWeapon,
+    RemoveObject
 }

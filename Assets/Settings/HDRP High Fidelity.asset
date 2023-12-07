@@ -18,7 +18,7 @@ MonoBehaviour:
     supportSSRTransparent: 0
     supportSSAO: 0
     supportSSGI: 0
-    supportSubsurfaceScattering: 1
+    supportSubsurfaceScattering: 0
     sssSampleBudget:
       m_Values: 140000002800000050000000
       m_SchemaId:
@@ -29,13 +29,13 @@ MonoBehaviour:
     supportWater: 0
     waterSimulationResolution: 128
     waterCPUSimulation: 0
-    supportDistortion: 1
+    supportDistortion: 0
     supportTransparentBackface: 1
     supportTransparentDepthPrepass: 1
     supportTransparentDepthPostpass: 1
-    colorBufferFormat: 48
+    colorBufferFormat: 74
     supportCustomPass: 1
-    customBufferFormat: 12
+    customBufferFormat: 8
     supportedLitShaderMode: 2
     planarReflectionResolution:
       m_Values: 000100000004000000080000
@@ -50,14 +50,14 @@ MonoBehaviour:
     supportSurfaceGradient: 1
     decalNormalBufferHP: 1
     msaaSampleCount: 1
-    supportMotionVectors: 0
-    supportRuntimeAOVAPI: 0
+    supportMotionVectors: 1
+    supportRuntimeAOVAPI: 1
     supportDitheringCrossFade: 1
     supportTerrainHole: 0
     lightProbeSystem: 1
     probeVolumeMemoryBudget: 1024
     probeVolumeBlendingMemoryBudget: 128
-    supportProbeVolumeStreaming: 0
+    supportProbeVolumeStreaming: 1
     probeVolumeSHBands: 1
     supportRayTracing: 0
     supportedRayTracingMode: 3
@@ -93,7 +93,7 @@ MonoBehaviour:
     hdShadowInitParams:
       maxShadowRequests: 512
       directionalShadowsDepthBits: 16
-      shadowFilteringQuality: 1
+      shadowFilteringQuality: 0
       areaShadowFilteringQuality: 0
       punctualLightShadowAtlas:
         shadowAtlasResolution: 4096
@@ -126,28 +126,28 @@ MonoBehaviour:
       screenSpaceShadowBufferFormat: 48
     decalSettings:
       drawDistance: 1000
-      atlasWidth: 2048
-      atlasHeight: 2048
+      atlasWidth: 4096
+      atlasHeight: 4096
       perChannelMask: 1
     postProcessSettings:
       m_LutSize: 32
-      lutFormat: 48
+      lutFormat: 74
       bufferFormat: 74
     dynamicResolutionSettings:
       enabled: 1
-      useMipBias: 0
-      enableDLSS: 0
-      DLSSPerfQualitySetting: 0
-      DLSSInjectionPoint: 0
-      DLSSUseOptimalSettings: 0
+      useMipBias: 1
+      enableDLSS: 1
+      DLSSPerfQualitySetting: 3
+      DLSSInjectionPoint: 2
+      DLSSUseOptimalSettings: 1
       DLSSSharpness: 0
-      fsrOverrideSharpness: 0
+      fsrOverrideSharpness: 1
       fsrSharpness: 0.92
       maxPercentage: 100
       minPercentage: 100
-      dynResType: 0
-      upsampleFilter: 1
-      forceResolution: 0
+      dynResType: 1
+      upsampleFilter: 4
+      forceResolution: 1
       forcedPercentage: 100
       lowResTransparencyMinimumThreshold: 0
       rayTracingHalfResThreshold: 50
@@ -161,7 +161,7 @@ MonoBehaviour:
       cameraJitter: 0
       allowMotionBlur: 0
     postProcessQualitySettings:
-      NearBlurSampleCount: 030000000500000008000000
+      NearBlurSampleCount: 030000000500000004000000
       NearBlurMaxRadius:
       - 2
       - 4
@@ -289,7 +289,7 @@ MonoBehaviour:
   allowShaderVariantStripping: 1
   enableSRPBatcher: 1
   availableMaterialQualityLevels: -1
-  m_DefaultMaterialQualityLevel: 2
+  m_DefaultMaterialQualityLevel: 4
   diffusionProfileSettings: {fileID: 0}
   virtualTexturingSettings:
     streamingCpuCacheSizeInMegaBytes: 256

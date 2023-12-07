@@ -32,7 +32,7 @@ public class MeleeWeaponCollidable : MonoBehaviour, ICollision, IFloat
         ICollision impactedCollisionGetter = collision.collider.GetComponent<ICollision>();
         if(impactedCollisionGetter != null) impactedCollisionGetter.Collision = collision;
         IVector3 impactedVectorGetter = collision.collider.GetComponent<IVector3>();
-        if(impactedVectorGetter != null) impactedVectorGetter.Value = contactPoint;
+        if(impactedVectorGetter != null) impactedVectorGetter.Vector = contactPoint;
         // IDamageTaker damageTaker = collision.collider.GetComponent<IDamageTaker>();
         // if(damageTaker != null)
         // {

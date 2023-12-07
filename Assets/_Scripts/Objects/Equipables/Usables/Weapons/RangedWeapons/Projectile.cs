@@ -27,7 +27,7 @@ public class Projectile : MonoBehaviour, ICollision, IFloat, IGameObject
         _collision = collision;
         Vector3 contactPoint = collision.contacts[0].point;
         IVector3 impactedVectorGetter = collision.collider.GetComponent<IVector3>();
-        if(impactedVectorGetter != null) impactedVectorGetter.Value = contactPoint;
+        if(impactedVectorGetter != null) impactedVectorGetter.Vector = contactPoint;
         OnImpact?.Invoke();
         OnDestroyAfterImpact?.Invoke();
     }

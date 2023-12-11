@@ -352,6 +352,15 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             ""id"": ""97878292-7b0c-4c8a-bb4d-111495fbc739"",
             ""actions"": [
                 {
+                    ""name"": ""ShowStats"",
+                    ""type"": ""Button"",
+                    ""id"": ""8d8ab287-1dac-417e-9e9b-a140c02b7d7a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""ShowHideFPS"",
                     ""type"": ""Button"",
                     ""id"": ""f319de39-2b43-4ea8-88dd-6411657486c9"",
@@ -370,6 +379,17 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ShowHideFPS"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c7d32092-9969-48ae-a756-5ebb250fe68b"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShowStats"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -402,6 +422,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         m_InventoryShortcuts_PreviousEquipable = m_InventoryShortcuts.FindAction("PreviousEquipable", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
+        m_Menu_ShowStats = m_Menu.FindAction("ShowStats", throwIfNotFound: true);
         m_Menu_ShowHideFPS = m_Menu.FindAction("ShowHideFPS", throwIfNotFound: true);
     }
 
@@ -750,11 +771,13 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     // Menu
     private readonly InputActionMap m_Menu;
     private List<IMenuActions> m_MenuActionsCallbackInterfaces = new List<IMenuActions>();
+    private readonly InputAction m_Menu_ShowStats;
     private readonly InputAction m_Menu_ShowHideFPS;
     public struct MenuActions
     {
         private @InputActionsAsset m_Wrapper;
         public MenuActions(@InputActionsAsset wrapper) { m_Wrapper = wrapper; }
+        public InputAction @ShowStats => m_Wrapper.m_Menu_ShowStats;
         public InputAction @ShowHideFPS => m_Wrapper.m_Menu_ShowHideFPS;
         public InputActionMap Get() { return m_Wrapper.m_Menu; }
         public void Enable() { Get().Enable(); }
@@ -765,6 +788,9 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_MenuActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_MenuActionsCallbackInterfaces.Add(instance);
+            @ShowStats.started += instance.OnShowStats;
+            @ShowStats.performed += instance.OnShowStats;
+            @ShowStats.canceled += instance.OnShowStats;
             @ShowHideFPS.started += instance.OnShowHideFPS;
             @ShowHideFPS.performed += instance.OnShowHideFPS;
             @ShowHideFPS.canceled += instance.OnShowHideFPS;
@@ -772,6 +798,9 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
 
         private void UnregisterCallbacks(IMenuActions instance)
         {
+            @ShowStats.started -= instance.OnShowStats;
+            @ShowStats.performed -= instance.OnShowStats;
+            @ShowStats.canceled -= instance.OnShowStats;
             @ShowHideFPS.started -= instance.OnShowHideFPS;
             @ShowHideFPS.performed -= instance.OnShowHideFPS;
             @ShowHideFPS.canceled -= instance.OnShowHideFPS;
@@ -821,6 +850,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     }
     public interface IMenuActions
     {
+        void OnShowStats(InputAction.CallbackContext context);
         void OnShowHideFPS(InputAction.CallbackContext context);
     }
 }

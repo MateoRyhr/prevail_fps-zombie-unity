@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1293696384918555178}
   - component: {fileID: 101025412018211377}
   - component: {fileID: 5247958320965179345}
+  - component: {fileID: 3522324925476166438}
   m_Layer: 0
   m_Name: OP_Door_Frame
   m_TagString: Untagged
@@ -106,6 +107,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3618112821865106467, guid: f5a5f20b8ac19414683dc6c75434d808, type: 3}
+--- !u!114 &3522324925476166438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435666883792795739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68698c4bdaa8c2489559aa486445bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _surfaceType: 2
 --- !u!1 &5630979135808128552
 GameObject:
   m_ObjectHideFlags: 0

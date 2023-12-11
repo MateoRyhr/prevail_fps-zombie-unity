@@ -587,7 +587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: {fileID: 11400000, guid: cdaff835aee27374681f91f7e6bd4670, type: 2}
-  _startingValue: 20
+  _startingValue: 50
   OnGetDamage:
     m_PersistentCalls:
       m_Calls: []

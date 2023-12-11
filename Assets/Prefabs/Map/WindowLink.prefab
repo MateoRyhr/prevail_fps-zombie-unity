@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 594904842684978686}
   - component: {fileID: 2717844509188633620}
   - component: {fileID: 7031776370595597106}
+  - component: {fileID: 557565372368253874}
   m_Layer: 14
   m_Name: BarrierReparable
   m_TagString: Untagged
@@ -309,11 +310,11 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
+  m_Radius: 0.75
+  m_Height: 1.5
+  m_Direction: 0
   m_Center: {x: 0, y: 0.76093745, z: 0}
 --- !u!114 &594904842684978686
 MonoBehaviour:
@@ -395,6 +396,27 @@ MonoBehaviour:
   - {fileID: 8314047043476100094, guid: 10c1a8afa5a3fda4eb18aa53c64d9479, type: 3}
   - {fileID: 8314047043476100094, guid: dd8ab8ab9475b8a4780ae75b4ef290c2, type: 3}
   _barrierRespawnPoint: {fileID: 8380519678137978327}
+--- !u!65 &557565372368253874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8959164852314315709}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5, y: 1, z: 1.5}
+  m_Center: {x: 0, y: 0.75, z: 0}
 --- !u!1 &9034682135549844475
 GameObject:
   m_ObjectHideFlags: 0

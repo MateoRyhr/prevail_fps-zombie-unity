@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerScoreForCombat
   m_EditorClassIdentifier: 
   ScoreMultiplier: 1
-  BulletImpactBaseScore: 10
-  HeadBulletImpactBaseScore: 20
-  KillBaseScore: 50
-  KillWithHeadshotBaseScore: 100
+  ScoreForBulletImpact: 10
+  ScoreForHeadBulletImpact: 10
+  ScoreForKill: 50
+  ScoreForKillWithHeadshot: 50

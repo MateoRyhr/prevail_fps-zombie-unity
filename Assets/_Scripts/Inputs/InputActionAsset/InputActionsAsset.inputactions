@@ -330,6 +330,15 @@
             "id": "97878292-7b0c-4c8a-bb4d-111495fbc739",
             "actions": [
                 {
+                    "name": "ShowStats",
+                    "type": "Button",
+                    "id": "8d8ab287-1dac-417e-9e9b-a140c02b7d7a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "ShowHideFPS",
                     "type": "Button",
                     "id": "f319de39-2b43-4ea8-88dd-6411657486c9",
@@ -348,6 +357,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "ShowHideFPS",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7d32092-9969-48ae-a756-5ebb250fe68b",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShowStats",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

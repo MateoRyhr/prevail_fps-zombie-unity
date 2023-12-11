@@ -6,8 +6,9 @@ public class HealthEntity : MonoBehaviour, IDamageTaker
     [SerializeField] private FloatVariable _maxValue;
     [SerializeField] private float _startingValue;
     
-    private bool _hasBeenDestructed;
-
+    public bool HasBeenDestructed;
+    public bool LastDamageKilledIt { get; set; }
+    
     public UnityEvent OnGetDamage;
     public UnityEvent OnGetHeal;
     public UnityEvent OnDestroy;
@@ -19,18 +20,24 @@ public class HealthEntity : MonoBehaviour, IDamageTaker
         Health = new Amount(_startingValue,0,_maxValue.Value);
         Health.OnSubstractToTheAmount = () => OnGetDamage?.Invoke();
         Health.OnAddToTheAmount = () => OnGetHeal?.Invoke();
+        LastDamageKilledIt = false;
     }
 
     public void TakeDamage(float damage)
     {
-        if(_hasBeenDestructed) return;
+        if(HasBeenDestructed)
+        {
+            LastDamageKilledIt = false;
+            return;
+        }
         Health.Substract(damage);
         if(Health.Value <= 0 )
         {
             Health.SetAmount(0);
-            if(!_hasBeenDestructed)
+            if(!HasBeenDestructed)
             {
-                _hasBeenDestructed = true;
+                HasBeenDestructed = true;
+                LastDamageKilledIt = true;
                 OnDestroy?.Invoke();
             }
         }

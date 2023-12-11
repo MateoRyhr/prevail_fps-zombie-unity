@@ -5,16 +5,19 @@ using TMPro;
 
 public class FPSMeter : MonoBehaviour
 {
+    [SerializeField] private GameObject _objectToActiveDesactive;
     [SerializeField] TextMeshProUGUI _fpsText;
     bool enable = false;
 
     public void Enable(){
+        _objectToActiveDesactive.SetActive(true);
         enable = true;
         _fpsText.gameObject.SetActive(true);
         StartCoroutine(UpdateFrameMeter());
     }
 
     public void Disable(){
+        _objectToActiveDesactive.SetActive(false);
         enable = false;
         _fpsText.gameObject.SetActive(false);
         StopCoroutine(UpdateFrameMeter());

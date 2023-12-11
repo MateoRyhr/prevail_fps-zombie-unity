@@ -1,3 +1,4 @@
+//Needs to be decoupled
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -97,7 +98,7 @@ public class StateAlwaysChaseEnemies : MonoBehaviour, IState
     void Stop() => _movementController.Value = Vector2.zero;
     float DistanceTo(Vector3 position) => Mathf.Abs(Vector3.Distance(_aiData.Collider.transform.position,position));
     float AttackRange() => _meleeWeapon.MeleeWeaponData.attackRange;
-    bool CanAttackEnemy() => DistanceTo(GetClosestEnemy()) < AttackRange();
+    bool CanAttackEnemy() => DistanceTo(GetClosestEnemy()) < AttackRange() && _aiData.EnemyDetector.EnemyInSight;
     Vector2 Forward() => new Vector2(0f,1f);
 
     // private void OnDrawGizmos() {

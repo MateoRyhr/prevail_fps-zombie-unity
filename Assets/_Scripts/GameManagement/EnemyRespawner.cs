@@ -1,14 +1,22 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class EnemyRespawner : MonoBehaviour
 {
-    [SerializeField] private EnemyInstantiator _enemyInstantiator;
+    // [SerializeField] private EnemyInstantiator _enemyInstantiator;
     [SerializeField] private List<Transform> _respawnPoints;
     [SerializeField] private Vector3Variable _playerPosition;
     [SerializeField] private float _timeBetweenRespawn;
     [SerializeField] private int _pointsOfRespawnToUse;
+    [SerializeField] private GameObject _prefabGetterContainer;
     
+    private IGameObject _prefabGetter;
+
+    public UnityEvent OnRespawn;
+
+    private void Awake() => _prefabGetter = _prefabGetterContainer.GetComponent<IGameObject>();
+
     public void RespawnEnemies(int enemiesAmount)
     {
         // Debug.Log($"Enemies to respawn: {enemiesAmount}");
@@ -23,17 +31,20 @@ public class EnemyRespawner : MonoBehaviour
             for (var i = 0; i < enemiesPerRespawn; i++)
             {
                 this.Invoke(() => {
-                    GameObject enemy = _enemyInstantiator.CreateEnemy(point);
+                    OnRespawn?.Invoke();
+                    CreateEnemy(point,_prefabGetter.GameObject);
                 },_timeBetweenRespawn * i);
             }
         }
 
         if(restOfEnemies > 0)
         {
-            this.Invoke(() => {
+            this.Invoke(() =>
+            {
                 for (var i = 0; i < restOfEnemies; i++)
                 {
-                    GameObject enemy = _enemyInstantiator.CreateEnemy(respawnPoints[i]); //Out of index
+                    OnRespawn?.Invoke();
+                    CreateEnemy(respawnPoints[i],_prefabGetter.GameObject);
                 }
             },_timeBetweenRespawn * enemiesPerRespawn);
         }
@@ -63,12 +74,21 @@ public class EnemyRespawner : MonoBehaviour
                 }
             }
         }
-
         return closestPoints.ToArray();
     }
 
     public void AddRespawnPoint(GameObject respawnPoint)
     {
         _respawnPoints.Add(respawnPoint.transform);
+    }
+
+    GameObject CreateEnemy(Vector3 position, GameObject prefab)
+    {
+        return Instantiate
+        (
+            prefab,
+            position,
+            Quaternion.identity
+        );
     }
 }

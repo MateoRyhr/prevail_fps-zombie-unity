@@ -5,13 +5,13 @@ public class PlayerScoreForCombat : ScriptableObject
 {
     public int ScoreMultiplier = 1;
 
-    public int BulletImpactBaseScore;
-    public int HeadBulletImpactBaseScore;
-    public int KillBaseScore;
-    public int KillWithHeadshotBaseScore;
+    public int ScoreForBulletImpact;
+    public int ScoreForHeadBulletImpact;
+    public int ScoreForKill;
+    public int ScoreForKillWithHeadshot;
 
-    public int BulletImpactScore() => BulletImpactBaseScore * ScoreMultiplier;
-    public int HeadBulletImpactScore() => HeadBulletImpactBaseScore * ScoreMultiplier;
-    public int KillScore() => KillBaseScore * ScoreMultiplier;
-    public int KillWithHeadshotScore() => KillWithHeadshotBaseScore * ScoreMultiplier;
+    public int BulletImpactScore() => ScoreForBulletImpact * ScoreMultiplier;
+    public int HeadBulletImpactScore() => ScoreForHeadBulletImpact * ScoreMultiplier;
+    public int KillScore() => ScoreForKill * ScoreMultiplier;
+    public int KillWithHeadshotScore() => ScoreForKillWithHeadshot * ScoreMultiplier;
 }

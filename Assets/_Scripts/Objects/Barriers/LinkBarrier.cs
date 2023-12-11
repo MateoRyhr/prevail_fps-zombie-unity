@@ -10,7 +10,7 @@ public class LinkBarrier : MonoBehaviour, IAmount
     public UnityEvent OnNoBarrier;
     public UnityEvent OnBarrier;
 
-    public Amount Amount { get => _amount; set => _amount = value; }
+    public Amount Amount { get => _amount; }
     private Amount _amount;
  
     private void Awake() => _amount = new Amount(_startBarriers,0,_maxBarriersAmount);
@@ -35,7 +35,7 @@ public class LinkBarrier : MonoBehaviour, IAmount
         OnNoBarrier.AddListener(agentActionToBarrier.ActionOnNoBarrier);
         if(_amount.Value > 0)
         {
-            agentActionToBarrier.ActionOnBarrier();
+            agentActionToBarrier.ActionOnBarrier(transform.position);
         }
         else
         {

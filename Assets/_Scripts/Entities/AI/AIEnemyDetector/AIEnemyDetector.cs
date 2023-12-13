@@ -23,7 +23,7 @@ public class AIEnemyDetector : MonoBehaviour, ICollider
 
     private Collider[] _rangeChecks;
 
-    private void Update()
+    private void FixedUpdate()
     {
         See();
         if(!_wasEnemyInSight && EnemyInSight != null)
@@ -55,12 +55,16 @@ public class AIEnemyDetector : MonoBehaviour, ICollider
         { 
             float distanceToTarget = Vector2.Distance(_visionOriginPoint.position, targetPosition);
             //If the enemy is not being obstucted.
-            if(!Physics.Raycast(_visionOriginPoint.position,directionToTarget,distanceToTarget,_obstructionLayer))
+            bool isSightObstructedFromView = Physics.Raycast(_visionOriginPoint.position,directionToTarget,distanceToTarget,_obstructionLayer);
+            bool isSightObstructedFromEnemy = Physics.Raycast(targetPosition,directionToTarget*-1,distanceToTarget,_obstructionLayer);
+            if(!isSightObstructedFromView && !isSightObstructedFromEnemy)
             {
                 EnemyInSight = _rangeChecks[0];
             }
         }
     }
+
+    //Uncomment for debugging
 
     // private void OnDrawGizmos()
     // {

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2a42278776d8b4189bd7e91790a0dd, type: 3}
   m_Name: Zombie-1_Movement_Easy_WalkingArmsUp
   m_EditorClassIdentifier: 
-  Value: 0.5
+  Value: 0.66

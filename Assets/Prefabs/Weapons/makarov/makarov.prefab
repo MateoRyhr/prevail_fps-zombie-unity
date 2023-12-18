@@ -199,6 +199,37 @@ Transform:
   m_Father: {fileID: 8550052126306576450}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &591825422789407043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8552375609923679697}
+  m_Layer: 7
+  m_Name: CasingReleaseForcePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8552375609923679697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591825422789407043}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0133, y: -0.0182, z: 0.0249}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3756636648842938109}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1019059176525405602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,7 +1336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7991906379999762613
 Transform:
   m_ObjectHideFlags: 0
@@ -2061,6 +2092,65 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &7096847473242175751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3756636648842938109}
+  - component: {fileID: 7350391528474012064}
+  m_Layer: 7
+  m_Name: CasingRelease
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3756636648842938109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7096847473242175751}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.0233, y: 0.1723, z: -0.0043}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8552375609923679697}
+  m_Father: {fileID: 8550052126306576450}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &7350391528474012064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7096847473242175751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de30bc2c8de0694c94fd31b6150e265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _casingPrefab: {fileID: 1569328382404938931, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+    type: 3}
+  _casingReleaseTransform: {fileID: 3756636648842938109}
+  _casingReleaseForceFrom: {fileID: 8552375609923679697}
+  _casingReleaseForce: {fileID: 11400000, guid: 6b7f7714af5679343a7889afbef9b4ce,
+    type: 2}
+  _casingLifeTime: {fileID: 11400000, guid: dd08a0877a69a8444a67c1c932ca7f5b, type: 2}
+  _forceVariation: {fileID: 11400000, guid: a1ba6fe2e1586d843b3365ed80343248, type: 2}
+  _directionVariation: {fileID: 11400000, guid: 3d877dc6bc995cb49a473028b2647bc9,
+    type: 2}
+  poolMaxSize: 13
+  OnCasingReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7313260695568947533
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,6 +2272,7 @@ Transform:
   - {fileID: 3910088506677853667}
   - {fileID: 3184010935748807427}
   - {fileID: 6568167173259251265}
+  - {fileID: 3756636648842938109}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2316,6 +2407,18 @@ MonoBehaviour:
       - m_Target: {fileID: 3381097604626046184}
         m_TargetAssemblyTypeName: ParticlesFXInstantiator, ParticlesVFX
         m_MethodName: PlayEffectTransformAsParent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: shoot
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7350391528474012064}
+        m_TargetAssemblyTypeName: GunCasingRelease, RangedWeapons
+        m_MethodName: CasingRelease
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

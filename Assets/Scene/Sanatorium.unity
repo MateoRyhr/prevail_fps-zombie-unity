@@ -523,33 +523,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 2.000545
-    sh[ 1]: 1.1374719
-    sh[ 2]: -0.5657985
-    sh[ 3]: 0.14245206
-    sh[ 4]: 0.31024617
-    sh[ 5]: -0.17203355
-    sh[ 6]: -0.07576387
-    sh[ 7]: -0.11137029
-    sh[ 8]: -0.09654529
-    sh[ 9]: 1.8482089
-    sh[10]: 1.1028762
-    sh[11]: -0.52257395
-    sh[12]: 0.15294407
-    sh[13]: 0.2980723
-    sh[14]: -0.16731852
-    sh[15]: -0.0736254
-    sh[16]: -0.10789464
-    sh[17]: -0.09003711
-    sh[18]: 1.7704171
-    sh[19]: 1.1137465
-    sh[20]: -0.5063459
-    sh[21]: 0.22299598
-    sh[22]: 0.30630663
-    sh[23]: -0.16905208
-    sh[24]: -0.07475289
-    sh[25]: -0.117525786
-    sh[26]: -0.09700798
+    sh[ 0]: 1.9411556
+    sh[ 1]: 1.2045919
+    sh[ 2]: -0.45601624
+    sh[ 3]: 0.25533366
+    sh[ 4]: 0.30409202
+    sh[ 5]: -0.15576907
+    sh[ 6]: -0.077259056
+    sh[ 7]: -0.05831786
+    sh[ 8]: -0.09592319
+    sh[ 9]: 1.808961
+    sh[10]: 1.1666614
+    sh[11]: -0.42734748
+    sh[12]: 0.24932829
+    sh[13]: 0.29033113
+    sh[14]: -0.15401232
+    sh[15]: -0.073293485
+    sh[16]: -0.053979926
+    sh[17]: -0.08786416
+    sh[18]: 1.7349591
+    sh[19]: 1.1706132
+    sh[20]: -0.4262425
+    sh[21]: 0.30375358
+    sh[22]: 0.2970122
+    sh[23]: -0.1574983
+    sh[24]: -0.07318854
+    sh[25]: -0.07277404
+    sh[26]: -0.09516637
   m_SHValidForCapturePosition: {x: -8.51558, y: 1.6628926, z: -4.2126136}
   m_SHValidForSourcePosition: {x: -8.51558, y: 1.6628926, z: -4.2126136}
   m_HDProbeVersion: 3
@@ -8958,33 +8958,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 4.4333262
-    sh[ 1]: -0.70490736
-    sh[ 2]: -1.7791162
-    sh[ 3]: -1.6633064
-    sh[ 4]: 0.007151039
-    sh[ 5]: 0.8841277
-    sh[ 6]: -0.08512747
-    sh[ 7]: 0.4089026
-    sh[ 8]: -0.057989012
-    sh[ 9]: 2.7191353
-    sh[10]: -0.37858266
-    sh[11]: -1.0603756
-    sh[12]: -1.0676644
-    sh[13]: 0.01379711
-    sh[14]: 0.5251273
-    sh[15]: -0.05325642
-    sh[16]: 0.26263052
-    sh[17]: -0.021787262
-    sh[18]: 0.80804336
-    sh[19]: -0.110733755
-    sh[20]: -0.31494546
-    sh[21]: -0.32804462
-    sh[22]: 0.002855074
-    sh[23]: 0.16083902
-    sh[24]: -0.01603052
-    sh[25]: 0.07968684
-    sh[26]: -0.010046352
+    sh[ 0]: 4.697201
+    sh[ 1]: -0.7574055
+    sh[ 2]: -1.9162575
+    sh[ 3]: -1.4748805
+    sh[ 4]: -0.09713983
+    sh[ 5]: 0.9621882
+    sh[ 6]: -0.10232189
+    sh[ 7]: 0.23530997
+    sh[ 8]: -0.08542972
+    sh[ 9]: 2.8755152
+    sh[10]: -0.3767721
+    sh[11]: -1.1392621
+    sh[12]: -0.9654404
+    sh[13]: -0.05268397
+    sh[14]: 0.56613404
+    sh[15]: -0.065218896
+    sh[16]: 0.15942883
+    sh[17]: -0.034847613
+    sh[18]: 0.8541937
+    sh[19]: -0.10933674
+    sh[20]: -0.33723208
+    sh[21]: -0.2927143
+    sh[22]: -0.018285658
+    sh[23]: 0.17311516
+    sh[24]: -0.019661328
+    sh[25]: 0.048199408
+    sh[26]: -0.016784776
   m_SHValidForCapturePosition: {x: 9.557335, y: 1.7960819, z: 6.487767}
   m_SHValidForSourcePosition: {x: 9.557335, y: 1.7960819, z: 6.487767}
   m_HDProbeVersion: 3
@@ -9521,33 +9521,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 0.9594617
-    sh[ 1]: -0.68245703
-    sh[ 2]: 0.2790023
-    sh[ 3]: 0.43822783
-    sh[ 4]: -0.12988731
-    sh[ 5]: -0.12313659
-    sh[ 6]: -0.02475959
-    sh[ 7]: 0.050857283
-    sh[ 8]: -0.0510008
-    sh[ 9]: 0.5496203
-    sh[10]: -0.37675086
-    sh[11]: 0.16066395
-    sh[12]: 0.25619528
-    sh[13]: -0.07153711
-    sh[14]: -0.06989473
-    sh[15]: -0.01375367
-    sh[16]: 0.030227166
-    sh[17]: -0.026888369
-    sh[18]: 0.17079276
-    sh[19]: -0.119669504
-    sh[20]: 0.05003484
-    sh[21]: 0.07997443
-    sh[22]: -0.02255681
-    sh[23]: -0.022214077
-    sh[24]: -0.004566948
-    sh[25]: 0.009366398
-    sh[26]: -0.008843248
+    sh[ 0]: 1.0999285
+    sh[ 1]: -0.8180536
+    sh[ 2]: 0.31306478
+    sh[ 3]: 0.5163049
+    sh[ 4]: -0.16144194
+    sh[ 5]: -0.13983971
+    sh[ 6]: -0.030470943
+    sh[ 7]: 0.05831647
+    sh[ 8]: -0.062477343
+    sh[ 9]: 0.61992115
+    sh[10]: -0.44442004
+    sh[11]: 0.17656322
+    sh[12]: 0.29597533
+    sh[13]: -0.08710867
+    sh[14]: -0.07821813
+    sh[15]: -0.01661726
+    sh[16]: 0.033741955
+    sh[17]: -0.0326179
+    sh[18]: 0.19448718
+    sh[19]: -0.14318688
+    sh[20]: 0.05600161
+    sh[21]: 0.09305591
+    sh[22]: -0.02796762
+    sh[23]: -0.0251216
+    sh[24]: -0.005554373
+    sh[25]: 0.010583001
+    sh[26]: -0.010867231
   m_SHValidForCapturePosition: {x: -18.001291, y: 1.6628926, z: 1.0882797}
   m_SHValidForSourcePosition: {x: -18.001291, y: 1.6628926, z: 1.0882797}
   m_HDProbeVersion: 3
@@ -11222,7 +11222,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126440
+  m_Name: pb_Mesh34196
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -15824,33 +15824,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 7.0655117
-    sh[ 1]: 0.982538
-    sh[ 2]: -1.6516343
-    sh[ 3]: -4.0023823
-    sh[ 4]: 0.10213193
-    sh[ 5]: -0.013534776
-    sh[ 6]: -0.12869006
-    sh[ 7]: 0.31844962
-    sh[ 8]: 0.16761088
-    sh[ 9]: 6.534603
-    sh[10]: 0.94781804
-    sh[11]: -1.5166328
-    sh[12]: -3.8377402
-    sh[13]: 0.11010693
-    sh[14]: -0.022251263
-    sh[15]: -0.12220106
-    sh[16]: 0.3207045
-    sh[17]: 0.16433653
-    sh[18]: 6.4194193
-    sh[19]: 0.83214253
-    sh[20]: -1.5093123
-    sh[21]: -4.006124
-    sh[22]: 0.14188005
-    sh[23]: -0.016765434
-    sh[24]: -0.12432495
-    sh[25]: 0.3626746
-    sh[26]: 0.18601303
+    sh[ 0]: 6.911423
+    sh[ 1]: 1.2446803
+    sh[ 2]: -1.5922434
+    sh[ 3]: -3.433126
+    sh[ 4]: -0.09986551
+    sh[ 5]: 0.029165735
+    sh[ 6]: -0.12115853
+    sh[ 7]: 0.23805994
+    sh[ 8]: 0.15419799
+    sh[ 9]: 6.2234197
+    sh[10]: 1.2792505
+    sh[11]: -1.3543478
+    sh[12]: -3.404245
+    sh[13]: -0.056829095
+    sh[14]: -0.011439319
+    sh[15]: -0.116785966
+    sh[16]: 0.2819262
+    sh[17]: 0.14865513
+    sh[18]: 6.0406833
+    sh[19]: 1.2346612
+    sh[20]: -1.3155857
+    sh[21]: -3.6193283
+    sh[22]: -0.017585538
+    sh[23]: -0.027947977
+    sh[24]: -0.11996858
+    sh[25]: 0.34383258
+    sh[26]: 0.16505441
   m_SHValidForCapturePosition: {x: -5.4822373, y: 1.6628926, z: -4.0496116}
   m_SHValidForSourcePosition: {x: -5.4822373, y: 1.6628926, z: -4.0496116}
   m_HDProbeVersion: 3
@@ -17428,7 +17428,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126754
+  m_Name: pb_Mesh34512
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -17587,6 +17587,85 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &575429594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 788286354}
+    m_Modifications:
+    - target: {fileID: 7368555718440798473, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_Name
+      value: makarov
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae842440bb58b8c428d18c7bf850e78c, type: 3}
+--- !u!4 &575429595 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8550052126306576450, guid: ae842440bb58b8c428d18c7bf850e78c,
+    type: 3}
+  m_PrefabInstance: {fileID: 575429594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &577835323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17848,7 +17927,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126996
+  m_Name: pb_Mesh34754
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -18013,7 +18092,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh34726
+  m_Name: pb_Mesh34788
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -19063,7 +19142,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126344
+  m_Name: pb_Mesh34100
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -19228,7 +19307,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126622
+  m_Name: pb_Mesh34380
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -19424,7 +19503,7 @@ Transform:
   - {fileID: 1013818531}
   - {fileID: 1191083259}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &714604578
 PrefabInstance:
@@ -20077,7 +20156,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh125936
+  m_Name: pb_Mesh33692
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -20242,7 +20321,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh127420
+  m_Name: pb_Mesh35192
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -20482,7 +20561,7 @@ PrefabInstance:
     - target: {fileID: 525953313168312556, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.15950003
+      value: 0.1595
       objectReference: {fileID: 0}
     - target: {fileID: 525953313168312556, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
@@ -20504,6 +20583,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.16999996
       objectReference: {fileID: 0}
+    - target: {fileID: 895826112539760911, guid: 2f8f48a655637ac44b635929a8724320,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1446679333640661386, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20517,7 +20601,7 @@ PrefabInstance:
     - target: {fileID: 1446679333640661386, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.15950003
+      value: 0.1595
       objectReference: {fileID: 0}
     - target: {fileID: 1665689942694526327, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
@@ -20537,7 +20621,7 @@ PrefabInstance:
     - target: {fileID: 1994496238173727322, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.317001
+      value: -8.994
       objectReference: {fileID: 0}
     - target: {fileID: 1994496238173727322, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
@@ -20547,7 +20631,7 @@ PrefabInstance:
     - target: {fileID: 1994496238173727322, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.463
+      value: 0.883
       objectReference: {fileID: 0}
     - target: {fileID: 1994496238173727322, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
@@ -20862,7 +20946,7 @@ PrefabInstance:
     - target: {fileID: 8269934132592282360, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
       propertyPath: _initialScore
-      value: 5000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8269934132592282360, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
@@ -20880,16 +20964,27 @@ PrefabInstance:
     - {fileID: 1713697914857189549, guid: 2f8f48a655637ac44b635929a8724320, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7586691912112542435, guid: 2f8f48a655637ac44b635929a8724320, type: 3}
-    m_AddedGameObjects: []
+    - {fileID: 895826112539760911, guid: 2f8f48a655637ac44b635929a8724320, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4003261540024484337, guid: 2f8f48a655637ac44b635929a8724320,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 575429595}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f8f48a655637ac44b635929a8724320, type: 3}
+--- !u!4 &788286354 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4003261540024484337, guid: 2f8f48a655637ac44b635929a8724320,
+    type: 3}
+  m_PrefabInstance: {fileID: 788286353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &789412493
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126318
+  m_Name: pb_Mesh34074
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -21424,7 +21519,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126944
+  m_Name: pb_Mesh34716
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -21922,7 +22017,7 @@ Transform:
   m_Children:
   - {fileID: 662005595}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &852851204
 PrefabInstance:
@@ -24147,7 +24242,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126190
+  m_Name: pb_Mesh33946
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -25867,33 +25962,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 0.22733675
-    sh[ 1]: 0.12629208
-    sh[ 2]: -0.0016161617
-    sh[ 3]: 0.0054852488
-    sh[ 4]: 0.010257834
-    sh[ 5]: -0.00426506
-    sh[ 6]: -0.007409262
-    sh[ 7]: 0.0057791322
-    sh[ 8]: -0.011663601
-    sh[ 9]: 0.14318313
-    sh[10]: 0.08582672
-    sh[11]: -0.002242146
-    sh[12]: 0.002510869
-    sh[13]: 0.00568501
-    sh[14]: -0.0037099498
-    sh[15]: -0.0046918592
-    sh[16]: 0.0027551665
-    sh[17]: -0.007849425
-    sh[18]: 0.04565601
-    sh[19]: 0.028313376
-    sh[20]: -0.0011879689
-    sh[21]: 0.00039705556
-    sh[22]: 0.0017978824
-    sh[23]: -0.0012380288
-    sh[24]: -0.0015329209
-    sh[25]: 0.0006681644
-    sh[26]: -0.002718429
+    sh[ 0]: 0.25153518
+    sh[ 1]: 0.15085135
+    sh[ 2]: -0.051352438
+    sh[ 3]: -0.036679734
+    sh[ 4]: -0.022282068
+    sh[ 5]: -0.015585466
+    sh[ 6]: -0.0062418487
+    sh[ 7]: 0.021575386
+    sh[ 8]: -0.014534104
+    sh[ 9]: 0.15857811
+    sh[10]: 0.10190574
+    sh[11]: -0.031134177
+    sh[12]: -0.024836378
+    sh[13]: -0.014590678
+    sh[14]: -0.010512128
+    sh[15]: -0.004363369
+    sh[16]: 0.01311516
+    sh[17]: -0.009584256
+    sh[18]: 0.0537419
+    sh[19]: 0.03624652
+    sh[20]: -0.010485153
+    sh[21]: -0.009594286
+    sh[22]: -0.0050550997
+    sh[23]: -0.0033710483
+    sh[24]: -0.0015890703
+    sh[25]: 0.0042639263
+    sh[26]: -0.003529128
   m_SHValidForCapturePosition: {x: 4.3015304, y: 1.7960819, z: 8.056812}
   m_SHValidForSourcePosition: {x: 4.3015304, y: 1.7960819, z: 8.056812}
   m_HDProbeVersion: 3
@@ -26341,33 +26436,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 3.0159183
-    sh[ 1]: -2.1413279
-    sh[ 2]: -1.1771157
-    sh[ 3]: 0.08122821
-    sh[ 4]: -0.05315851
-    sh[ 5]: 0.707185
-    sh[ 6]: -0.14558013
-    sh[ 7]: -0.042587243
-    sh[ 8]: -0.45306808
-    sh[ 9]: 1.6606709
-    sh[10]: -1.1804155
-    sh[11]: -0.65716493
-    sh[12]: 0.05730487
-    sh[13]: -0.026511248
-    sh[14]: 0.39062965
-    sh[15]: -0.071921214
-    sh[16]: -0.026461707
-    sh[17]: -0.25523
-    sh[18]: 0.5163355
-    sh[19]: -0.39276052
-    sh[20]: -0.2059156
-    sh[21]: 0.019256422
-    sh[22]: -0.007317357
-    sh[23]: 0.1279561
-    sh[24]: -0.022247529
-    sh[25]: -0.0083386535
-    sh[26]: -0.085461594
+    sh[ 0]: 3.2022915
+    sh[ 1]: -2.0575676
+    sh[ 2]: -1.1867648
+    sh[ 3]: 0.11243075
+    sh[ 4]: -0.36322844
+    sh[ 5]: 0.87976116
+    sh[ 6]: -0.16152549
+    sh[ 7]: -0.11716854
+    sh[ 8]: -0.5967431
+    sh[ 9]: 1.7442672
+    sh[10]: -1.1094258
+    sh[11]: -0.65126103
+    sh[12]: 0.07316215
+    sh[13]: -0.18666615
+    sh[14]: 0.4801914
+    sh[15]: -0.07822554
+    sh[16]: -0.07158609
+    sh[17]: -0.31387842
+    sh[18]: 0.54589176
+    sh[19]: -0.38076195
+    sh[20]: -0.20489495
+    sh[21]: 0.032278202
+    sh[22]: -0.060670618
+    sh[23]: 0.1587835
+    sh[24]: -0.026005624
+    sh[25]: -0.02626111
+    sh[26]: -0.10438485
   m_SHValidForCapturePosition: {x: -19.633038, y: 1.6628926, z: -4.094527}
   m_SHValidForSourcePosition: {x: -19.633038, y: 1.6628926, z: -4.094527}
   m_HDProbeVersion: 3
@@ -26848,33 +26943,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 0.5148948
-    sh[ 1]: -0.17839278
-    sh[ 2]: 0.13405725
-    sh[ 3]: 0.19389585
-    sh[ 4]: -0.060692832
-    sh[ 5]: -0.020105684
-    sh[ 6]: -0.00016153854
-    sh[ 7]: 0.08315778
-    sh[ 8]: -0.028914759
-    sh[ 9]: 0.4602158
-    sh[10]: -0.17239639
-    sh[11]: 0.15139133
-    sh[12]: 0.19680077
-    sh[13]: -0.0666203
-    sh[14]: -0.03334747
-    sh[15]: 0.0019786044
-    sh[16]: 0.090192236
-    sh[17]: -0.013511539
-    sh[18]: 0.46654144
-    sh[19]: -0.23401824
-    sh[20]: 0.19594508
-    sh[21]: 0.2330938
-    sh[22]: -0.09578609
-    sh[23]: -0.064628944
-    sh[24]: -0.0016320099
-    sh[25]: 0.11226173
-    sh[26]: -0.001478929
+    sh[ 0]: 0.53622514
+    sh[ 1]: -0.20297478
+    sh[ 2]: 0.13115229
+    sh[ 3]: 0.20322552
+    sh[ 4]: -0.06912364
+    sh[ 5]: -0.022515394
+    sh[ 6]: -0.0038792118
+    sh[ 7]: 0.09060096
+    sh[ 8]: -0.0360388
+    sh[ 9]: 0.46679318
+    sh[10]: -0.18358688
+    sh[11]: 0.1519252
+    sh[12]: 0.18966489
+    sh[13]: -0.06401209
+    sh[14]: -0.03644933
+    sh[15]: 0.0014856479
+    sh[16]: 0.092369035
+    sh[17]: -0.021123162
+    sh[18]: 0.4679641
+    sh[19]: -0.24500495
+    sh[20]: 0.19446534
+    sh[21]: 0.21087177
+    sh[22]: -0.086391084
+    sh[23]: -0.06768556
+    sh[24]: -0.00035518408
+    sh[25]: 0.10761807
+    sh[26]: -0.013088138
   m_SHValidForCapturePosition: {x: -4.8948154, y: 1.7724332, z: 6.991779}
   m_SHValidForSourcePosition: {x: -4.8948154, y: 1.7724332, z: 6.991779}
   m_HDProbeVersion: 3
@@ -31006,7 +31101,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126910
+  m_Name: pb_Mesh34668
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -32266,7 +32361,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126598
+  m_Name: pb_Mesh34356
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -32887,33 +32982,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 7.424484
-    sh[ 1]: -0.8032659
-    sh[ 2]: -2.5875118
-    sh[ 3]: 4.3552675
-    sh[ 4]: -1.7707204
-    sh[ 5]: 1.1249877
-    sh[ 6]: -0.26967597
-    sh[ 7]: -1.7291137
-    sh[ 8]: 0.08938947
-    sh[ 9]: 4.5745134
-    sh[10]: -0.31654084
-    sh[11]: -1.56427
-    sh[12]: 2.620953
-    sh[13]: -1.0557485
-    sh[14]: 0.69138783
-    sh[15]: -0.16446343
-    sh[16]: -1.0447928
-    sh[17]: 0.045265257
-    sh[18]: 1.3954037
-    sh[19]: -0.047162585
-    sh[20]: -0.4638678
-    sh[21]: 0.7749742
-    sh[22]: -0.30967113
-    sh[23]: 0.20681913
-    sh[24]: -0.050492976
-    sh[25]: -0.3106633
-    sh[26]: 0.0057135765
+    sh[ 0]: 3.78284
+    sh[ 1]: 2.0551925
+    sh[ 2]: -0.4997624
+    sh[ 3]: 0.5018995
+    sh[ 4]: -0.10997731
+    sh[ 5]: 0.121017
+    sh[ 6]: -0.13580745
+    sh[ 7]: -0.3548116
+    sh[ 8]: -0.31094727
+    sh[ 9]: 2.3459342
+    sh[10]: 1.3981581
+    sh[11]: -0.2617115
+    sh[12]: 0.24523573
+    sh[13]: -0.045379274
+    sh[14]: 0.07407713
+    sh[15]: -0.08312497
+    sh[16]: -0.19730477
+    sh[17]: -0.2025051
+    sh[18]: 0.7478198
+    sh[19]: 0.44887885
+    sh[20]: -0.07913713
+    sh[21]: 0.08136808
+    sh[22]: -0.01174411
+    sh[23]: 0.022656493
+    sh[24]: -0.026668971
+    sh[25]: -0.063359424
+    sh[26]: -0.06696021
   m_SHValidForCapturePosition: {x: -2.8533359, y: 1.7440667, z: 1.8189483}
   m_SHValidForSourcePosition: {x: -2.8533359, y: 1.7440667, z: 1.8189483}
   m_HDProbeVersion: 3
@@ -33105,6 +33200,7 @@ Transform:
   - {fileID: 7649901898613431076}
   - {fileID: 2015408207}
   - {fileID: 190410357}
+  - {fileID: 3624832955172426526}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33151,7 +33247,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126698
+  m_Name: pb_Mesh34456
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -34327,33 +34423,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 1.2467822
-    sh[ 1]: 0.568362
-    sh[ 2]: -0.9938013
-    sh[ 3]: 0.0527897
-    sh[ 4]: 0.0049373875
-    sh[ 5]: -0.2153623
-    sh[ 6]: 0.045379687
-    sh[ 7]: -0.022448815
-    sh[ 8]: -0.05180368
-    sh[ 9]: 1.1518209
-    sh[10]: 0.5483254
-    sh[11]: -0.936149
-    sh[12]: 0.044036865
-    sh[13]: 0.0035357273
-    sh[14]: -0.20646223
-    sh[15]: 0.042908877
-    sh[16]: -0.019427536
-    sh[17]: -0.047074407
-    sh[18]: 1.174375
-    sh[19]: 0.57282317
-    sh[20]: -0.96930224
-    sh[21]: 0.040148042
-    sh[22]: 0.0026818102
-    sh[23]: -0.21663108
-    sh[24]: 0.044188563
-    sh[25]: -0.018368946
-    sh[26]: -0.047818474
+    sh[ 0]: 1.25446
+    sh[ 1]: 0.5693624
+    sh[ 2]: -0.9835421
+    sh[ 3]: 0.051294755
+    sh[ 4]: 0.0065706517
+    sh[ 5]: -0.21813841
+    sh[ 6]: 0.044765815
+    sh[ 7]: -0.021893408
+    sh[ 8]: -0.05287329
+    sh[ 9]: 1.1552238
+    sh[10]: 0.5498782
+    sh[11]: -0.9280378
+    sh[12]: 0.041783318
+    sh[13]: 0.0047786054
+    sh[14]: -0.20918855
+    sh[15]: 0.04243015
+    sh[16]: -0.018838512
+    sh[17]: -0.047750458
+    sh[18]: 1.1769207
+    sh[19]: 0.5712702
+    sh[20]: -0.9617723
+    sh[21]: 0.037366826
+    sh[22]: 0.003564895
+    sh[23]: -0.21884903
+    sh[24]: 0.043662313
+    sh[25]: -0.017838998
+    sh[26]: -0.048536394
   m_SHValidForCapturePosition: {x: -13.538672, y: 1.6628926, z: -11.995268}
   m_SHValidForSourcePosition: {x: -13.538672, y: 1.6628926, z: -11.995268}
   m_HDProbeVersion: 3
@@ -35009,7 +35105,7 @@ GameObject:
   - component: {fileID: 1321778253}
   - component: {fileID: 1321778259}
   - component: {fileID: 1321778258}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36828,33 +36924,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 1.0089806
-    sh[ 1]: 0.9124643
-    sh[ 2]: -0.10056154
-    sh[ 3]: 0.006003631
-    sh[ 4]: -0.0103392545
-    sh[ 5]: -0.01828419
-    sh[ 6]: -0.028626887
-    sh[ 7]: -0.00018813602
-    sh[ 8]: -0.10046648
-    sh[ 9]: 0.9428152
-    sh[10]: 0.87220055
-    sh[11]: -0.09345499
-    sh[12]: -0.0022425165
-    sh[13]: -0.008755415
-    sh[14]: -0.017351888
-    sh[15]: -0.02693871
-    sh[16]: 0.00022712858
-    sh[17]: -0.09613782
-    sh[18]: 0.96404153
-    sh[19]: 0.91627324
-    sh[20]: -0.09168125
-    sh[21]: -0.010406478
-    sh[22]: -0.008258128
-    sh[23]: -0.017908396
-    sh[24]: -0.028071033
-    sh[25]: 0.00050959294
-    sh[26]: -0.10158067
+    sh[ 0]: 1.1483438
+    sh[ 1]: 0.8623632
+    sh[ 2]: -0.045059305
+    sh[ 3]: 0.031388067
+    sh[ 4]: -0.005658416
+    sh[ 5]: -0.01381566
+    sh[ 6]: -0.03206622
+    sh[ 7]: -0.004884307
+    sh[ 8]: -0.096053764
+    sh[ 9]: 1.0493433
+    sh[10]: 0.83728725
+    sh[11]: -0.042901542
+    sh[12]: 0.016042167
+    sh[13]: -0.005217251
+    sh[14]: -0.013190086
+    sh[15]: -0.02975854
+    sh[16]: -0.0027327943
+    sh[17]: -0.09247644
+    sh[18]: 1.0519499
+    sh[19]: 0.8868003
+    sh[20]: -0.04027783
+    sh[21]: -0.0036119805
+    sh[22]: -0.005381984
+    sh[23]: -0.015277343
+    sh[24]: -0.030866595
+    sh[25]: -0.0015307278
+    sh[26]: -0.099358335
   m_SHValidForCapturePosition: {x: -7.9680405, y: 1.6628926, z: 1.8286371}
   m_SHValidForSourcePosition: {x: -7.9680405, y: 1.6628926, z: 1.8286371}
   m_HDProbeVersion: 3
@@ -43212,7 +43308,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh127210
+  m_Name: pb_Mesh34980
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -43613,7 +43709,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh127014
+  m_Name: pb_Mesh34772
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -43929,6 +44025,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie-1
       objectReference: {fileID: 0}
+    - target: {fileID: 4055715264260337226, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
         type: 3}
       propertyPath: m_RootOrder
@@ -43937,7 +44038,7 @@ PrefabInstance:
     - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.711
+      value: -2.276
       objectReference: {fileID: 0}
     - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
         type: 3}
@@ -43947,7 +44048,7 @@ PrefabInstance:
     - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.827
+      value: -3.204
       objectReference: {fileID: 0}
     - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
         type: 3}
@@ -44738,7 +44839,7 @@ MonoBehaviour:
         renderQueueType: 2
         layerMask:
           serializedVersion: 2
-          m_Bits: 128
+          m_Bits: 1048704
         sortingCriteria: 59
         overrideMode: 1
         overrideMaterial: {fileID: 0}
@@ -45917,7 +46018,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733304465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9187663, y: 2.0404043, z: -2.601184}
+  m_LocalPosition: {x: 3.9190457, y: 2.0404043, z: -2.6013236}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46200,35 +46301,35 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 1.1127961
-    sh[ 1]: 0.5633855
-    sh[ 2]: 0.5710899
-    sh[ 3]: -0.0118497
-    sh[ 4]: 0.039229795
-    sh[ 5]: 0.180405
-    sh[ 6]: 0.014811987
-    sh[ 7]: 0.029140374
-    sh[ 8]: -0.034059644
-    sh[ 9]: 0.7085881
-    sh[10]: 0.37721482
-    sh[11]: 0.3592805
-    sh[12]: -0.010259288
-    sh[13]: 0.027111162
-    sh[14]: 0.11993578
-    sh[15]: 0.008285181
-    sh[16]: 0.016241785
-    sh[17]: -0.022343501
-    sh[18]: 0.22323686
-    sh[19]: 0.12547272
-    sh[20]: 0.11252936
-    sh[21]: -0.0009263718
-    sh[22]: 0.009943918
-    sh[23]: 0.039336827
-    sh[24]: 0.0024791807
-    sh[25]: 0.0055337283
-    sh[26]: -0.008256427
-  m_SHValidForCapturePosition: {x: -2.2484634, y: 1.7960819, z: -4.089847}
-  m_SHValidForSourcePosition: {x: -2.2484634, y: 1.7960819, z: -4.089847}
+    sh[ 0]: 1.0090795
+    sh[ 1]: 0.5185923
+    sh[ 2]: 0.38320062
+    sh[ 3]: -0.10728478
+    sh[ 4]: 0.021835634
+    sh[ 5]: 0.11560153
+    sh[ 6]: -0.004125619
+    sh[ 7]: -0.012456816
+    sh[ 8]: -0.026979558
+    sh[ 9]: 0.6476193
+    sh[10]: 0.35199183
+    sh[11]: 0.24591611
+    sh[12]: -0.0749817
+    sh[13]: 0.013753716
+    sh[14]: 0.076382205
+    sh[15]: -0.0031647605
+    sh[16]: -0.011063875
+    sh[17]: -0.01687644
+    sh[18]: 0.20432359
+    sh[19]: 0.11706651
+    sh[20]: 0.077155724
+    sh[21]: -0.020559318
+    sh[22]: 0.0055113323
+    sh[23]: 0.025118995
+    sh[24]: -0.0010309884
+    sh[25]: -0.0028099148
+    sh[26]: -0.0064525655
+  m_SHValidForCapturePosition: {x: -2.248665, y: 1.7960819, z: -4.0902505}
+  m_SHValidForSourcePosition: {x: -2.248665, y: 1.7960819, z: -4.0902505}
   m_HDProbeVersion: 3
   m_ObsoleteInfiniteProjection: 1
   m_ObsoleteInfluenceVolume:
@@ -46372,7 +46473,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126682
+  m_Name: pb_Mesh34440
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -46851,7 +46952,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126218
+  m_Name: pb_Mesh33974
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -47519,7 +47620,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126000
+  m_Name: pb_Mesh33756
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -48694,7 +48795,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126068
+  m_Name: pb_Mesh33824
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -49254,33 +49355,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 2.781621
-    sh[ 1]: -1.8476082
-    sh[ 2]: -0.24279152
-    sh[ 3]: 0.20600277
-    sh[ 4]: -0.010882546
-    sh[ 5]: 0.15729713
-    sh[ 6]: -0.29284653
-    sh[ 7]: 0.27252167
-    sh[ 8]: -0.79066706
-    sh[ 9]: 1.5369151
-    sh[10]: -0.99646217
-    sh[11]: -0.15894035
-    sh[12]: 0.13540375
-    sh[13]: -0.021997396
-    sh[14]: 0.08406586
-    sh[15]: -0.15549739
-    sh[16]: 0.10585505
-    sh[17]: -0.44853187
-    sh[18]: 0.4915455
-    sh[19]: -0.3325447
-    sh[20]: -0.08312147
-    sh[21]: 0.06373476
-    sh[22]: -0.019414524
-    sh[23]: 0.030934269
-    sh[24]: -0.04432746
-    sh[25]: -0.009607804
-    sh[26]: -0.14615177
+    sh[ 0]: 2.6285026
+    sh[ 1]: -1.8965583
+    sh[ 2]: 0.10110881
+    sh[ 3]: 0.12548801
+    sh[ 4]: -0.12747844
+    sh[ 5]: -0.08527107
+    sh[ 6]: -0.20027553
+    sh[ 7]: 0.2751967
+    sh[ 8]: -0.80580604
+    sh[ 9]: 1.4414927
+    sh[10]: -1.000918
+    sh[11]: 0.048208997
+    sh[12]: 0.094709896
+    sh[13]: -0.07052275
+    sh[14]: -0.048244435
+    sh[15]: -0.10789357
+    sh[16]: 0.143673
+    sh[17]: -0.42679846
+    sh[18]: 0.46876493
+    sh[19]: -0.3403209
+    sh[20]: 0.004409167
+    sh[21]: 0.043990392
+    sh[22]: -0.022702195
+    sh[23]: -0.016813703
+    sh[24]: -0.03359478
+    sh[25]: 0.030644871
+    sh[26]: -0.14030562
   m_SHValidForCapturePosition: {x: -13.111159, y: 1.6628926, z: -4.1142077}
   m_SHValidForSourcePosition: {x: -13.111159, y: 1.6628926, z: -4.1142077}
   m_HDProbeVersion: 3
@@ -50793,33 +50894,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 6.0577273
-    sh[ 1]: -1.8373282
-    sh[ 2]: -4.501491
-    sh[ 3]: 1.501429
-    sh[ 4]: -0.29861385
-    sh[ 5]: 0.80459505
-    sh[ 6]: 0.1981713
-    sh[ 7]: -0.6370432
-    sh[ 8]: -0.04274116
-    sh[ 9]: 3.9493792
-    sh[10]: -1.2187983
-    sh[11]: -2.9608555
-    sh[12]: 0.99927074
-    sh[13]: -0.19512725
-    sh[14]: 0.531894
-    sh[15]: 0.13240272
-    sh[16]: -0.42097852
-    sh[17]: -0.024755932
-    sh[18]: 1.3660008
-    sh[19]: -0.44056243
-    sh[20]: -1.0491743
-    sh[21]: 0.3638855
-    sh[22]: -0.0691199
-    sh[23]: 0.18946849
-    sh[24]: 0.048020393
-    sh[25]: -0.15009618
-    sh[26]: -0.009321314
+    sh[ 0]: 5.916733
+    sh[ 1]: -2.0354934
+    sh[ 2]: -4.333452
+    sh[ 3]: 1.5599225
+    sh[ 4]: -0.2848979
+    sh[ 5]: 0.8291124
+    sh[ 6]: 0.18712732
+    sh[ 7]: -0.61891687
+    sh[ 8]: -0.052295264
+    sh[ 9]: 3.867271
+    sh[10]: -1.3166269
+    sh[11]: -2.865581
+    sh[12]: 1.0265795
+    sh[13]: -0.18716156
+    sh[14]: 0.54268396
+    sh[15]: 0.12606196
+    sh[16]: -0.41090807
+    sh[17]: -0.029592618
+    sh[18]: 1.3357979
+    sh[19]: -0.4653571
+    sh[20]: -1.0167015
+    sh[21]: 0.36767194
+    sh[22]: -0.06623747
+    sh[23]: 0.19082269
+    sh[24]: 0.04591242
+    sh[25]: -0.14620335
+    sh[26]: -0.010391754
   m_SHValidForCapturePosition: {x: -24.428772, y: 1.6628926, z: -3.153555}
   m_SHValidForSourcePosition: {x: -24.428772, y: 1.6628926, z: -3.153555}
   m_HDProbeVersion: 3
@@ -51382,7 +51483,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004837668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.198166, y: 0, z: -2.6923246}
+  m_LocalPosition: {x: 5.198859, y: 0, z: -2.6926322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51663,35 +51764,35 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 2.65498
-    sh[ 1]: -0.50630885
-    sh[ 2]: -0.31912887
-    sh[ 3]: -0.6561911
-    sh[ 4]: 0.7653788
-    sh[ 5]: -0.2267963
-    sh[ 6]: 0.07712334
-    sh[ 7]: 0.02643502
-    sh[ 8]: -0.38249186
-    sh[ 9]: 1.6559174
-    sh[10]: -0.28728873
-    sh[11]: -0.19876035
-    sh[12]: -0.41067067
-    sh[13]: 0.47581795
-    sh[14]: -0.14258704
-    sh[15]: 0.051765643
-    sh[16]: 0.020675605
-    sh[17]: -0.23136412
-    sh[18]: 0.494642
-    sh[19]: -0.07950136
-    sh[20]: -0.063329786
-    sh[21]: -0.11816194
-    sh[22]: 0.14436708
-    sh[23]: -0.041489705
-    sh[24]: 0.013985567
-    sh[25]: 0.009964756
-    sh[26]: -0.071419105
-  m_SHValidForCapturePosition: {x: -4.940651, y: 1.7960819, z: -9.287706}
-  m_SHValidForSourcePosition: {x: -4.940651, y: 1.7960819, z: -9.287706}
+    sh[ 0]: 2.3741493
+    sh[ 1]: -0.26444706
+    sh[ 2]: -0.31552854
+    sh[ 3]: -0.58452106
+    sh[ 4]: 0.68167347
+    sh[ 5]: -0.19190621
+    sh[ 6]: 0.058281295
+    sh[ 7]: 0.19496007
+    sh[ 8]: -0.2725176
+    sh[ 9]: 1.4595463
+    sh[10]: -0.11712896
+    sh[11]: -0.20601264
+    sh[12]: -0.35638756
+    sh[13]: 0.41269603
+    sh[14]: -0.118236564
+    sh[15]: 0.038936958
+    sh[16]: 0.12997141
+    sh[17]: -0.15969509
+    sh[18]: 0.43471706
+    sh[19]: -0.03175045
+    sh[20]: -0.06866358
+    sh[21]: -0.10500962
+    sh[22]: 0.12687315
+    sh[23]: -0.035292275
+    sh[24]: 0.00886592
+    sh[25]: 0.039611008
+    sh[26]: -0.04992637
+  m_SHValidForCapturePosition: {x: -4.941293, y: 1.7960819, z: -9.289097}
+  m_SHValidForSourcePosition: {x: -4.941293, y: 1.7960819, z: -9.289097}
   m_HDProbeVersion: 3
   m_ObsoleteInfiniteProjection: 1
   m_ObsoleteInfluenceVolume:
@@ -52590,6 +52691,84 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2036802899}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2039927056
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4055715264260337226, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_Name
+      value: Zombie-1_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055715264260337226, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000014305115
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306975357755961851, guid: 2bdd122ef542e36499dcac04c3aa8a79,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2bdd122ef542e36499dcac04c3aa8a79, type: 3}
 --- !u!1 &2042691977
 GameObject:
   m_ObjectHideFlags: 0
@@ -52748,7 +52927,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126716
+  m_Name: pb_Mesh34474
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -54031,7 +54210,7 @@ Transform:
   - {fileID: 338079662}
   - {fileID: 1873014004}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2105508956
 PrefabInstance:
@@ -54228,7 +54407,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh126288
+  m_Name: pb_Mesh34044
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -54706,7 +54885,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh127260
+  m_Name: pb_Mesh35030
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -54881,7 +55060,7 @@ PrefabInstance:
     - target: {fileID: 1013986159259337739, guid: 361d1b02cbd0b7541bf8a881014f29bc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.32134295
+      value: -6.043
       objectReference: {fileID: 0}
     - target: {fileID: 1013986159259337739, guid: 361d1b02cbd0b7541bf8a881014f29bc,
         type: 3}
@@ -54891,7 +55070,7 @@ PrefabInstance:
     - target: {fileID: 1013986159259337739, guid: 361d1b02cbd0b7541bf8a881014f29bc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.201791
+      value: -13.174
       objectReference: {fileID: 0}
     - target: {fileID: 1013986159259337739, guid: 361d1b02cbd0b7541bf8a881014f29bc,
         type: 3}
@@ -55957,6 +56136,94 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9094525966462257227}
   m_Mesh: {fileID: 8348894944683664661, guid: e6c2868fb3faca74b9698e63534938fd, type: 3}
+--- !u!1001 &3247805246570787437
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1153292642}
+    m_Modifications:
+    - target: {fileID: 925506715745933043, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_Name
+      value: Python_Decal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874832154383831557, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_Name
+      value: Python_OnSale
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960231227014150179, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_Name
+      value: BuyPython_Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.492
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.43632245
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.588
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791873207837797988, guid: 7051d61039bba4b4c8a01b29854abc61,
+        type: 3}
+      propertyPath: m_Name
+      value: Python_Decal_Buyed
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7051d61039bba4b4c8a01b29854abc61, type: 3}
 --- !u!33 &3469287837561231755
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -56078,6 +56345,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5368466640265391401, guid: fd9f7fb7e373fbd49bb5dc5c8c99b605,
     type: 3}
   m_PrefabInstance: {fileID: 3592167710205467918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3624832955172426526 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5624785842627426609, guid: 7051d61039bba4b4c8a01b29854abc61,
+    type: 3}
+  m_PrefabInstance: {fileID: 3247805246570787437}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3865475635216426403
 PrefabInstance:

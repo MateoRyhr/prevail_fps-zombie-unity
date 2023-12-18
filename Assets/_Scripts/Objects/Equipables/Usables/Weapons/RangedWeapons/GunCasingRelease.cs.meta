@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0de30bc2c8de0694c94fd31b6150e265
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _casingPrefab: {instanceID: 0}
+  - _casingReleaseTransform: {instanceID: 0}
+  - _casingReleaseForceFrom: {instanceID: 0}
+  - _casingReleaseForce: {instanceID: 0}
+  - _casingLifeTime: {fileID: 11400000, guid: dd08a0877a69a8444a67c1c932ca7f5b, type: 2}
+  - _forceVariation: {fileID: 11400000, guid: a1ba6fe2e1586d843b3365ed80343248, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

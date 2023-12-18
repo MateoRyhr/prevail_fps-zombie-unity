@@ -6,7 +6,7 @@ public class HealthEntity : MonoBehaviour, IDamageTaker
     [SerializeField] private FloatVariable _maxValue;
     [SerializeField] private float _startingValue;
     
-    public bool HasBeenDestructed;
+    public bool HasBeenDestructed { get; set; }
     public bool LastDamageKilledIt { get; set; }
     
     public UnityEvent OnGetDamage;

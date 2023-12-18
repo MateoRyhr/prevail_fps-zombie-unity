@@ -62,39 +62,4 @@ public class SingleShotLinearWeapon : RangedWeapon
     }
 
     Vector3 GetBulletDirection() => Sight.GetRandomPointOnRadius() - ProjectileStartPostition.position;
-
-    // public Component InstantiateObject()
-    // {
-    //     Projectile projectile =
-    //         Instantiate
-    //         (
-    //             ProjectilePrefab,
-    //             ProjectileStartPostition.position,
-    //             Quaternion.LookRotation(GetBulletDirection(),Vector3.up)
-    //         );
-    //     projectile.Damage = WeaponData.damage;
-    //     projectile.transform.parent = null;
-    //     projectile.OnDestroyAfterImpact.AddListener(() => _pool.Release(projectile));
-    //     return projectile;
-    // }
-
-    // public void OnGetComponent(Component projectile)
-    // {
-    //     SetOnPosition(projectile.gameObject);
-    //     projectile.GetComponent<Rigidbody>().velocity = projectile.transform.forward * RangedWeaponData.velocity;
-    //     CurrentAmmo--;
-    //     TimeSinceLastShoot = 0f;
-    //     projectile.gameObject.SetActive(true);
-    // }
-
-    // public void OnReturnToPool(Component projectile)
-    // {
-    //     projectile.HasAlreadyCollided = false;
-    //     projectile.gameObject.SetActive(false);
-    // }
-
-    // public void OnDestroyFromPool(Projectile component)
-    // {
-    //     throw new System.NotImplementedException();
-    // }
 }

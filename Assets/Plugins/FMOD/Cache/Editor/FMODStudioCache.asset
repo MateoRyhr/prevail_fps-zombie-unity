@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638369549446536298
+  lastModified: 638383334409564633
   FileSizes:
   - Name: Desktop
-    Value: 4248672
+    Value: 4500160
   Exists: 1
 --- !u!114 &-7019096679819489112
 MonoBehaviour:
@@ -128,6 +128,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2795
+--- !u!114 &-5302089217822627190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/CasingLand
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/CasingLand
+  Guid:
+    Data1: 52096218
+    Data2: 1144932616
+    Data3: 1537581701
+    Data4: -880391567
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5123059684335583837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,7 +359,7 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638369549403065912
+  lastModified: 638383334405490350
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -433,7 +460,7 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/VO.bank
   Name: VO
   StudioPath: bank:/VO
-  lastModified: 638369549446576312
+  lastModified: 638383334409604640
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -482,12 +509,17 @@ MonoBehaviour:
   - {fileID: -5728108243726417526}
   - {fileID: 6513503863333052630}
   - {fileID: -1159543523626306333}
+  - {fileID: 3022429227672070695}
+  - {fileID: 7245216293264881156}
+  - {fileID: -5302089217822627190}
+  - {fileID: 912629808683181505}
+  - {fileID: 7101051641243107725}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1302040948764729701}
   StringsBanks:
   - {fileID: 8256719651917186016}
-  cacheTime: 638369549446576312
+  cacheTime: 638383334409604640
   cacheVersion: 131605
 --- !u!114 &173400674341161584
 MonoBehaviour:
@@ -570,6 +602,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 50
   Length: 5
+--- !u!114 &912629808683181505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Revolvers/Revolver_Pyrhon_Fire-1
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Revolvers/Revolver_Pyrhon_Fire-1
+  Guid:
+    Data1: 1354548828
+    Data2: 1208138343
+    Data3: -1011202419
+    Data4: -1913887076
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 1000
+  Length: 0
 --- !u!114 &1013900631925574604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,7 +644,7 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638369549403606031
+  lastModified: 638383334406338613
   FileSizes:
   - Name: Desktop
     Value: 22048
@@ -615,6 +674,33 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: 3798539857981302455}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3022429227672070695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Wood/WoodTableHitted
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Wood/WoodTableHitted
+  Guid:
+    Data1: -278220494
+    Data2: 1117255552
+    Data3: 1632446362
+    Data4: -1297175317
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -811,6 +897,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7101051641243107725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Revolvers/Revolver_Python_Reload
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Revolvers/Revolver_Python_Reload
+  Guid:
+    Data1: -1129290538
+    Data2: 1166301748
+    Data3: -1434511472
+    Data4: 204226318
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 1000
+  Length: 0
+--- !u!114 &7245216293264881156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Wood/WoodTableBroken
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Wood/WoodTableBroken
+  Guid:
+    Data1: -726889028
+    Data2: 1091721318
+    Data3: 1821942917
+    Data4: 1428570058
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8147509433122175829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,8 +993,8 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638369549403085912
+  lastModified: 638383334405510351
   FileSizes:
   - Name: Desktop
-    Value: 2232
+    Value: 2490
   Exists: 1

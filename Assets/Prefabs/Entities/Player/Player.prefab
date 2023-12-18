@@ -6696,7 +6696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4e28ec6d63dbd409350ba8b7a6613c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialAmounts: 3c00000096000000
+  _initialAmounts: 3c000000960000003c000000
   _weaponEquipper: {fileID: 587537308505853434}
   OnNoAmmo:
     m_PersistentCalls:
@@ -8740,7 +8740,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 75
   m_Drag: 1
-  m_AngularDrag: 0.3
+  m_AngularDrag: 999999
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -8793,7 +8793,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxValue: {fileID: 11400000, guid: 08e79a87536f1cf409b4c4124a702311, type: 2}
   _startingValue: 100
-  HasBeenDestructed: 0
   OnGetDamage:
     m_PersistentCalls:
       m_Calls:
@@ -15157,7 +15156,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 394177
+    m_Bits: 1967041
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0

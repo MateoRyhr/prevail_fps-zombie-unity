@@ -4235,6 +4235,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4708541773238656938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3063043819806633639}
+  m_Layer: 7
+  m_Name: CasingReleaseForcePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3063043819806633639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4708541773238656938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00156, y: -0.00077, z: 0.00291}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1050446243043127766}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4745067537290550619
 GameObject:
   m_ObjectHideFlags: 0
@@ -6493,8 +6524,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7098306371515207072}
-  m_LocalRotation: {x: -0.46471968, y: 0.4623472, z: 0.4886694, w: 0.5757369}
-  m_LocalPosition: {x: -0.0020000245, y: 0.1710001, z: 0.029000094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 7.0000005}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6506,6 +6537,7 @@ Transform:
   - {fileID: 7208291689809796124}
   - {fileID: 2911132704950443739}
   - {fileID: 8343659368801573069}
+  - {fileID: 1050446243043127766}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6644,6 +6676,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: 11a262e044bcb6a4389a1a2eb7bb56d9,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: Sound, AudioFMOD
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: shoot_submachineGun
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5764464704580609767}
+        m_TargetAssemblyTypeName: GunCasingRelease, RangedWeapons
+        m_MethodName: CasingRelease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: shoot_submachineGun
@@ -6923,6 +6967,65 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &7212580678065124956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1050446243043127766}
+  - component: {fileID: 5764464704580609767}
+  m_Layer: 7
+  m_Name: CasingRelease
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1050446243043127766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7212580678065124956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.00122, y: 0.01523, z: 0.00558}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3063043819806633639}
+  m_Father: {fileID: 3697652417108098318}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5764464704580609767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7212580678065124956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de30bc2c8de0694c94fd31b6150e265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _casingPrefab: {fileID: 1569328382404938931, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+    type: 3}
+  _casingReleaseTransform: {fileID: 1050446243043127766}
+  _casingReleaseForceFrom: {fileID: 3063043819806633639}
+  _casingReleaseForce: {fileID: 11400000, guid: 9bdba5d2696c3fa4eb7e1721b26f2385,
+    type: 2}
+  _casingLifeTime: {fileID: 11400000, guid: dd08a0877a69a8444a67c1c932ca7f5b, type: 2}
+  _forceVariation: {fileID: 11400000, guid: a1ba6fe2e1586d843b3365ed80343248, type: 2}
+  _directionVariation: {fileID: 11400000, guid: 3d877dc6bc995cb49a473028b2647bc9,
+    type: 2}
+  poolMaxSize: 31
+  OnCasingReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7248534591501066856
 GameObject:
   m_ObjectHideFlags: 0
@@ -8388,7 +8491,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7899343121185042721
 Transform:
   m_ObjectHideFlags: 0

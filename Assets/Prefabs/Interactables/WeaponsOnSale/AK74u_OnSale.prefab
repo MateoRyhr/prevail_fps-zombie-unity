@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionType: 2
-  _message: 'Hold F to buy AK47 [Cost: 1600]'
+  _message: 'Hold F to buy AK47 [Cost: 2000]'
   Interaction:
     m_PersistentCalls:
       m_Calls:
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52a2c05d954d1348bb7b00dc59d09f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cost: 1600
+  _cost: 2000
   _buyerGetterContainer: {fileID: 2940123174546823404}
   OnSellSucceed:
     m_PersistentCalls:

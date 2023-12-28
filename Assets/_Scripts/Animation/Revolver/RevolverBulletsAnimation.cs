@@ -15,6 +15,7 @@ public class RevolverBulletsAnimation : MonoBehaviour
     [SerializeField] Vector3 _axisForce;
 
     [SerializeField] int _startAmount;
+    [SerializeField] float _timeToDestroyBullets;
 
     private IInt _bulletsLoadedGetter;
 
@@ -57,6 +58,7 @@ public class RevolverBulletsAnimation : MonoBehaviour
                 _currentBullets[i].transform.parent = null;
                 Vector3 dropeForce = rb.transform.TransformDirection(_axisForce) * _forceToDrop.Value;
                 rb.AddForce(dropeForce);
+                Destroy(_currentBullets[i].gameObject,_timeToDestroyBullets);
                 _currentBullets.Remove(_currentBullets[i]);
             }
         },_timeBeforeBulletsStartFall);
@@ -75,6 +77,4 @@ public class RevolverBulletsAnimation : MonoBehaviour
             rb.gameObject.layer = _layerAfterDrop;
         },0.15f);
     }
-
-    // Vector3 DropForce() => _axisForce * _forceToDrop.Value;
 }

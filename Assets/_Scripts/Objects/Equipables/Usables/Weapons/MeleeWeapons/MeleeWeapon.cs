@@ -9,6 +9,7 @@ public abstract class MeleeWeapon : Weapon
     [SerializeField] private LayerMask _impactableLayers;
     public LayerMask ImpactableLayers => _impactableLayers;
     public bool IsAttacking { get; private set; }
+    public override bool CanBeUsed => true;
 
     public UnityEvent OnMeleeAttackStart;
     public UnityEvent OnMeleeAttackHitStart;

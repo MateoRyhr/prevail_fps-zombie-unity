@@ -13,4 +13,14 @@ public class EquipableAnimatorOfEquipper : MonoBehaviour
     {
         _animator.SetTrigger(animation);
     }
+
+    public void ActiveBoolAnimation(string animation)
+    {
+        _animator.SetBool(animation,true);
+    }
+
+    public void DesactiveBoolAnimation(string animation)
+    {
+        _animator.SetBool(animation,false);
+    }
 }

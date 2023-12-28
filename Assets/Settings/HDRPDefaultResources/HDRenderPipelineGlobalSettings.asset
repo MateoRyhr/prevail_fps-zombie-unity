@@ -138,7 +138,7 @@ MonoBehaviour:
           maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 4294967291
+            m_Bits: 4293263425
     - sceneGUID: c62fe50bb5586934d8b089802508b660
       settings:
         m_Version: 1
@@ -156,7 +156,7 @@ MonoBehaviour:
           maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 4294967291
+            m_Bits: 4293263425
     - sceneGUID: 6e88161c9f4931648bf2d437759dd1b5
       settings:
         m_Version: 1
@@ -174,7 +174,7 @@ MonoBehaviour:
           maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 4294967291
+            m_Bits: 4293263425
     - sceneGUID: c3adc22017925d44f8804a39acbb08bd
       settings:
         m_Version: 1
@@ -192,7 +192,7 @@ MonoBehaviour:
           maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 4294967291
+            m_Bits: 4293263425
     serializedBakingSets:
     - name: Default
       sceneGUIDs:
@@ -216,7 +216,7 @@ MonoBehaviour:
           maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 4294967291
+            m_Bits: 4293263425
       profile: {fileID: 11400000, guid: aafb6490cd828e1438f9de9ed42ae335, type: 2}
       lightingScenarios:
       - Default

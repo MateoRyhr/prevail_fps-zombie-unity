@@ -165,6 +165,15 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MeleeAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""b84ffd99-b598-4498-99ec-c99530575454"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -198,6 +207,17 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Reload"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""05ddaa53-e40e-44ef-a362-3b57e26121e4"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MeleeAttack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -311,37 +331,39 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""PreviousEquipable"",
-                    ""type"": ""Button"",
-                    ""id"": ""113c39be-b396-4187-80b4-e02ca1e79fd3"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
                 {
-                    ""name"": """",
-                    ""id"": ""539bf015-b1b4-4926-930d-a9d96f9d29d2"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""name"": ""1D Axis"",
+                    ""id"": ""dcfc2825-846c-496c-a701-88c0368e5328"",
+                    ""path"": ""1DAxis(minValue=0,whichSideWins=1)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NextEquipable"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""e6197545-4564-47bc-90c1-2effc144ab7d"",
+                    ""path"": ""<Mouse>/scroll/y"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""NextEquipable"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",
-                    ""id"": ""5c22192e-1896-4742-90f9-0bd33a109f24"",
+                    ""id"": ""2e723350-3f05-4bd9-bf99-95ae7f7c0949"",
                     ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""PreviousEquipable"",
+                    ""action"": ""NextEquipable"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -408,6 +430,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         m_Combat_Fire = m_Combat.FindAction("Fire", throwIfNotFound: true);
         m_Combat_Aim = m_Combat.FindAction("Aim", throwIfNotFound: true);
         m_Combat_Reload = m_Combat.FindAction("Reload", throwIfNotFound: true);
+        m_Combat_MeleeAttack = m_Combat.FindAction("MeleeAttack", throwIfNotFound: true);
         // Interaction
         m_Interaction = asset.FindActionMap("Interaction", throwIfNotFound: true);
         m_Interaction_Interact = m_Interaction.FindAction("Interact", throwIfNotFound: true);
@@ -419,7 +442,6 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         // InventoryShortcuts
         m_InventoryShortcuts = asset.FindActionMap("InventoryShortcuts", throwIfNotFound: true);
         m_InventoryShortcuts_NextEquipable = m_InventoryShortcuts.FindAction("NextEquipable", throwIfNotFound: true);
-        m_InventoryShortcuts_PreviousEquipable = m_InventoryShortcuts.FindAction("PreviousEquipable", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_ShowStats = m_Menu.FindAction("ShowStats", throwIfNotFound: true);
@@ -550,6 +572,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_Combat_Fire;
     private readonly InputAction m_Combat_Aim;
     private readonly InputAction m_Combat_Reload;
+    private readonly InputAction m_Combat_MeleeAttack;
     public struct CombatActions
     {
         private @InputActionsAsset m_Wrapper;
@@ -557,6 +580,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         public InputAction @Fire => m_Wrapper.m_Combat_Fire;
         public InputAction @Aim => m_Wrapper.m_Combat_Aim;
         public InputAction @Reload => m_Wrapper.m_Combat_Reload;
+        public InputAction @MeleeAttack => m_Wrapper.m_Combat_MeleeAttack;
         public InputActionMap Get() { return m_Wrapper.m_Combat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -575,6 +599,9 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             @Reload.started += instance.OnReload;
             @Reload.performed += instance.OnReload;
             @Reload.canceled += instance.OnReload;
+            @MeleeAttack.started += instance.OnMeleeAttack;
+            @MeleeAttack.performed += instance.OnMeleeAttack;
+            @MeleeAttack.canceled += instance.OnMeleeAttack;
         }
 
         private void UnregisterCallbacks(ICombatActions instance)
@@ -588,6 +615,9 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             @Reload.started -= instance.OnReload;
             @Reload.performed -= instance.OnReload;
             @Reload.canceled -= instance.OnReload;
+            @MeleeAttack.started -= instance.OnMeleeAttack;
+            @MeleeAttack.performed -= instance.OnMeleeAttack;
+            @MeleeAttack.canceled -= instance.OnMeleeAttack;
         }
 
         public void RemoveCallbacks(ICombatActions instance)
@@ -718,13 +748,11 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_InventoryShortcuts;
     private List<IInventoryShortcutsActions> m_InventoryShortcutsActionsCallbackInterfaces = new List<IInventoryShortcutsActions>();
     private readonly InputAction m_InventoryShortcuts_NextEquipable;
-    private readonly InputAction m_InventoryShortcuts_PreviousEquipable;
     public struct InventoryShortcutsActions
     {
         private @InputActionsAsset m_Wrapper;
         public InventoryShortcutsActions(@InputActionsAsset wrapper) { m_Wrapper = wrapper; }
         public InputAction @NextEquipable => m_Wrapper.m_InventoryShortcuts_NextEquipable;
-        public InputAction @PreviousEquipable => m_Wrapper.m_InventoryShortcuts_PreviousEquipable;
         public InputActionMap Get() { return m_Wrapper.m_InventoryShortcuts; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -737,9 +765,6 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             @NextEquipable.started += instance.OnNextEquipable;
             @NextEquipable.performed += instance.OnNextEquipable;
             @NextEquipable.canceled += instance.OnNextEquipable;
-            @PreviousEquipable.started += instance.OnPreviousEquipable;
-            @PreviousEquipable.performed += instance.OnPreviousEquipable;
-            @PreviousEquipable.canceled += instance.OnPreviousEquipable;
         }
 
         private void UnregisterCallbacks(IInventoryShortcutsActions instance)
@@ -747,9 +772,6 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
             @NextEquipable.started -= instance.OnNextEquipable;
             @NextEquipable.performed -= instance.OnNextEquipable;
             @NextEquipable.canceled -= instance.OnNextEquipable;
-            @PreviousEquipable.started -= instance.OnPreviousEquipable;
-            @PreviousEquipable.performed -= instance.OnPreviousEquipable;
-            @PreviousEquipable.canceled -= instance.OnPreviousEquipable;
         }
 
         public void RemoveCallbacks(IInventoryShortcutsActions instance)
@@ -832,6 +854,7 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
         void OnFire(InputAction.CallbackContext context);
         void OnAim(InputAction.CallbackContext context);
         void OnReload(InputAction.CallbackContext context);
+        void OnMeleeAttack(InputAction.CallbackContext context);
     }
     public interface IInteractionActions
     {
@@ -846,7 +869,6 @@ public partial class @InputActionsAsset: IInputActionCollection2, IDisposable
     public interface IInventoryShortcutsActions
     {
         void OnNextEquipable(InputAction.CallbackContext context);
-        void OnPreviousEquipable(InputAction.CallbackContext context);
     }
     public interface IMenuActions
     {

@@ -7,9 +7,9 @@ public class BuyerOfAmmo : MonoBehaviour
 
     public UnityEvent OnBuyAmmo;
 
-    public void BuyAmmo(int amuntOfAmmo)
+    public void BuyAmmo(int[] amuntOfAmmo)
     {
-        _ammoCounter.AddAmmo(amuntOfAmmo);
+        _ammoCounter.AddAmmo(amuntOfAmmo[_ammoCounter.CurrentAmmoType]);
         OnBuyAmmo?.Invoke();
     }
 }

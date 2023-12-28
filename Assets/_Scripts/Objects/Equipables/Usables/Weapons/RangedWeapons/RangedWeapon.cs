@@ -15,6 +15,7 @@ public abstract class RangedWeapon : Weapon
     public bool IsReloading { get; set; }
     public bool WaitingForFireRate { get; set; }
     public float TimeSinceLastShoot { get; set; }
+    public override bool CanBeUsed => CurrentAmmo > 0;
 
     public UnityEvent OnWeaponEmpty;
 
@@ -22,15 +23,12 @@ public abstract class RangedWeapon : Weapon
 
     public override void Use()
     {
-        if(CurrentAmmo == 0)
-        {
-            OnWeaponEmpty?.Invoke();
-            return;
-        }
         if(!CanShoot()) return;
         Shoot();
         Recoil();
         OnUse?.Invoke();
+        if(CurrentAmmo == 0)
+            OnWeaponEmpty?.Invoke();
     }
 
     private void Recoil()

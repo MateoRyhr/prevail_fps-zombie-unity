@@ -8,13 +8,23 @@ public class ObjectUser : MonoBehaviour
     public Usable Usable => _objectToUse;
 
     public UnityEvent OnUse;
+    public UnityEvent OnCantUse;
+    public UnityEvent OnUseFinish;
 
     public void UseObject()
     {
         if(_objectToUse.Equipped)
         {
-            OnUse?.Invoke();
-           _objectToUse.Use();
+            if(_objectToUse.CanBeUsed)
+            {
+                OnUse?.Invoke();
+                _objectToUse.Use();
+                this.Invoke(() => OnUseFinish?.Invoke(),_objectToUse.TimeUsing);
+            }
+            else
+            {
+                OnCantUse?.Invoke();
+            }
         }
     }
 
@@ -22,8 +32,11 @@ public class ObjectUser : MonoBehaviour
     {
         if(_objectToUse.Equipped)
         {
-            OnUse?.Invoke();
-           _objectToUse.UseRepeatedly();
+            if(_objectToUse.CanBeUsed)
+            {
+                OnUse?.Invoke();
+                _objectToUse.UseRepeatedly();
+            }
         }
     }
 

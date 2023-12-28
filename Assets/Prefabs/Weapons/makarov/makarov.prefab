@@ -2335,6 +2335,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3725345422683342318}
+        m_TargetAssemblyTypeName: EquipableAnimatorOfEquipper, Objects
+        m_MethodName: ActiveBoolAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: pistol
+          m_BoolArgument: 0
+        m_CallState: 2
   OnShow:
     m_PersistentCalls:
       m_Calls: []
@@ -2343,7 +2355,19 @@ MonoBehaviour:
       m_Calls: []
   OnUnequippingStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3725345422683342318}
+        m_TargetAssemblyTypeName: EquipableAnimatorOfEquipper, Objects
+        m_MethodName: DesactiveBoolAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: pistol
+          m_BoolArgument: 0
+        m_CallState: 2
   OnHide:
     m_PersistentCalls:
       m_Calls: []
@@ -2438,7 +2462,19 @@ MonoBehaviour:
   Sight: {fileID: 0}
   OnWeaponEmpty:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8585427172018338752}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: noAmmo
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7786922115946192266
 MonoBehaviour:
   m_ObjectHideFlags: 0

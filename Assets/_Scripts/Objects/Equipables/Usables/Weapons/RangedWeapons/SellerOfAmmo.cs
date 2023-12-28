@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SellerOfAmmo : MonoBehaviour
 {
-    [SerializeField] private int _amountOfAmmo;
+    [SerializeField] private int[] _amountOfAmmo;
     [SerializeField] private GameObject _buyerGetterContainer;
 
     IGameObject _buyerGetter;

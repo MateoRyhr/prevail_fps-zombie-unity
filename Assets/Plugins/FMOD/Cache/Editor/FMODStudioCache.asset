@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638383334409564633
+  lastModified: 638393153056389734
   FileSizes:
   - Name: Desktop
-    Value: 4500160
+    Value: 4512192
   Exists: 1
 --- !u!114 &-7019096679819489112
 MonoBehaviour:
@@ -359,7 +359,7 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638383334405490350
+  lastModified: 638393153054100861
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -460,7 +460,7 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/VO.bank
   Name: VO
   StudioPath: bank:/VO
-  lastModified: 638383334409604640
+  lastModified: 638393153056429741
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -514,12 +514,13 @@ MonoBehaviour:
   - {fileID: -5302089217822627190}
   - {fileID: 912629808683181505}
   - {fileID: 7101051641243107725}
+  - {fileID: 4878831313343336555}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1302040948764729701}
   StringsBanks:
   - {fileID: 8256719651917186016}
-  cacheTime: 638383334409604640
+  cacheTime: 638393153056429741
   cacheVersion: 131605
 --- !u!114 &173400674341161584
 MonoBehaviour:
@@ -644,7 +645,7 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638383334406338613
+  lastModified: 638393153054294571
   FileSizes:
   - Name: Desktop
     Value: 22048
@@ -734,6 +735,33 @@ MonoBehaviour:
   - Glass
   - Default
   Exists: 1
+--- !u!114 &4878831313343336555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Knife/KnifeAttack
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Knife/KnifeAttack
+  Guid:
+    Data1: -1272966594
+    Data2: 1117584567
+    Data3: 70183834
+    Data4: 1608112202
+  Banks:
+  - {fileID: -7022453945639051154}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 1000
+  Length: 0
 --- !u!114 &4936515105899985881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -993,8 +1021,8 @@ MonoBehaviour:
   Path: ../Audio/FMOD/prevail/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638383334405510351
+  lastModified: 638393153054117977
   FileSizes:
   - Name: Desktop
-    Value: 2490
+    Value: 2538
   Exists: 1

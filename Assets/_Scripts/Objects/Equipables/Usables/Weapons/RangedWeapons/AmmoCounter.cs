@@ -8,7 +8,8 @@ public class AmmoCounter : MonoBehaviour
 
     private RangedWeapon _rangedWeapon;
     public AmountOfTypesCounter AmountsCounter;
-
+    public int CurrentAmmoType { get => (int)_rangedWeapon.RangedWeaponData.ammoType; }
+    
     public UnityEvent OnNoAmmo;
     public UnityEvent OnAmmoChange;
     public UnityEvent OnWeaponChange;
@@ -30,7 +31,7 @@ public class AmmoCounter : MonoBehaviour
     public void Reload()
     {
         if(!_rangedWeapon || _rangedWeapon.IsReloading) return;
-        int ammoAvailable = AmountsCounter.Amounts[(int)_rangedWeapon.RangedWeaponData.ammoType];
+        int ammoAvailable = AmountsCounter.Amounts[CurrentAmmoType];
         if(ammoAvailable <= 0)
         {
             OnNoAmmo?.Invoke();
@@ -41,13 +42,13 @@ public class AmmoCounter : MonoBehaviour
 
     public void SubstractAmmo(int value)
     {
-        AmountsCounter.Amounts[(int)_rangedWeapon.RangedWeaponData.ammoType] -= value;
+        AmountsCounter.Amounts[CurrentAmmoType] -= value;
         OnAmmoChange?.Invoke();
     }
 
     public void AddAmmo(int value)
     {
-        AmountsCounter.Amounts[(int)_rangedWeapon.RangedWeaponData.ammoType] += value;
+        AmountsCounter.Amounts[CurrentAmmoType] += value;
         OnAmmoChange?.Invoke();
     }
 }

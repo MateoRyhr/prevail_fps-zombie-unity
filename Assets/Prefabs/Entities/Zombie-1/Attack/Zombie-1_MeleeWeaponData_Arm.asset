@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f76e9c768ae299142b08b6e190e37e2f, type: 3}
   m_Name: Zombie-1_MeleeWeaponData_Arm
   m_EditorClassIdentifier: 
-  attackRange: 1.5
+  attackRange: 1.25

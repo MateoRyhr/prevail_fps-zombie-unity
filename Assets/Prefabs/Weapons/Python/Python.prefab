@@ -553,6 +553,7 @@ MonoBehaviour:
   _forceToDrop: {fileID: 11400000, guid: 012c7a1999ba195478f9636f82e9beb9, type: 2}
   _axisForce: {x: 0, y: 0, z: -1}
   _startAmount: 6
+  _timeToDestroyBullets: 10
 --- !u!1 &898034804378876133
 GameObject:
   m_ObjectHideFlags: 0
@@ -4077,6 +4078,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3725345422683342318}
+        m_TargetAssemblyTypeName: EquipableAnimatorOfEquipper, Objects
+        m_MethodName: ActiveBoolAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: pistol
+          m_BoolArgument: 0
+        m_CallState: 2
   OnShow:
     m_PersistentCalls:
       m_Calls: []
@@ -4085,7 +4098,19 @@ MonoBehaviour:
       m_Calls: []
   OnUnequippingStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3725345422683342318}
+        m_TargetAssemblyTypeName: EquipableAnimatorOfEquipper, Objects
+        m_MethodName: DesactiveBoolAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: pistol
+          m_BoolArgument: 0
+        m_CallState: 2
   OnHide:
     m_PersistentCalls:
       m_Calls: []
@@ -5015,6 +5040,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4928229726277547065}
     m_Modifications:
+    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 267653994539382180, guid: 200754589c6407c409f0429101fe067c,
         type: 3}
       propertyPath: m_RootOrder
@@ -5098,16 +5133,6 @@ PrefabInstance:
     - target: {fileID: 4061834704955291051, guid: 200754589c6407c409f0429101fe067c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
-        type: 3}
-      propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -5226,6 +5251,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4928229726277547065}
     m_Modifications:
+    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 267653994539382180, guid: 200754589c6407c409f0429101fe067c,
         type: 3}
       propertyPath: m_RootOrder
@@ -5311,16 +5346,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943, type: 3}
     m_RemovedGameObjects: []
@@ -5347,6 +5372,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4928229726277547065}
     m_Modifications:
+    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 267653994539382180, guid: 200754589c6407c409f0429101fe067c,
         type: 3}
       propertyPath: m_RootOrder
@@ -5432,16 +5467,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943, type: 3}
     m_RemovedGameObjects: []
@@ -5468,6 +5493,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4928229726277547065}
     m_Modifications:
+    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 267653994539382180, guid: 200754589c6407c409f0429101fe067c,
         type: 3}
       propertyPath: m_RootOrder
@@ -5553,16 +5588,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943, type: 3}
     m_RemovedGameObjects: []
@@ -5589,6 +5614,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4928229726277547065}
     m_Modifications:
+    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 267653994539382180, guid: 200754589c6407c409f0429101fe067c,
         type: 3}
       propertyPath: m_RootOrder
@@ -5672,16 +5707,6 @@ PrefabInstance:
     - target: {fileID: 4061834704955291051, guid: 200754589c6407c409f0429101fe067c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7040720469218885179, guid: 7fbca32b2cc4a5b47978f72c18ac0943,
-        type: 3}
-      propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:

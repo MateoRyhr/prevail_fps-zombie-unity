@@ -2121,8 +2121,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.60327804, y: 1.7858086, z: 1.5}
-  m_Center: {x: 0, y: -0.39290428, z: 0.59654504}
+  m_Size: {x: 0.60327804, y: 1.7858086, z: 1.25}
+  m_Center: {x: 0, y: -0.39290428, z: 0.48}
 --- !u!114 &2428697538773722830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4023,7 +4023,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxValue: {fileID: 11400000, guid: 3d6b928578c0e7847928d26ef5861669, type: 2}
   _startingValue: 100
-  HasBeenDestructed: 0
   OnGetDamage:
     m_PersistentCalls:
       m_Calls:
@@ -4573,6 +4572,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnCantUse:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUseFinish:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &7360935793031015716
 MonoBehaviour:
   m_ObjectHideFlags: 0

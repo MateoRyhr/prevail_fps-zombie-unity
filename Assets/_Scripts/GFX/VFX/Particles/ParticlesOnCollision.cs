@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.Pool;
+// using UnityEngine.Pool;
 
 [CreateAssetMenu(fileName = "ParticlesOnCollision", menuName = "Particles/ParticlesOnCollision")]
 public class ParticlesOnCollision : ScriptableObject
@@ -7,7 +7,8 @@ public class ParticlesOnCollision : ScriptableObject
     [SerializeField] private ParticleSystem _particles;
     [SerializeField] private int _maxAmount;
 
-    private ObjectPool<ParticleSystem> _pool;
+    // private ObjectPool<ParticleSystem> _pool;
+    Pool<ParticleSystem> _pool;
 
     public ParticleSystem InstantiateObject() => Instantiate(_particles);
 
@@ -24,9 +25,9 @@ public class ParticlesOnCollision : ScriptableObject
 
     void InstantiateParticles(Collision collision, bool collisionAsParent)
     {
-        ParticleSystem particles = _pool.Get();
+        ParticleSystem particles = _pool.GetObject();
         SetParticlesPosition(particles,collision,collisionAsParent);
-        particles.GetComponent<Actioner>().PerformAction(() => _pool.Release(particles),particles.main.duration);
+        particles.GetComponent<Actioner>().PerformAction(() => OnReturnToPool(particles),particles.main.duration);
     }
 
     void SetParticlesPosition(ParticleSystem particles, Collision collision,bool collisionAsParent)
@@ -39,6 +40,7 @@ public class ParticlesOnCollision : ScriptableObject
 
     public void Init()
     {
-        _pool = new ObjectPool<ParticleSystem>(InstantiateObject,OnGetFromPool,OnReturnToPool,OnDestroyFromPool,true,_maxAmount);
+        _pool = new Pool<ParticleSystem>(InstantiateObject,OnGetFromPool,_maxAmount);
+        // _pool = new ObjectPool<ParticleSystem>(InstantiateObject,OnGetFromPool,OnReturnToPool,OnDestroyFromPool,true,_maxAmount);
     }
 }

@@ -12,17 +12,17 @@ public class GunCasingRelease : MonoBehaviour
     [SerializeField] private FloatVariable _forceVariation;
     [SerializeField] private FloatVariable _directionVariation;
 
-    [SerializeField] private int poolMaxSize = 10;
-    public int PoolSize { get => _pool.Count; }
-    private List<GameObject> _pool;
+    [SerializeField] private int _poolMaxSize = 10;
+    Pool<GameObject> _pool;
 
     public UnityEvent OnCasingReleased;
 
-    private void Awake() => _pool = new List<GameObject>();
+    private void Awake() => _pool = new Pool<GameObject>(InstantiateCasing,ActionOnGetCasing,_poolMaxSize);
 
-    public void CasingRelease()
+    public void CasingRelease() => _pool.GetObject();
+
+    public void ActionOnGetCasing(GameObject casing)
     {
-        GameObject casing = GetCasing();
         SimpleEvent eventOnCasing = casing.GetComponent<SimpleEvent>();
         Rigidbody casingRb = casing.GetComponentInChildren<Rigidbody>();
         casingRb.velocity = Vector3.zero;
@@ -48,21 +48,6 @@ public class GunCasingRelease : MonoBehaviour
             OnCasingReleased?.Invoke();
             eventOnCasing.OnEvent?.Invoke();
             },Time.fixedDeltaTime);
-    }
-
-    GameObject GetCasing()
-    {
-        if(PoolSize < poolMaxSize)
-        {
-            _pool.Add(InstantiateCasing());
-        }
-        else
-        {
-            GameObject casing = _pool[0];
-            _pool.Remove(casing);
-            _pool.Add(casing);
-        }
-        return _pool[_pool.Count-1];
     }
 
     GameObject InstantiateCasing() => Instantiate(_casingPrefab,_casingReleaseTransform.position,_casingReleaseTransform.rotation,null);

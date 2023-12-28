@@ -1,20 +1,17 @@
-using System;
 using UnityEngine;
 using UnityEngine.Pool;
 
 public class SingleShotLinearWeapon : RangedWeapon
 {
-    private ObjectPool<Projectile> _pool;
+    private Pool<Projectile> _projectilesPool;
 
-    private void Awake() =>
-        _pool = new ObjectPool<Projectile>(CreateProjectile,OnTakeFromPool,ReturnToPool,DestroyFromPool,true,RangedWeaponData.magSize+1);
+    private void Awake(){
+        _projectilesPool = new Pool<Projectile>(CreateProjectile,OnTakeFromPool,RangedWeaponData.magSize+1);
+    }
     
     private protected override void Update() => base.Update();
 
-    protected override void Shoot()
-    {
-        Projectile projectile = _pool.Get();
-    }
+    protected override void Shoot() => _projectilesPool.GetObject();
 
     Projectile CreateProjectile()
     {
@@ -28,7 +25,8 @@ public class SingleShotLinearWeapon : RangedWeapon
         projectile.Damage = WeaponData.damage;
         projectile.Instantiator = transform.root.gameObject;
         projectile.transform.parent = null;
-        projectile.OnDestroyAfterImpact.AddListener(() => _pool.Release(projectile));
+        projectile.OnDestroyAfterImpact.AddListener(() => ReturnToPool(projectile));
+        // projectile.OnDestroyAfterImpact.AddListener(() => _pool.Release(projectile));
         return projectile;
     }
 

@@ -13,15 +13,15 @@ public class DecalOnCollision : ScriptableObject
     public int MaxAmount;
 
     private Collision _collision;
-    private int _currentDecalAmount;
 
-    private List<DecalProjector> _decalPool;
+    private Pool<DecalProjector> _pool;
 
     public void PrintDecal(Collision collision)
     {
         _collision = collision;
-        DecalProjector decal = GetDecal();
-        SetDecal(decal);
+        DecalProjector decal = _pool.GetObject();
+        // DecalProjector decal = GetDecal();
+        // SetDecal(decal);
     }
 
     private DecalProjector CreateDecal()
@@ -32,22 +32,6 @@ public class DecalOnCollision : ScriptableObject
             Quaternion.identity
         );
         return decal;
-    }
-
-    private DecalProjector GetDecal()
-    {
-        if(_currentDecalAmount < MaxAmount)
-        {
-            _decalPool.Add(CreateDecal());
-            _currentDecalAmount++;
-        }
-        else
-        {
-            DecalProjector decal = _decalPool[0];
-            _decalPool.Remove(decal);
-            _decalPool.Add(decal);
-        }
-        return _decalPool[_decalPool.Count-1];
     }
 
     private void SetDecal(DecalProjector decal)
@@ -70,7 +54,6 @@ public class DecalOnCollision : ScriptableObject
 
     public void Init()
     {
-        _currentDecalAmount = 0;
-        _decalPool = new List<DecalProjector>();
+        _pool = new Pool<DecalProjector>(CreateDecal,SetDecal,MaxAmount);
     }
 }

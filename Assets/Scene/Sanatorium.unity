@@ -24751,6 +24751,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8269934132592282360, guid: 2f8f48a655637ac44b635929a8724320,
         type: 3}
+      propertyPath: _initialScore
+      value: 50000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269934132592282360, guid: 2f8f48a655637ac44b635929a8724320,
+        type: 3}
       propertyPath: OnAddScore.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -58553,7 +58558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733304465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.919452, y: 2.0404043, z: -2.1301498}
+  m_LocalPosition: {x: 3.9194672, y: 2.0404043, z: -2.1301575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -63823,7 +63828,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004837668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.199191, y: 0, z: -2.6927862}
+  m_LocalPosition: {x: 5.1992235, y: 0, z: -2.6928005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -31,5 +31,5 @@ public class Buyer : MonoBehaviour
         }
     }
     
-    bool CanBuyIt(float cost) => cost < _money.Amount.Value;
+    bool CanBuyIt(float cost) => cost <= _money.Amount.Value;
 }

@@ -2,6 +2,12 @@
 
 Prevail is a first-person shooter in which you'll have to survive waves of zombies.
 
+![](./Media//Gifs/gif_ak_480x270_short_2-optimized.gif)
+
+[Download it here](https://mateoryhr.itch.io/prevail)
+
+[Look this gameplay](https://youtu.be/3eZuvO2aXho)
+
 # Systems
 
 > Index <a id="i"></a>
